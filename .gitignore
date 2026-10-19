@@ -3,3 +3,5 @@ kotoba-party/public/
 test-results/
 *.log
 .DS_Store
+__pycache__/
+*.pyc

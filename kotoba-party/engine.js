@@ -2,7 +2,9 @@
 (function(root){
 'use strict';
 const groups=[
-'犬|いぬ|イヌ','猫|ねこ|ネコ','ウサギ|うさぎ|兎','ネズミ|ねずみ|鼠','馬|うま|ウマ','牛|うし|ウシ','豚|ぶた|ブタ','羊|ひつじ|ヒツジ','鶏|にわとり|ニワトリ','狐|きつね|キツネ','狸|たぬき|タヌキ','熊|くま|クマ','シロクマ|白熊|ホッキョクグマ','鹿|しか|シカ','猪|いのしし|イノシシ','猿|さる|サル','鯨|くじら|クジラ','海豚|いるか|イルカ','蛙|かえる|カエル','蛇|へび|ヘビ','亀|かめ|カメ','蛸|たこ|タコ','烏賊|いか|イカ','海老|えび|エビ','蟹|かに|カニ','貝|かい|カイ','蟻|あり|アリ','蜂|はち|ハチ','蝶|ちょう|チョウ','蜻蛉|とんぼ|トンボ','蝉|せみ|セミ','蝸牛|かたつむり|カタツムリ','雀|すずめ|スズメ','烏|からす|カラス','鳩|はと|ハト','鶴|つる|ツル','燕|つばめ|ツバメ','鷲|わし|ワシ','鷹|たか|タカ','鮭|さけ|サケ|シャケ','鮪|まぐろ|マグロ','鯛|たい|タイ','鯖|さば|サバ','鰯|いわし|イワシ','秋刀魚|さんま|サンマ','鰤|ぶり|ブリ','鰻|うなぎ|ウナギ','林檎|りんご|リンゴ','苺|いちご|イチゴ','蜜柑|みかん|ミカン','葡萄|ぶどう|ブドウ','桃|もも|モモ','梨|なし|ナシ','柿|かき|カキの果物','西瓜|すいか|スイカ','檸檬|れもん|レモン','梅|うめ|ウメ','桜|さくら|サクラ','栗|くり|クリ','胡桃|くるみ|クルミ','枇杷|びわ|ビワ','無花果|いちじく|イチジク','杏|あんず|アンズ','椰子|ヤシ','大根|だいこん|ダイコン','人参|にんじん|ニンジン','玉ねぎ|玉葱|タマネギ|タマネギ','長ねぎ|長ネギ|白ネギ','じゃがいも|ジャガイモ|馬鈴薯','さつまいも|サツマイモ|薩摩芋','里芋|サトイモ','山芋|ヤマイモ','生姜|ショウガ|しょうが','大蒜|ニンニク|にんにく','茄子|ナス|なすび','胡瓜|キュウリ','南瓜|カボチャ','牛蒡|ゴボウ','蓮根|レンコン','筍|タケノコ','白菜|ハクサイ','椎茸|シイタケ','松茸|マツタケ','舞茸|マイタケ','木耳|キクラゲ','大豆|ダイズ','小豆|アズキ','落花生|ピーナッツ','トウモロコシ|とうもろこし|玉蜀黍|コーン','ゴーヤ|ニガウリ|苦瓜','シソ|紫蘇|大葉','ブロッコリー|ブロッコリ','カリフラワー|カリフラワ','白米|ごはん|ご飯|御飯|ご飯の白米','おにぎり|おむすび|御握り','チャーハン|炒飯|焼き飯','ラーメン|らーめん|拉麺','うどん|饂飩','そば|蕎麦','そうめん|素麺','焼きそば|やきそば','寿司|すし|スシ|鮨|鮓','餃子|ギョーザ|ぎょうざ','水餃子|すいぎょうざ','焼売|シュウマイ|シューマイ','小籠包|ショウロンポウ','肉まん|豚まん','天ぷら|天麩羅|てんぷら|天婦羅','唐揚げ|からあげ|空揚げ','とんかつ|トンカツ|豚カツ','マクドナルド|マック|マクド','フライドポテト|ポテトフライ','お好み焼き|おこのみやき','たこ焼き|たこやき','カレー|カレーライス','クリームシチュー|ホワイトシチュー','おはぎ|ぼたもち|牡丹餅','今川焼き|回転焼き|大判焼き|御座候','カステラ|かすてら','プリン|ぷりん','甘酒|あまざけ','牛乳|ミルク','コーヒー|珈琲|こーひー','コーラ|コカコーラ','ウーロン茶|烏龍茶|うーろん茶','緑茶|りょくちゃ','紅茶|こうちゃ','麦茶|むぎちゃ','水|みず|ウォーター','スマートフォン|スマホ|すまほ','パソコン|PC|ぱそこん','ノートパソコン|ノートPC','テレビ|TV','エアコン|冷暖房機','冷蔵庫|れいぞうこ','洗濯機|せんたくき','掃除機|そうじき','電子レンジ|でんしれんじ','自動車|車|クルマ|くるま','オートバイ|バイク','自転車|チャリンコ|チャリ','航空機|飛行機','ヘリコプター|ヘリ','船|ふね','新幹線|しんかんせん','ロープウェイ|ロープウエー','ベビーカー|乳母車','車椅子|車いす','キックボード|キックスケーター','フォークリフト|フォークリフト車','ボールペン|ボールぺン','シャープペンシル|シャーペン','セロハンテープ|セロテープ','ホチキス|ホッチキス|ステープラー','はさみ|ハサミ|鋏','傘|かさ|カサ','包丁|ほうちょう','鍋|なべ|ナベ','椅子|いす|イス','机|つくえ|ツクエ','箸|はし|お箸','サイコロ|さいころ|賽子','トランプ|とらんぷ','ぬいぐるみ|縫いぐるみ','赤|あか|レッド','青|あお|ブルー','黄色|黄|きいろ|イエロー','緑|みどり|グリーン','白|しろ|ホワイト|真っ白','黒|くろ|ブラック|真っ黒','紫|むらさき|パープル','茶色|ちゃいろ|ブラウン','灰色|グレー|グレイ','オレンジ色|橙色','ピンク|桃色','金色|黄金色|ゴールド','銀色|白銀|シルバー','紺色|ネイビーブルー','水玉模様|水玉|ドット柄','ストライプ|縞模様','王冠|クラウン','頭|あたま','顔|かお','目|眼','耳|みみ','鼻|はな','口|くち','肩|かた','腕|うで','手|て','足|あし','爪|つめ','お腹|腹|おなか','お尻|尻|おしり','へそ|臍','眉毛|まゆげ|眉','まつ毛|まつげ|睫毛','ひげ|髭|髯|鬚','歯|は','膝|ひざ','肘|ひじ','あご|顎','ごみ箱|ゴミ箱','サングラス|さんぐらす','帽子|ぼうし','眼鏡|メガネ|めがね','長靴|ながぐつ','子ども部屋|子供部屋','ファミレス|ファミリーレストラン','コンビニ|コンビニエンスストア','スーパー|スーパーマーケット','マインクラフト|Minecraft|マイクラ','UNDERTALE|アンダーテイル|アンダーテール|アンテ','DELTARUNE|デルタルーン','ポケットモンスター|ポケモン','スーパーマリオブラザーズ|スーパーマリオ','大乱闘スマッシュブラザーズ|スマブラ','ドラゴンクエスト|ドラクエ','ファイナルファンタジー|FF','マリオカート|マリカー','あつまれどうぶつの森|あつ森','スプラトゥーン|スプラ','PlayStation5|PS5|プレステ5','数独|ナンプレ','スパイダーマン|スパイダーマッ','ジャイアン|剛田武','ベジータ|べジータ','野比のび太|のび太','野原しんのすけ|しんちゃん','江戸川コナン|コナン','サトシ|サトシのポケモントレーナー','ピカチュウ|ぴかちゅう','ハローキティ|キティちゃん','シナモロール|シナモン','エルサ|エルサのアナと雪の女王','ミッキーマウス|ミッキー','ミニーマウス|ミニー','ドナルドダック|ドナルド','初音ミク|ミク','くまのプーさん|プーさん','ちびまる子ちゃん|まる子|さくらももこ','うずまきナルト|ナルト','モンキーDルフィ|ルフィ','ロロノアゾロ|ゾロ','竈門炭治郎|炭治郎','竈門禰豆子|禰豆子','0|ゼロ|零|〇','1|一','2|二','3|三','4|四','5|五','6|六','7|七','8|八','9|九','10|十','100|百','1000|千','10000|一万'
+'犬|いぬ|イヌ','猫|ねこ|ネコ','ウサギ|うさぎ|兎','ネズミ|ねずみ|鼠','馬|うま|ウマ','牛|うし|ウシ','豚|ぶた|ブタ','羊|ひつじ|ヒツジ','鶏|にわとり|ニワトリ','狐|きつね|キツネ','狸|たぬき|タヌキ','熊|くま|クマ','シロクマ|白熊|ホッキョクグマ','鹿|しか|シカ','猪|いのしし|イノシシ','猿|さる|サル','鯨|くじら|クジラ','海豚|いるか|イルカ','蛙|かえる|カエル','蛇|へび|ヘビ','亀|かめ|カメ','蛸|たこ|タコ','烏賊|いか|イカ','海老|えび|エビ','蟹|かに|カニ','貝|かい|カイ','蟻|あり|アリ','蜂|はち|ハチ','蝶|ちょう|チョウ','蜻蛉|とんぼ|トンボ','蝉|せみ|セミ','蝸牛|かたつむり|カタツムリ','雀|すずめ|スズメ','烏|からす|カラス','鳩|はと|ハト','鶴|つる|ツル','燕|つばめ|ツバメ','鷲|わし|ワシ','鷹|たか|タカ','鮭|さけ|サケ|シャケ','鮪|まぐろ|マグロ','鯛|たい|タイ','鯖|さば|サバ','鰯|いわし|イワシ','秋刀魚|さんま|サンマ','鰤|ぶり|ブリ','鰻|うなぎ|ウナギ','林檎|りんご|リンゴ','苺|いちご|イチゴ','蜜柑|みかん|ミカン','葡萄|ぶどう|ブドウ','桃|もも|モモ','梨|なし|ナシ','柿|かき|カキの果物','西瓜|すいか|スイカ','檸檬|れもん|レモン','梅|うめ|ウメ','桜|さくら|サクラ','栗|くり|クリ','胡桃|くるみ|クルミ','枇杷|びわ|ビワ','無花果|いちじく|イチジク','杏|あんず|アンズ','椰子|ヤシ','大根|だいこん|ダイコン','人参|にんじん|ニンジン','玉ねぎ|玉葱|タマネギ|タマネギ','長ねぎ|長ネギ|白ネギ','じゃがいも|ジャガイモ|馬鈴薯','さつまいも|サツマイモ|薩摩芋','里芋|サトイモ','山芋|ヤマイモ','生姜|ショウガ|しょうが','大蒜|ニンニク|にんにく','茄子|ナス|なすび','胡瓜|キュウリ','南瓜|カボチャ|パンプキン','牛蒡|ゴボウ','蓮根|レンコン','筍|タケノコ','白菜|ハクサイ','椎茸|シイタケ','松茸|マツタケ','舞茸|マイタケ','木耳|キクラゲ','大豆|ダイズ','小豆|アズキ','落花生|ピーナッツ','トウモロコシ|とうもろこし|玉蜀黍|コーン','ゴーヤ|ニガウリ|苦瓜','シソ|紫蘇|大葉','ブロッコリー|ブロッコリ','カリフラワー|カリフラワ','白米|ごはん|ご飯|御飯|ご飯の白米','おにぎり|おむすび|御握り','チャーハン|炒飯|焼き飯','ラーメン|らーめん|拉麺','うどん|饂飩','そば|蕎麦','そうめん|素麺','焼きそば|やきそば','寿司|すし|スシ|鮨|鮓','餃子|ギョーザ|ぎょうざ','水餃子|すいぎょうざ','焼売|シュウマイ|シューマイ','小籠包|ショウロンポウ','肉まん|豚まん','天ぷら|天麩羅|てんぷら|天婦羅','唐揚げ|からあげ|空揚げ','とんかつ|トンカツ|豚カツ','マクドナルド|マック|マクド','フライドポテト|ポテトフライ','お好み焼き|おこのみやき','たこ焼き|たこやき','カレー|カレーライス','クリームシチュー|ホワイトシチュー','おはぎ|ぼたもち|牡丹餅','今川焼き|回転焼き|大判焼き|御座候','カステラ|かすてら','プリン|ぷりん','甘酒|あまざけ','牛乳|ミルク','コーヒー|珈琲|こーひー','コーラ|コカコーラ','ウーロン茶|烏龍茶|うーろん茶','緑茶|りょくちゃ','紅茶|こうちゃ','麦茶|むぎちゃ','水|みず|ウォーター','スマートフォン|スマホ|すまほ','パソコン|PC|ぱそこん','ノートパソコン|ノートPC','テレビ|TV','エアコン|冷暖房機','冷蔵庫|れいぞうこ','洗濯機|せんたくき','掃除機|そうじき','電子レンジ|でんしれんじ','自動車|車|クルマ|くるま','オートバイ|バイク','自転車|チャリンコ|チャリ','航空機|飛行機','ヘリコプター|ヘリ','船|ふね','新幹線|しんかんせん','ロープウェイ|ロープウエー','ベビーカー|乳母車','車椅子|車いす','キックボード|キックスケーター','フォークリフト|フォークリフト車','ボールペン|ボールぺン','シャープペンシル|シャーペン','セロハンテープ|セロテープ','ホチキス|ホッチキス|ステープラー','はさみ|ハサミ|鋏','傘|かさ|カサ','包丁|ほうちょう','鍋|なべ|ナベ','椅子|いす|イス','机|つくえ|ツクエ','箸|はし|お箸','サイコロ|さいころ|賽子','トランプ|とらんぷ','ぬいぐるみ|縫いぐるみ','赤|あか|レッド','青|あお|ブルー','黄色|黄|きいろ|イエロー','緑|みどり|グリーン','白|しろ|ホワイト|真っ白','黒|くろ|ブラック|真っ黒','紫|むらさき|パープル','茶色|ちゃいろ|ブラウン','灰色|グレー|グレイ','オレンジ色|橙色','ピンク|桃色','金色|黄金色|ゴールド','銀色|白銀|シルバー','紺色|ネイビーブルー','水玉模様|水玉|ドット柄','ストライプ|縞模様','王冠|クラウン','頭|あたま','顔|かお','目|眼','耳|みみ','鼻|はな','口|くち','肩|かた','腕|うで','手|て','足|あし','爪|つめ','お腹|腹|おなか','お尻|尻|おしり','へそ|臍','眉毛|まゆげ|眉','まつ毛|まつげ|睫毛','ひげ|髭|髯|鬚','歯|は','膝|ひざ','肘|ひじ','あご|顎','ごみ箱|ゴミ箱','サングラス|さんぐらす','帽子|ぼうし','眼鏡|メガネ|めがね','長靴|ながぐつ','子ども部屋|子供部屋','ファミレス|ファミリーレストラン','コンビニ|コンビニエンスストア','スーパー|スーパーマーケット','マインクラフト|Minecraft|マイクラ','UNDERTALE|アンダーテイル|アンダーテール|アンテ','DELTARUNE|デルタルーン','ポケットモンスター|ポケモン','スーパーマリオブラザーズ|スーパーマリオ','大乱闘スマッシュブラザーズ|スマブラ','ドラゴンクエスト|ドラクエ','ファイナルファンタジー|FF','マリオカート|マリカー','あつまれどうぶつの森|あつ森','スプラトゥーン|スプラ','PlayStation5|PS5|プレステ5','数独|ナンプレ','スパイダーマン|スパイダーマッ','ジャイアン|剛田武','ベジータ|べジータ','野比のび太|のび太','野原しんのすけ|しんちゃん','江戸川コナン|コナン','サトシ|サトシのポケモントレーナー','ピカチュウ|ぴかちゅう','ハローキティ|キティちゃん','シナモロール|シナモン','エルサ|エルサのアナと雪の女王','ミッキーマウス|ミッキー','ミニーマウス|ミニー','ドナルドダック|ドナルド','初音ミク|ミク','くまのプーさん|プーさん','ちびまる子ちゃん|まる子|さくらももこ','うずまきナルト|ナルト','モンキーDルフィ|ルフィ','ロロノアゾロ|ゾロ','竈門炭治郎|炭治郎','竈門禰豆子|禰豆子','0|ゼロ|零|〇','1|一','2|二','3|三','4|四','5|五','6|六','7|七','8|八','9|九','10|十','100|百','1000|千','10000|一万'
+,
+'ベッド|寝台','たんす|箪笥','足の裏|足裏','足の指|足指','背骨|脊椎','まぶた|眼瞼','やかん|薬缶|ケトル','ごみ箱|くずかご|屑籠','スパゲッティ|スパゲッティー|スパゲティ','医師|ドクター|お医者さん','手のひら|掌','アイスキャンディ|アイスキャンディー|アイスキャンデー','ビオラ|ヴィオラ','ファゴット|バスーン','パルメザンチーズ|パルメザン','脱脂粉乳|スキムミルク','真珠|パール'
 ];
 // Keep numeric signs and decimal points meaningful before removing word punctuation.
 function numericKey(s){
@@ -24,7 +26,16 @@ function base(s){
 }
 const aliases=new Map();
 for(const group of groups){const list=group.split('|').map(base);for(const k of list)aliases.set(k,list[0]);}
-function key(s){const k=base(s);return aliases.get(k)||k;}
+// String normalization is deterministic. Reuse it across genre counts, plans
+// and draws while bounding retained input from long-running/manual sessions.
+const keyCache=new Map(),KEY_CACHE_LIMIT=200000;
+function key(s){
+  const raw=String(s==null?'':s),cached=keyCache.get(raw);
+  if(cached!==undefined)return cached;
+  const k=base(raw),result=aliases.get(k)||k;
+  if(keyCache.size>=KEY_CACHE_LIMIT)keyCache.clear();
+  keyCache.set(raw,result);return result;
+}
 function randomInt(max){if(!Number.isInteger(max)||max<1||max>0xffffffff)throw Error('乱数の範囲が不正です。');if(root.crypto&&root.crypto.getRandomValues){const a=new Uint32Array(1),limit=Math.floor(0x100000000/max)*max;do{root.crypto.getRandomValues(a);}while(a[0]>=limit);return a[0]%max;}return Math.floor(Math.random()*max);}
 function shuffle(a){const b=[...a];for(let i=b.length-1;i>0;i--){let j=randomInt(i+1);[b[i],b[j]]=[b[j],b[i]];}return b;}
 function unique(list){const seen=new Set();return list.filter(x=>{let k=key(typeof x==='string'?x:x.w);if(!k||seen.has(k))return false;seen.add(k);return true;});}
@@ -38,15 +49,44 @@ function wordPool(cat,db,cache,used,includeOnline=true){
   const common=(c.common||[]).map(w=>({w,c:cat,source:'内蔵',tier:0}));
   const builtin=(c.words||[]).map(w=>({w,c:cat,source:'内蔵',tier:1}));
   const online=includeOnline?((((cache||{})[cat]||{}).words)||[]).filter(Boolean).map(e=>({...(typeof e==='object'?e:{}),w:typeof e==='string'?e:e.w,c:cat,source:(e&&e.source)||'検索',tier:2})):[];
-  const excluded=excludedKeys(used);
-  return unique([...common,...builtin,...online].filter(e=>typeof e.w==='string'&&e.w.trim())).filter(e=>!excluded.has(key(e.w)));
+  const seen=excludedKeys(used),pool=[];
+  // Normalize each candidate once; source order preserves the best tier.
+  for(const e of [...common,...builtin,...online]){
+    if(typeof e.w!=='string'||!e.w.trim())continue;
+    const k=key(e.w);
+    if(!k||seen.has(k))continue;
+    seen.add(k);pool.push(e);
+  }
+  return pool;
 }
 function numberPool(min,max,used){validateRange(min,max);const excluded=excludedKeys(used),result=[];for(let i=min;i<=max;i++){const w=String(i);if(!excluded.has(w))result.push({w,c:'numbers',source:'数字',tier:0});}return result;}
 function getPool(cat,config,db,cache,used){return cat==='numbers'?numberPool(config.min,config.max,used):wordPool(cat,db,cache,used,config.search===true);}
 function pick(pool,familiar){if(!pool.length)throw Error('未出題のお題がありません。');if(familiar){const tier=pool.reduce((min,x)=>Math.min(min,Number(x.tier)||0),Infinity);const preferred=pool.filter(x=>(Number(x.tier)||0)===tier);return preferred[randomInt(preferred.length)];}return pool[randomInt(pool.length)];}
 function remaining(cat,config,db,cache,used){if(cat!=='numbers')return wordPool(cat,db,cache,used,config.search===true).length;validateRange(config.min,config.max);let n=config.max-config.min+1;for(const k of excludedKeys(used)){if(/^\d+$/.test(k)){let v=Number(k);if(v>=config.min&&v<=config.max)n--;}}return Math.max(0,n);}
 function drawOne(cat,config,db,cache,used){if(cat!=='numbers')return pick(wordPool(cat,db,cache,used,config.search===true),config.familiar);const excluded=excludedKeys(used),n=remaining(cat,config,db,cache,excluded);if(!n)throw Error('この範囲の数字はすべて出題済みです。範囲を広げてください。');const width=config.max-config.min+1;for(let i=0;i<120;i++){let w=String(config.min+randomInt(width));if(!excluded.has(w))return {w,c:cat,source:'数字',tier:0};}let target=randomInt(n);for(let v=config.min;v<=config.max;v++){let w=String(v);if(!excluded.has(w)&&target--===0)return {w,c:cat,source:'数字',tier:0};}throw Error('数字の抽選に失敗しました。');}
-function orderedPool(pool,familiar){const entries=shuffle(pool).map(e=>({...e,k:key(e.w)}));if(familiar)entries.sort((a,b)=>a.tier-b.tier);return entries;}
+// Partial Fisher–Yates with a sparse index map: sample at most 50 entries
+// without copying or shuffling a category containing thousands of words.
+function sample(pool,count){
+  const swaps=new Map(),result=[];
+  for(let left=pool.length;left>0&&result.length<count;left--){
+    const at=randomInt(left),index=swaps.has(at)?swaps.get(at):at,last=left-1;
+    result.push(pool[index]);
+    swaps.set(at,swaps.has(last)?swaps.get(last):last);swaps.delete(last);
+  }
+  return result;
+}
+function orderedPool(pool,familiar,count){
+  let selected=[];
+  if(familiar){
+    const tiers=new Map();
+    for(const e of pool){const tier=Number(e.tier)||0;if(!tiers.has(tier))tiers.set(tier,[]);tiers.get(tier).push(e);}
+    for(const tier of [...tiers.keys()].sort((a,b)=>a-b)){
+      selected.push(...sample(tiers.get(tier),count-selected.length));
+      if(selected.length===count)break;
+    }
+  }else selected=sample(pool,count);
+  return selected.map(e=>({...e,k:key(e.w)}));
+}
 function poolCatalog(config,db,cache,used,categories){
   const pools=new Map();
   for(const cat of new Set(categories)){
@@ -57,7 +97,9 @@ function poolCatalog(config,db,cache,used,categories){
       pool=[];const excluded=excludedKeys(used),n=Math.min(config.count,remaining(cat,config,db,cache,excluded));
       for(let i=0;i<n;i++){const e=drawOne(cat,config,db,cache,excluded);pool.push(e);excluded.add(key(e.w));}
     }else pool=wordPool(cat,db,cache,used,config.search===true);
-    pools.set(cat,orderedPool(pool,config.familiar));
+    // There are at most count slots. Retaining count distinct candidates from
+    // a larger pool cannot make any subset of those slots unmatchable.
+    pools.set(cat,orderedPool(pool,config.familiar,config.count));
   }
   return pools;
 }

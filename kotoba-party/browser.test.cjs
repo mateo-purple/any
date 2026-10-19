@@ -21,6 +21,7 @@ const fixture = read('template.html')
   .split('__STYLE__').join(read('style.css'))
   .split('__DATA__').join(read('public/data.json').replace(/<\//g, '<\\/'))
   .split('__ENGINE__').join(read('engine.js'))
+  .split('__LICENSES__').join(JSON.stringify({WordNet:read('wordnet-LICENSE.txt')}))
   .split('__APP__').join(read('app.js'));
 const completed = [];
 const counts = [];
@@ -29,7 +30,7 @@ const state = page => page.evaluate(() => JSON.parse(localStorage.getItem('kotob
 const waitStatus = (page, text) => page.waitForFunction(value => {
   return document.getElementById('refillStatus')?.textContent.includes(value);
 }, text, { timeout: 30000 });
-const endRound = async page => { await page.click('#endRound'); await page.click('#dialogOk'); };
+const endRound = async page => { await page.click('#topEnd'); await page.click('#dialogOk'); };
 const openRefill = async page => {
   if (!await page.locator('#numberSettings').evaluate(e => e.open)) {
     await page.locator('#numberSettings > summary').click();
@@ -98,7 +99,7 @@ async function bulkAndPrivacy(browser) {
     await page.check('#searchToggle');
     await openRefill(page);
     await page.click('#refill');
-    await waitStatus(page, '3,000語保存しました。');
+    await waitStatus(page, '3,000語保存済み。');
     const full = await state(page);
     assert.equal(full.cache.food.words.length, 3000);
     assert.equal(await page.evaluate(() => {
@@ -109,7 +110,8 @@ async function bulkAndPrivacy(browser) {
     assert.equal(mock.requests, 31);
     pass('serial bulk search stores exactly 3,000 canonical unique candidates with real progress');
     await page.uncheck('#searchToggle');
-    assert.equal(await page.locator('[data-genre=food] span').textContent(), `未出題 ${offlineCount - 3}語`);
+    const remainingOffline = Number((await page.locator('[data-genre=food] span').textContent()).replace(/[^0-9]/g, ''));
+    assert.equal(remainingOffline, offlineCount - 3);
     const beforeOfflineDraw = mock.requests;
     await page.click('[data-genre=food]');
     assert.equal(mock.requests, beforeOfflineDraw);
@@ -183,7 +185,7 @@ async function cancellationAndManual(browser) {
     await page.click('#refill');
     await page.waitForFunction(() => JSON.parse(localStorage.getItem('kotoba-party.v1')).cache.food?.words.length > 0);
     await page.click('#cancelRefill');
-    await waitStatus(page, '補充を止めました。');
+    await waitStatus(page, '停止しました。');
     const partial = (await state(page)).cache.food.words.length;
     assert(partial > 0 && partial < 3000);
     assert.equal(await page.isDisabled('#refill'), false);
@@ -191,18 +193,18 @@ async function cancellationAndManual(browser) {
 
     mock.mode = 'empty';
     await page.click('#refill');
-    await waitStatus(page, '最後まで取得しました。');
+    await waitStatus(page, '取得完了。');
     assert.equal((await state(page)).cache.food.words.length, partial);
     const requestsAtExhaustion = mock.requests;
     await page.click('#refill');
-    await waitStatus(page, '最後まで取得しました。');
+    await waitStatus(page, '取得完了。');
     assert.equal(mock.requests, requestsAtExhaustion);
     pass('empty/exhausted results stop gracefully and do not fabricate or reuse candidates');
 
     await page.selectOption('#refillGenre', 'animals');
     mock.mode = 'failure';
     await page.click('#refill');
-    await waitStatus(page, '通信または');
+    await waitStatus(page, '通信エラー');
     assert.equal(await page.isDisabled('#refill'), false);
     assert.equal((await state(page)).cache.food.words.length, partial);
     pass('API failure restores controls and retains already downloaded candidates');
@@ -335,12 +337,43 @@ async function replacementFlows(browser) {
   } finally { await context.close(); }
 }
 
+async function familiaritySetting(browser) {
+  const { context, page, mock, errors } = await createContext(browser);
+  try {
+    await page.click('#autoMode');
+    assert.equal(await page.getAttribute('#familiar', 'type'), 'checkbox');
+    assert.equal(await page.isChecked('#familiar'), true);
+    assert.equal(await page.locator('#familiar').evaluate(e => !!e.closest('details')), false);
+    await page.uncheck('#familiar');
+    await page.reload();
+    await page.click('#autoMode');
+    assert.equal(await page.isChecked('#familiar'), false);
+    await page.click('[data-genre=food]');
+    assert.equal((await state(page)).current.config.familiar, false);
+    await page.click('[data-player="0"]');
+    await page.click('#replaceWord');
+    await page.click('#dialogOk');
+    assert.equal((await state(page)).current.config.familiar, false);
+    await page.click('#hideWord');
+    await endRound(page);
+    await page.click('#autoMode');
+    await page.check('#familiar');
+    await page.click('[data-genre=food]');
+    assert.equal((await state(page)).current.config.familiar, true);
+    assert((await state(page)).current.entries.every(e => e.tier === 0));
+    assert.equal(mock.requests, 0);
+    assert.deepEqual(errors, []);
+    pass('visible familiarity checkbox persists OFF through reload, draw and change; ON restores common-first draws');
+  } finally { await context.close(); }
+}
+
 (async () => {
   const browser = await chromium.launch({ headless: true, executablePath: process.env.CHROMIUM_PATH || '/usr/bin/chromium', args: ['--no-sandbox'] });
   try {
     await bulkAndPrivacy(browser);
     await cancellationAndManual(browser);
     await replacementFlows(browser);
+    await familiaritySetting(browser);
     console.log(JSON.stringify({ ok: true, passed: completed.length, mode: process.env.BASE_URL ? 'BASE_URL app' : 'in-memory source fixture', wikipedia: 'All search responses mocked locally; live Wikipedia access not verified.', counts }, null, 2));
   } finally { await browser.close(); }
 })().catch(error => { console.error(error); process.exitCode = 1; });

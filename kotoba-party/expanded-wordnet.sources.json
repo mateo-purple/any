@@ -1,0 +1,8179 @@
+{
+  "source": "Japanese WordNet 2.0 + Princeton WordNet 3.0 noun hierarchy",
+  "homepage": "https://bond-lab.github.io/wnja/index.ja.html",
+  "sources": [
+    {
+      "filename": "wnja-2.0.xml",
+      "url": "https://github.com/bond-lab/wnja/releases/download/v2.0/wnja-2.0.xml",
+      "sha256": "c5fa7512f4d420db95a54ad3f84ed4bdc55bdfdff5dc4b79c4064954978fbc9d"
+    },
+    {
+      "filename": "wordnet.zip",
+      "url": "https://raw.githubusercontent.com/nltk/nltk_data/gh-pages/packages/corpora/wordnet.zip",
+      "sha256": "cbda5ea6eef7f36a97a43d4a75f85e07fccbb4f23657d27b4ccbc93e2646ab59"
+    }
+  ],
+  "licenseFile": "wordnet-LICENSE.txt",
+  "licenseUrls": [
+    "https://raw.githubusercontent.com/bond-lab/wnja/v2.0/docs/license.txt",
+    "https://wordnet.princeton.edu/license-and-commercial-use"
+  ],
+  "method": "Positive noun hypernym descendants; manually reviewed explicit choices; one spelling per synset per category; game canonical-key deduplication. Curated nature names may display an attested katakana reading without adding another entry for that sense. Low-confidence senses, named-person instance links and rejected subtrees excluded. Nature labels were additionally reviewed to omit taxonomic ranks, general biological concepts and mistranslations. English definition substrings are never classification rules.",
+  "curationFile": "wordnet-curation.json",
+  "importScript": "scripts/import-wordnet.py",
+  "counts": {
+    "food": 94,
+    "drinks": 61,
+    "sweets": 14,
+    "things": 167,
+    "clothes": 100,
+    "electronics": 39,
+    "jobs": 91,
+    "vehicles": 73,
+    "body": 136,
+    "colors": 33,
+    "music": 51,
+    "plants": 384,
+    "animals": 764
+  },
+  "rootSynsets": {
+    "food": [
+      "07555863"
+    ],
+    "drinks": [
+      "07881800"
+    ],
+    "sweets": [
+      "07596967",
+      "07597365",
+      "07609840"
+    ],
+    "things": [
+      "03563967",
+      "03405725",
+      "03094503",
+      "06258852",
+      "03964744",
+      "02820210",
+      "03932670"
+    ],
+    "clothes": [
+      "03051540",
+      "03597469",
+      "03113152"
+    ],
+    "electronics": [
+      "03269401",
+      "03278248",
+      "03528263"
+    ],
+    "jobs": [
+      "09632518",
+      "09616922",
+      "10480253",
+      "09820263"
+    ],
+    "vehicles": [
+      "04524313"
+    ],
+    "body": [
+      "05220461"
+    ],
+    "colors": [
+      "04956594",
+      "03011162",
+      "03516367",
+      "03978300",
+      "04683136"
+    ],
+    "music": [
+      "03800933"
+    ],
+    "plants": [
+      "00017222",
+      "07705931",
+      "07707451",
+      "07737081",
+      "07734744",
+      "12997919"
+    ],
+    "animals": [
+      "00015388"
+    ]
+  },
+  "excludedSubtrees": [
+    "04565375",
+    "03764276",
+    "05513302",
+    "13087625",
+    "10317007",
+    "10622053"
+  ],
+  "excludedSubtreesApplyTo": "Non-nature categories; nature categories use their separate exclusion set so edible fruits and nuts are retained.",
+  "natureExcludedSubtrees": [
+    "02472293",
+    "00007846",
+    "01321579",
+    "07992450"
+  ],
+  "natureReview": {
+    "plants": "All 430 preliminary candidates reviewed; abstract concepts, processed foods, mistranslations and obvious alternate spellings removed; source-attested common readings selected.",
+    "animals": "All 811 preliminary candidates independently reviewed; mistranslations, taxonomic ranks, general concepts and labels differing only by role or coat color removed."
+  },
+  "records": {
+    "food": [
+      {
+        "word": "コンフィ",
+        "synset": "wnja-07581132-n"
+      },
+      {
+        "word": "キッシュ",
+        "synset": "wnja-07619594-n"
+      },
+      {
+        "word": "タルト",
+        "synset": "wnja-07623933-n"
+      },
+      {
+        "word": "アップルパイ",
+        "synset": "wnja-07626174-n"
+      },
+      {
+        "word": "エクレア",
+        "synset": "wnja-07628691-n"
+      },
+      {
+        "word": "ケーキ",
+        "synset": "wnja-07628870-n"
+      },
+      {
+        "word": "カステラ",
+        "synset": "wnja-07632037-n"
+      },
+      {
+        "word": "パウンドケーキ",
+        "synset": "wnja-07633229-n"
+      },
+      {
+        "word": "トルテ",
+        "synset": "wnja-07633511-n"
+      },
+      {
+        "word": "ビスケット",
+        "synset": "wnja-07635155-n"
+      },
+      {
+        "word": "ドーナツ",
+        "synset": "wnja-07639069-n"
+      },
+      {
+        "word": "フリッター",
+        "synset": "wnja-07639855-n"
+      },
+      {
+        "word": "パンケーキ",
+        "synset": "wnja-07640203-n"
+      },
+      {
+        "word": "ワッフル",
+        "synset": "wnja-07641699-n"
+      },
+      {
+        "word": "鶏肉",
+        "synset": "wnja-07644967-n"
+      },
+      {
+        "word": "ジビエ",
+        "synset": "wnja-07650449-n"
+      },
+      {
+        "word": "生肉",
+        "synset": "wnja-07651159-n"
+      },
+      {
+        "word": "スペアリブ",
+        "synset": "wnja-07656961-n"
+      },
+      {
+        "word": "ステーキ",
+        "synset": "wnja-07658168-n"
+      },
+      {
+        "word": "サーロイン",
+        "synset": "wnja-07658958-n"
+      },
+      {
+        "word": "テンダーロイン",
+        "synset": "wnja-07659793-n"
+      },
+      {
+        "word": "ヒレ",
+        "synset": "wnja-07660065-n"
+      },
+      {
+        "word": "牛肉",
+        "synset": "wnja-07663592-n"
+      },
+      {
+        "word": "ローストビーフ",
+        "synset": "wnja-07663796-n"
+      },
+      {
+        "word": "コンビーフ",
+        "synset": "wnja-07664266-n"
+      },
+      {
+        "word": "ビーフジャーキー",
+        "synset": "wnja-07664936-n"
+      },
+      {
+        "word": "馬肉",
+        "synset": "wnja-07666406-n"
+      },
+      {
+        "word": "マトン",
+        "synset": "wnja-07666733-n"
+      },
+      {
+        "word": "豚肉",
+        "synset": "wnja-07668702-n"
+      },
+      {
+        "word": "焼き豚",
+        "synset": "wnja-07669788-n"
+      },
+      {
+        "word": "ハム",
+        "synset": "wnja-07669891-n"
+      },
+      {
+        "word": "ベーコン",
+        "synset": "wnja-07670433-n"
+      },
+      {
+        "word": "ソーセージ",
+        "synset": "wnja-07675627-n"
+      },
+      {
+        "word": "食パン",
+        "synset": "wnja-07679356-n"
+      },
+      {
+        "word": "黒パン",
+        "synset": "wnja-07680761-n"
+      },
+      {
+        "word": "コッペパン",
+        "synset": "wnja-07680932-n"
+      },
+      {
+        "word": "クルトン",
+        "synset": "wnja-07682197-n"
+      },
+      {
+        "word": "イングリッシュマフィン",
+        "synset": "wnja-07682477-n"
+      },
+      {
+        "word": "チャパティ",
+        "synset": "wnja-07683490-n"
+      },
+      {
+        "word": "ピタ",
+        "synset": "wnja-07683617-n"
+      },
+      {
+        "word": "ナン",
+        "synset": "wnja-07684289-n"
+      },
+      {
+        "word": "トースト",
+        "synset": "wnja-07686873-n"
+      },
+      {
+        "word": "バゲット",
+        "synset": "wnja-07687381-n"
+      },
+      {
+        "word": "フランスパン",
+        "synset": "wnja-07687469-n"
+      },
+      {
+        "word": "ラスク",
+        "synset": "wnja-07689842-n"
+      },
+      {
+        "word": "マフィン",
+        "synset": "wnja-07690273-n"
+      },
+      {
+        "word": "スコーン",
+        "synset": "wnja-07690892-n"
+      },
+      {
+        "word": "ブリオッシュ",
+        "synset": "wnja-07691539-n"
+      },
+      {
+        "word": "クロワッサン",
+        "synset": "wnja-07691650-n"
+      },
+      {
+        "word": "デニッシュ",
+        "synset": "wnja-07693590-n"
+      },
+      {
+        "word": "ベーグル",
+        "synset": "wnja-07693725-n"
+      },
+      {
+        "word": "乾パン",
+        "synset": "wnja-07694839-n"
+      },
+      {
+        "word": "ウエハース",
+        "synset": "wnja-07695012-n"
+      },
+      {
+        "word": "プレッツェル",
+        "synset": "wnja-07695742-n"
+      },
+      {
+        "word": "パスタ",
+        "synset": "wnja-07698915-n"
+      },
+      {
+        "word": "ヌードル",
+        "synset": "wnja-07699584-n"
+      },
+      {
+        "word": "スパゲッティー",
+        "synset": "wnja-07699914-n"
+      },
+      {
+        "word": "マカロニ",
+        "synset": "wnja-07700964-n"
+      },
+      {
+        "word": "ラザニア",
+        "synset": "wnja-07701053-n"
+      },
+      {
+        "word": "ラビオリ",
+        "synset": "wnja-07701244-n"
+      },
+      {
+        "word": "団子",
+        "synset": "wnja-07702193-n"
+      },
+      {
+        "word": "グラノーラ",
+        "synset": "wnja-07704994-n"
+      },
+      {
+        "word": "豆類",
+        "synset": "wnja-07709046-n"
+      },
+      {
+        "word": "根菜",
+        "synset": "wnja-07710283-n"
+      },
+      {
+        "word": "フライドポテト",
+        "synset": "wnja-07711080-n"
+      },
+      {
+        "word": "山芋",
+        "synset": "wnja-07711907-n"
+      },
+      {
+        "word": "スプラウト",
+        "synset": "wnja-07719437-n"
+      },
+      {
+        "word": "もやし",
+        "synset": "wnja-07719616-n"
+      },
+      {
+        "word": "クレソン",
+        "synset": "wnja-07732904-n"
+      },
+      {
+        "word": "パンプキン",
+        "synset": "wnja-07735510-n"
+      },
+      {
+        "word": "ラディッシュ",
+        "synset": "wnja-07735687-n"
+      },
+      {
+        "word": "里芋",
+        "synset": "wnja-07736813-n"
+      },
+      {
+        "word": "魚肉",
+        "synset": "wnja-07775375-n"
+      },
+      {
+        "word": "シーフード",
+        "synset": "wnja-07776866-n"
+      },
+      {
+        "word": "スズキ",
+        "synset": "wnja-07777945-n"
+      },
+      {
+        "word": "コイ",
+        "synset": "wnja-07779123-n"
+      },
+      {
+        "word": "エスカルゴ",
+        "synset": "wnja-07782475-n"
+      },
+      {
+        "word": "タラ",
+        "synset": "wnja-07789063-n"
+      },
+      {
+        "word": "ひらめ",
+        "synset": "wnja-07790400-n"
+      },
+      {
+        "word": "キャビア",
+        "synset": "wnja-07799579-n"
+      },
+      {
+        "word": "バター",
+        "synset": "wnja-07848338-n"
+      },
+      {
+        "word": "ギー",
+        "synset": "wnja-07848936-n"
+      },
+      {
+        "word": "ヨーグルト",
+        "synset": "wnja-07849336-n"
+      },
+      {
+        "word": "チーズ",
+        "synset": "wnja-07850329-n"
+      },
+      {
+        "word": "クリームチーズ",
+        "synset": "wnja-07851298-n"
+      },
+      {
+        "word": "カッテージチーズ",
+        "synset": "wnja-07851767-n"
+      },
+      {
+        "word": "パルメザン",
+        "synset": "wnja-07854348-n"
+      },
+      {
+        "word": "ミートローフ",
+        "synset": "wnja-07871810-n"
+      },
+      {
+        "word": "トルティーヤ",
+        "synset": "wnja-07880583-n"
+      },
+      {
+        "word": "月餅",
+        "synset": "wnja-80000320-n"
+      },
+      {
+        "word": "そば",
+        "synset": "wnja-80001626-n"
+      },
+      {
+        "word": "ビーフン",
+        "synset": "wnja-90000310-n"
+      },
+      {
+        "word": "フライドチキン",
+        "synset": "wnja-90000326-n"
+      },
+      {
+        "word": "枝豆",
+        "synset": "wnja-90000471-n"
+      }
+    ],
+    "drinks": [
+      {
+        "word": "牛乳",
+        "synset": "wnja-07844042-n"
+      },
+      {
+        "word": "粉ミルク",
+        "synset": "wnja-07846143-n"
+      },
+      {
+        "word": "スキムミルク",
+        "synset": "wnja-07846557-n"
+      },
+      {
+        "word": "ビール",
+        "synset": "wnja-07886849-n"
+      },
+      {
+        "word": "ギネス",
+        "synset": "wnja-07890540-n"
+      },
+      {
+        "word": "清酒",
+        "synset": "wnja-07891433-n"
+      },
+      {
+        "word": "ワイン",
+        "synset": "wnja-07891726-n"
+      },
+      {
+        "word": "赤ワイン",
+        "synset": "wnja-07892512-n"
+      },
+      {
+        "word": "スパークリングワイン",
+        "synset": "wnja-07893528-n"
+      },
+      {
+        "word": "シャンパン",
+        "synset": "wnja-07893642-n"
+      },
+      {
+        "word": "ボジョレー",
+        "synset": "wnja-07894102-n"
+      },
+      {
+        "word": "ベルモット",
+        "synset": "wnja-07899108-n"
+      },
+      {
+        "word": "ポートワイン",
+        "synset": "wnja-07900825-n"
+      },
+      {
+        "word": "シェリー",
+        "synset": "wnja-07900958-n"
+      },
+      {
+        "word": "焼酎",
+        "synset": "wnja-07901587-n"
+      },
+      {
+        "word": "ブランデー",
+        "synset": "wnja-07903208-n"
+      },
+      {
+        "word": "コニャック",
+        "synset": "wnja-07903841-n"
+      },
+      {
+        "word": "キルシュ",
+        "synset": "wnja-07904072-n"
+      },
+      {
+        "word": "テキーラ",
+        "synset": "wnja-07905979-n"
+      },
+      {
+        "word": "ウォッカ",
+        "synset": "wnja-07906111-n"
+      },
+      {
+        "word": "ウイスキー",
+        "synset": "wnja-07906284-n"
+      },
+      {
+        "word": "スコッチ",
+        "synset": "wnja-07907548-n"
+      },
+      {
+        "word": "リキュール",
+        "synset": "wnja-07907943-n"
+      },
+      {
+        "word": "アブサン",
+        "synset": "wnja-07908411-n"
+      },
+      {
+        "word": "ハイボール",
+        "synset": "wnja-07912211-n"
+      },
+      {
+        "word": "ギムレット",
+        "synset": "wnja-07914995-n"
+      },
+      {
+        "word": "マルガリータ",
+        "synset": "wnja-07915918-n"
+      },
+      {
+        "word": "マティーニ",
+        "synset": "wnja-07916041-n"
+      },
+      {
+        "word": "スリング",
+        "synset": "wnja-07917618-n"
+      },
+      {
+        "word": "サワー",
+        "synset": "wnja-07918028-n"
+      },
+      {
+        "word": "スティンガー",
+        "synset": "wnja-07918309-n"
+      },
+      {
+        "word": "フィズ",
+        "synset": "wnja-07919310-n"
+      },
+      {
+        "word": "カフェオレ",
+        "synset": "wnja-07919572-n"
+      },
+      {
+        "word": "ドリップコーヒー",
+        "synset": "wnja-07919894-n"
+      },
+      {
+        "word": "エスプレッソ",
+        "synset": "wnja-07920052-n"
+      },
+      {
+        "word": "カプチーノ",
+        "synset": "wnja-07920349-n"
+      },
+      {
+        "word": "アイスコーヒー",
+        "synset": "wnja-07920540-n"
+      },
+      {
+        "word": "ココア",
+        "synset": "wnja-07922764-n"
+      },
+      {
+        "word": "果汁",
+        "synset": "wnja-07924033-n"
+      },
+      {
+        "word": "ネクター",
+        "synset": "wnja-07924276-n"
+      },
+      {
+        "word": "オレンジジュース",
+        "synset": "wnja-07924834-n"
+      },
+      {
+        "word": "レモネード",
+        "synset": "wnja-07926250-n"
+      },
+      {
+        "word": "ソフトドリンク",
+        "synset": "wnja-07927197-n"
+      },
+      {
+        "word": "サイダー",
+        "synset": "wnja-07927512-n"
+      },
+      {
+        "word": "コーラ",
+        "synset": "wnja-07927931-n"
+      },
+      {
+        "word": "クリームソーダ",
+        "synset": "wnja-07928163-n"
+      },
+      {
+        "word": "ジンジャーエール",
+        "synset": "wnja-07928367-n"
+      },
+      {
+        "word": "ペプシ",
+        "synset": "wnja-07928790-n"
+      },
+      {
+        "word": "ルートビア",
+        "synset": "wnja-07928887-n"
+      },
+      {
+        "word": "トニックウォーター",
+        "synset": "wnja-07929172-n"
+      },
+      {
+        "word": "珈琲",
+        "synset": "wnja-07929519-n"
+      },
+      {
+        "word": "フルーツポンチ",
+        "synset": "wnja-07930062-n"
+      },
+      {
+        "word": "ミモザ",
+        "synset": "wnja-07930315-n"
+      },
+      {
+        "word": "リッキー",
+        "synset": "wnja-07932614-n"
+      },
+      {
+        "word": "紅茶",
+        "synset": "wnja-07933274-n"
+      },
+      {
+        "word": "ハーブティー",
+        "synset": "wnja-07933891-n"
+      },
+      {
+        "word": "カモミールティー",
+        "synset": "wnja-07934152-n"
+      },
+      {
+        "word": "アイスティー",
+        "synset": "wnja-07934282-n"
+      },
+      {
+        "word": "氷水",
+        "synset": "wnja-07936459-n"
+      },
+      {
+        "word": "炭酸水",
+        "synset": "wnja-07936548-n"
+      },
+      {
+        "word": "ミルクティー",
+        "synset": "wnja-80000391-n"
+      }
+    ],
+    "sweets": [
+      {
+        "word": "キャンディー",
+        "synset": "wnja-07597365-n"
+      },
+      {
+        "word": "ボンボン",
+        "synset": "wnja-07599649-n"
+      },
+      {
+        "word": "キャラメル",
+        "synset": "wnja-07601809-n"
+      },
+      {
+        "word": "マシュマロ",
+        "synset": "wnja-07608098-n"
+      },
+      {
+        "word": "ヌガー",
+        "synset": "wnja-07608339-n"
+      },
+      {
+        "word": "氷砂糖",
+        "synset": "wnja-07608980-n"
+      },
+      {
+        "word": "シャルロット",
+        "synset": "wnja-07610890-n"
+      },
+      {
+        "word": "コンポート",
+        "synset": "wnja-07611046-n"
+      },
+      {
+        "word": "ムース",
+        "synset": "wnja-07611991-n"
+      },
+      {
+        "word": "プリン",
+        "synset": "wnja-07612632-n"
+      },
+      {
+        "word": "アイスクリーム",
+        "synset": "wnja-07614500-n"
+      },
+      {
+        "word": "アイスキャンデー",
+        "synset": "wnja-07615774-n"
+      },
+      {
+        "word": "パフェ",
+        "synset": "wnja-07616386-n"
+      },
+      {
+        "word": "サンデー",
+        "synset": "wnja-07616487-n"
+      }
+    ],
+    "things": [
+      {
+        "word": "アクセル",
+        "synset": "wnja-02670683-n"
+      },
+      {
+        "word": "手斧",
+        "synset": "wnja-02682311-n"
+      },
+      {
+        "word": "エアバッグ",
+        "synset": "wnja-02685365-n"
+      },
+      {
+        "word": "灰皿",
+        "synset": "wnja-02747802-n"
+      },
+      {
+        "word": "アタッシュケース",
+        "synset": "wnja-02755140-n"
+      },
+      {
+        "word": "車軸",
+        "synset": "wnja-02764779-n"
+      },
+      {
+        "word": "リュック",
+        "synset": "wnja-02769748-n"
+      },
+      {
+        "word": "スーツケース",
+        "synset": "wnja-02773838-n"
+      },
+      {
+        "word": "ハンドバッグ",
+        "synset": "wnja-02774152-n"
+      },
+      {
+        "word": "ボール",
+        "synset": "wnja-02779435-n"
+      },
+      {
+        "word": "風船",
+        "synset": "wnja-02782329-n"
+      },
+      {
+        "word": "バット",
+        "synset": "wnja-02799175-n"
+      },
+      {
+        "word": "水槽",
+        "synset": "wnja-02806530-n"
+      },
+      {
+        "word": "バスタオル",
+        "synset": "wnja-02808304-n"
+      },
+      {
+        "word": "浴槽",
+        "synset": "wnja-02808440-n"
+      },
+      {
+        "word": "バトン",
+        "synset": "wnja-02809491-n"
+      },
+      {
+        "word": "ビーカー",
+        "synset": "wnja-02815834-n"
+      },
+      {
+        "word": "お手玉",
+        "synset": "wnja-02816656-n"
+      },
+      {
+        "word": "ベッド",
+        "synset": "wnja-02818832-n"
+      },
+      {
+        "word": "ビール瓶",
+        "synset": "wnja-02823428-n"
+      },
+      {
+        "word": "ジョッキ",
+        "synset": "wnja-02824058-n"
+      },
+      {
+        "word": "長椅子",
+        "synset": "wnja-02828884-n"
+      },
+      {
+        "word": "毛布",
+        "synset": "wnja-02849154-n"
+      },
+      {
+        "word": "ボイラー",
+        "synset": "wnja-02863750-n"
+      },
+      {
+        "word": "本棚",
+        "synset": "wnja-02870880-n"
+      },
+      {
+        "word": "ボトル",
+        "synset": "wnja-02876657-n"
+      },
+      {
+        "word": "ボウル",
+        "synset": "wnja-02880940-n"
+      },
+      {
+        "word": "ブラシ",
+        "synset": "wnja-02908217-n"
+      },
+      {
+        "word": "バケット",
+        "synset": "wnja-02909870-n"
+      },
+      {
+        "word": "食器棚",
+        "synset": "wnja-02912065-n"
+      },
+      {
+        "word": "飾り棚",
+        "synset": "wnja-02933112-n"
+      },
+      {
+        "word": "ステッキ",
+        "synset": "wnja-02949202-n"
+      },
+      {
+        "word": "缶切り",
+        "synset": "wnja-02951585-n"
+      },
+      {
+        "word": "水筒",
+        "synset": "wnja-02952374-n"
+      },
+      {
+        "word": "デカンタ",
+        "synset": "wnja-02960903-n"
+      },
+      {
+        "word": "トートバッグ",
+        "synset": "wnja-02970408-n"
+      },
+      {
+        "word": "レジ",
+        "synset": "wnja-02977438-n"
+      },
+      {
+        "word": "キャセロール",
+        "synset": "wnja-02978753-n"
+      },
+      {
+        "word": "カセット",
+        "synset": "wnja-02978881-n"
+      },
+      {
+        "word": "チェーンソー",
+        "synset": "wnja-03000684-n"
+      },
+      {
+        "word": "椅子",
+        "synset": "wnja-03001627-n"
+      },
+      {
+        "word": "ゴブレット",
+        "synset": "wnja-03002948-n"
+      },
+      {
+        "word": "チョーク",
+        "synset": "wnja-03003091-n"
+      },
+      {
+        "word": "箪笥",
+        "synset": "wnja-03015254-n"
+      },
+      {
+        "word": "陶器",
+        "synset": "wnja-03018209-n"
+      },
+      {
+        "word": "コンパクト",
+        "synset": "wnja-03078995-n"
+      },
+      {
+        "word": "栓抜き",
+        "synset": "wnja-03109150-n"
+      },
+      {
+        "word": "揺りかご",
+        "synset": "wnja-03125729-n"
+      },
+      {
+        "word": "クランク",
+        "synset": "wnja-03127024-n"
+      },
+      {
+        "word": "クレヨン",
+        "synset": "wnja-03128248-n"
+      },
+      {
+        "word": "かぎ針",
+        "synset": "wnja-03133050-n"
+      },
+      {
+        "word": "松葉杖",
+        "synset": "wnja-03141823-n"
+      },
+      {
+        "word": "コップ",
+        "synset": "wnja-03147509-n"
+      },
+      {
+        "word": "机",
+        "synset": "wnja-03179701-n"
+      },
+      {
+        "word": "食卓",
+        "synset": "wnja-03201208-n"
+      },
+      {
+        "word": "弁当箱",
+        "synset": "wnja-03201996-n"
+      },
+      {
+        "word": "柄杓",
+        "synset": "wnja-03204306-n"
+      },
+      {
+        "word": "皿",
+        "synset": "wnja-03206908-n"
+      },
+      {
+        "word": "ディスペンサー",
+        "synset": "wnja-03210683-n"
+      },
+      {
+        "word": "人形",
+        "synset": "wnja-03219135-n"
+      },
+      {
+        "word": "引き出し",
+        "synset": "wnja-03233905-n"
+      },
+      {
+        "word": "鏡台",
+        "synset": "wnja-03238586-n"
+      },
+      {
+        "word": "ドラム缶",
+        "synset": "wnja-03249956-n"
+      },
+      {
+        "word": "ダッフルバッグ",
+        "synset": "wnja-03253886-n"
+      },
+      {
+        "word": "安楽椅子",
+        "synset": "wnja-03262932-n"
+      },
+      {
+        "word": "封筒",
+        "synset": "wnja-03291819-n"
+      },
+      {
+        "word": "サインペン",
+        "synset": "wnja-03326948-n"
+      },
+      {
+        "word": "ファイル",
+        "synset": "wnja-03337140-n"
+      },
+      {
+        "word": "釣り針",
+        "synset": "wnja-03351151-n"
+      },
+      {
+        "word": "釣り竿",
+        "synset": "wnja-03351979-n"
+      },
+      {
+        "word": "旗竿",
+        "synset": "wnja-03355925-n"
+      },
+      {
+        "word": "フラスコ",
+        "synset": "wnja-03359566-n"
+      },
+      {
+        "word": "フォーク",
+        "synset": "wnja-03384167-n"
+      },
+      {
+        "word": "万年筆",
+        "synset": "wnja-03388183-n"
+      },
+      {
+        "word": "フライパン",
+        "synset": "wnja-03400231-n"
+      },
+      {
+        "word": "おろし金",
+        "synset": "wnja-03454885-n"
+      },
+      {
+        "word": "ヘアブラシ",
+        "synset": "wnja-03475581-n"
+      },
+      {
+        "word": "ハンモック",
+        "synset": "wnja-03482252-n"
+      },
+      {
+        "word": "ハンカチ",
+        "synset": "wnja-03485794-n"
+      },
+      {
+        "word": "指人形",
+        "synset": "wnja-03487963-n"
+      },
+      {
+        "word": "湯たんぽ",
+        "synset": "wnja-03543735-n"
+      },
+      {
+        "word": "フラフープ",
+        "synset": "wnja-03548402-n"
+      },
+      {
+        "word": "氷枕",
+        "synset": "wnja-03557840-n"
+      },
+      {
+        "word": "工具",
+        "synset": "wnja-03563967-n"
+      },
+      {
+        "word": "ジャッキ",
+        "synset": "wnja-03588951-n"
+      },
+      {
+        "word": "糸鋸",
+        "synset": "wnja-03598783-n"
+      },
+      {
+        "word": "万華鏡",
+        "synset": "wnja-03607756-n"
+      },
+      {
+        "word": "ケトル",
+        "synset": "wnja-03612814-n"
+      },
+      {
+        "word": "凧",
+        "synset": "wnja-03621473-n"
+      },
+      {
+        "word": "包丁",
+        "synset": "wnja-03623556-n"
+      },
+      {
+        "word": "鉛筆",
+        "synset": "wnja-03652100-n"
+      },
+      {
+        "word": "レゴ",
+        "synset": "wnja-03655295-n"
+      },
+      {
+        "word": "裏地",
+        "synset": "wnja-03673270-n"
+      },
+      {
+        "word": "郵便受け",
+        "synset": "wnja-03710193-n"
+      },
+      {
+        "word": "マーカー",
+        "synset": "wnja-03722007-n"
+      },
+      {
+        "word": "マスト",
+        "synset": "wnja-03726760-n"
+      },
+      {
+        "word": "すり鉢",
+        "synset": "wnja-03786901-n"
+      },
+      {
+        "word": "オール",
+        "synset": "wnja-03837422-n"
+      },
+      {
+        "word": "ラケット",
+        "synset": "wnja-03873416-n"
+      },
+      {
+        "word": "絵筆",
+        "synset": "wnja-03876231-n"
+      },
+      {
+        "word": "トレイ",
+        "synset": "wnja-03880323-n"
+      },
+      {
+        "word": "鍋",
+        "synset": "wnja-03880531-n"
+      },
+      {
+        "word": "ペーパータオル",
+        "synset": "wnja-03887697-n"
+      },
+      {
+        "word": "ペダル",
+        "synset": "wnja-03903424-n"
+      },
+      {
+        "word": "筆",
+        "synset": "wnja-03906997-n"
+      },
+      {
+        "word": "筆箱",
+        "synset": "wnja-03908618-n"
+      },
+      {
+        "word": "鉛筆削り",
+        "synset": "wnja-03908714-n"
+      },
+      {
+        "word": "ピンセット",
+        "synset": "wnja-03941684-n"
+      },
+      {
+        "word": "水差し",
+        "synset": "wnja-03950228-n"
+      },
+      {
+        "word": "プランター",
+        "synset": "wnja-03957315-n"
+      },
+      {
+        "word": "プライヤー",
+        "synset": "wnja-03966976-n"
+      },
+      {
+        "word": "ポケット",
+        "synset": "wnja-03972524-n"
+      },
+      {
+        "word": "磁器",
+        "synset": "wnja-03984234-n"
+      },
+      {
+        "word": "植木鉢",
+        "synset": "wnja-03991062-n"
+      },
+      {
+        "word": "ポーチ",
+        "synset": "wnja-03993180-n"
+      },
+      {
+        "word": "圧力鍋",
+        "synset": "wnja-04001265-n"
+      },
+      {
+        "word": "財布",
+        "synset": "wnja-04026417-n"
+      },
+      {
+        "word": "レール",
+        "synset": "wnja-04046590-n"
+      },
+      {
+        "word": "熊手",
+        "synset": "wnja-04050066-n"
+      },
+      {
+        "word": "剃刀",
+        "synset": "wnja-04057047-n"
+      },
+      {
+        "word": "リーマー",
+        "synset": "wnja-04059399-n"
+      },
+      {
+        "word": "麺棒",
+        "synset": "wnja-04103206-n"
+      },
+      {
+        "word": "消しゴム",
+        "synset": "wnja-04116512-n"
+      },
+      {
+        "word": "レジ袋",
+        "synset": "wnja-04122825-n"
+      },
+      {
+        "word": "金庫",
+        "synset": "wnja-04125021-n"
+      },
+      {
+        "word": "砂場",
+        "synset": "wnja-04134339-n"
+      },
+      {
+        "word": "ドライバー",
+        "synset": "wnja-04154565-n"
+      },
+      {
+        "word": "シーソー",
+        "synset": "wnja-04167759-n"
+      },
+      {
+        "word": "三角定規",
+        "synset": "wnja-04177654-n"
+      },
+      {
+        "word": "シェーバー",
+        "synset": "wnja-04185804-n"
+      },
+      {
+        "word": "ショルダーバッグ",
+        "synset": "wnja-04207343-n"
+      },
+      {
+        "word": "スコップ",
+        "synset": "wnja-04208210-n"
+      },
+      {
+        "word": "鎌",
+        "synset": "wnja-04213353-n"
+      },
+      {
+        "word": "寝袋",
+        "synset": "wnja-04235860-n"
+      },
+      {
+        "word": "滑り台",
+        "synset": "wnja-04238128-n"
+      },
+      {
+        "word": "ソファ",
+        "synset": "wnja-04256520-n"
+      },
+      {
+        "word": "ヘラ",
+        "synset": "wnja-04269944-n"
+      },
+      {
+        "word": "スプーン",
+        "synset": "wnja-04284002-n"
+      },
+      {
+        "word": "モップ",
+        "synset": "wnja-04367480-n"
+      },
+      {
+        "word": "テーブル",
+        "synset": "wnja-04379243-n"
+      },
+      {
+        "word": "チャコ",
+        "synset": "wnja-04385157-n"
+      },
+      {
+        "word": "茶釜",
+        "synset": "wnja-04397768-n"
+      },
+      {
+        "word": "ティーポット",
+        "synset": "wnja-04398044-n"
+      },
+      {
+        "word": "ティースプーン",
+        "synset": "wnja-04398688-n"
+      },
+      {
+        "word": "テラコッタ",
+        "synset": "wnja-04414101-n"
+      },
+      {
+        "word": "魔法瓶",
+        "synset": "wnja-04422727-n"
+      },
+      {
+        "word": "便座",
+        "synset": "wnja-04447861-n"
+      },
+      {
+        "word": "歯ブラシ",
+        "synset": "wnja-04453156-n"
+      },
+      {
+        "word": "独楽",
+        "synset": "wnja-04454240-n"
+      },
+      {
+        "word": "トルクレンチ",
+        "synset": "wnja-04457910-n"
+      },
+      {
+        "word": "タオル",
+        "synset": "wnja-04459362-n"
+      },
+      {
+        "word": "音叉",
+        "synset": "wnja-04497801-n"
+      },
+      {
+        "word": "フライ返し",
+        "synset": "wnja-04500060-n"
+      },
+      {
+        "word": "花瓶",
+        "synset": "wnja-04522168-n"
+      },
+      {
+        "word": "クローゼット",
+        "synset": "wnja-04550184-n"
+      },
+      {
+        "word": "洗面器",
+        "synset": "wnja-04553703-n"
+      },
+      {
+        "word": "ゴミ箱",
+        "synset": "wnja-04555700-n"
+      },
+      {
+        "word": "湯沸かし器",
+        "synset": "wnja-04560113-n"
+      },
+      {
+        "word": "水鉄砲",
+        "synset": "wnja-04561548-n"
+      },
+      {
+        "word": "車椅子",
+        "synset": "wnja-04576002-n"
+      },
+      {
+        "word": "泡立て器",
+        "synset": "wnja-04578934-n"
+      },
+      {
+        "word": "レンチ",
+        "synset": "wnja-04606574-n"
+      },
+      {
+        "word": "ライティングデスク",
+        "synset": "wnja-04608329-n"
+      },
+      {
+        "word": "ヨーヨー",
+        "synset": "wnja-04613555-n"
+      },
+      {
+        "word": "便箋",
+        "synset": "wnja-06258852-n"
+      },
+      {
+        "word": "茶碗",
+        "synset": "wnja-80002358-n"
+      },
+      {
+        "word": "ランドセル",
+        "synset": "wnja-90000580-n"
+      }
+    ],
+    "clothes": [
+      {
+        "word": "アンクレット",
+        "synset": "wnja-02713097-n"
+      },
+      {
+        "word": "着物",
+        "synset": "wnja-02728440-n"
+      },
+      {
+        "word": "エプロン",
+        "synset": "wnja-02730930-n"
+      },
+      {
+        "word": "ドレス",
+        "synset": "wnja-02756098-n"
+      },
+      {
+        "word": "チュチュ",
+        "synset": "wnja-02780815-n"
+      },
+      {
+        "word": "バスローブ",
+        "synset": "wnja-02807616-n"
+      },
+      {
+        "word": "ベルト",
+        "synset": "wnja-02827606-n"
+      },
+      {
+        "word": "ベレー帽",
+        "synset": "wnja-02831237-n"
+      },
+      {
+        "word": "ビキニ",
+        "synset": "wnja-02837789-n"
+      },
+      {
+        "word": "ブレザー",
+        "synset": "wnja-02850358-n"
+      },
+      {
+        "word": "ブラウス",
+        "synset": "wnja-02854926-n"
+      },
+      {
+        "word": "ストローハット",
+        "synset": "wnja-02859184-n"
+      },
+      {
+        "word": "サスペンダー",
+        "synset": "wnja-02887489-n"
+      },
+      {
+        "word": "ブレスレット",
+        "synset": "wnja-02887970-n"
+      },
+      {
+        "word": "ブラジャー",
+        "synset": "wnja-02892767-n"
+      },
+      {
+        "word": "キュロット",
+        "synset": "wnja-02896442-n"
+      },
+      {
+        "word": "ブローチ",
+        "synset": "wnja-02906438-n"
+      },
+      {
+        "word": "キャミソール",
+        "synset": "wnja-02944075-n"
+      },
+      {
+        "word": "帽子",
+        "synset": "wnja-02954340-n"
+      },
+      {
+        "word": "ケープ",
+        "synset": "wnja-02955767-n"
+      },
+      {
+        "word": "カーディガン",
+        "synset": "wnja-02963159-n"
+      },
+      {
+        "word": "スリップ",
+        "synset": "wnja-03013580-n"
+      },
+      {
+        "word": "チョーカー",
+        "synset": "wnja-03024882-n"
+      },
+      {
+        "word": "ハンチング",
+        "synset": "wnja-03049924-n"
+      },
+      {
+        "word": "コート",
+        "synset": "wnja-03057021-n"
+      },
+      {
+        "word": "コルセット",
+        "synset": "wnja-03112869-n"
+      },
+      {
+        "word": "テンガロンハット",
+        "synset": "wnja-03124170-n"
+      },
+      {
+        "word": "ネクタイ",
+        "synset": "wnja-03128085-n"
+      },
+      {
+        "word": "カフスボタン",
+        "synset": "wnja-03146075-n"
+      },
+      {
+        "word": "タキシード",
+        "synset": "wnja-03201776-n"
+      },
+      {
+        "word": "パンツ",
+        "synset": "wnja-03234164-n"
+      },
+      {
+        "word": "ワンピース",
+        "synset": "wnja-03236735-n"
+      },
+      {
+        "word": "シルクハット",
+        "synset": "wnja-03237416-n"
+      },
+      {
+        "word": "部屋着",
+        "synset": "wnja-03237992-n"
+      },
+      {
+        "word": "スモック",
+        "synset": "wnja-03258730-n"
+      },
+      {
+        "word": "アイライナー",
+        "synset": "wnja-03309110-n"
+      },
+      {
+        "word": "アイシャドウ",
+        "synset": "wnja-03309687-n"
+      },
+      {
+        "word": "白粉",
+        "synset": "wnja-03314780-n"
+      },
+      {
+        "word": "手袋",
+        "synset": "wnja-03441112-n"
+      },
+      {
+        "word": "ドーラン",
+        "synset": "wnja-03456447-n"
+      },
+      {
+        "word": "ヘルメット",
+        "synset": "wnja-03492922-n"
+      },
+      {
+        "word": "ベール",
+        "synset": "wnja-03502331-n"
+      },
+      {
+        "word": "被り物",
+        "synset": "wnja-03502509-n"
+      },
+      {
+        "word": "フード",
+        "synset": "wnja-03531281-n"
+      },
+      {
+        "word": "ジャケット",
+        "synset": "wnja-03589791-n"
+      },
+      {
+        "word": "ジーンズ",
+        "synset": "wnja-03594734-n"
+      },
+      {
+        "word": "Tシャツ",
+        "synset": "wnja-03595614-n"
+      },
+      {
+        "word": "ジャンパー",
+        "synset": "wnja-03604536-n"
+      },
+      {
+        "word": "キルト",
+        "synset": "wnja-03617312-n"
+      },
+      {
+        "word": "レオタード",
+        "synset": "wnja-03657511-n"
+      },
+      {
+        "word": "ランジェリー",
+        "synset": "wnja-03673450-n"
+      },
+      {
+        "word": "口紅",
+        "synset": "wnja-03676483-n"
+      },
+      {
+        "word": "レインコート",
+        "synset": "wnja-03702719-n"
+      },
+      {
+        "word": "マスカラ",
+        "synset": "wnja-03724066-n"
+      },
+      {
+        "word": "ミトン",
+        "synset": "wnja-03775071-n"
+      },
+      {
+        "word": "ムームー",
+        "synset": "wnja-03788914-n"
+      },
+      {
+        "word": "マフラー",
+        "synset": "wnja-03797182-n"
+      },
+      {
+        "word": "ネックレス",
+        "synset": "wnja-03814906-n"
+      },
+      {
+        "word": "ネグリジェ",
+        "synset": "wnja-03817647-n"
+      },
+      {
+        "word": "サロペット",
+        "synset": "wnja-03863108-n"
+      },
+      {
+        "word": "上着",
+        "synset": "wnja-03863923-n"
+      },
+      {
+        "word": "パジャマ",
+        "synset": "wnja-03877472-n"
+      },
+      {
+        "word": "ウインドブレーカー",
+        "synset": "wnja-03891051-n"
+      },
+      {
+        "word": "ポロシャツ",
+        "synset": "wnja-03978966-n"
+      },
+      {
+        "word": "ポンチョ",
+        "synset": "wnja-03980874-n"
+      },
+      {
+        "word": "プルオーバー",
+        "synset": "wnja-04021028-n"
+      },
+      {
+        "word": "指輪",
+        "synset": "wnja-04092609-n"
+      },
+      {
+        "word": "ローブ",
+        "synset": "wnja-04097866-n"
+      },
+      {
+        "word": "セーラー服",
+        "synset": "wnja-04129766-n"
+      },
+      {
+        "word": "サリー",
+        "synset": "wnja-04136161-n"
+      },
+      {
+        "word": "ショール",
+        "synset": "wnja-04186455-n"
+      },
+      {
+        "word": "シャツ",
+        "synset": "wnja-04197391-n"
+      },
+      {
+        "word": "短パン",
+        "synset": "wnja-04205318-n"
+      },
+      {
+        "word": "アンダーシャツ",
+        "synset": "wnja-04223299-n"
+      },
+      {
+        "word": "スカート",
+        "synset": "wnja-04230808-n"
+      },
+      {
+        "word": "スラックス",
+        "synset": "wnja-04233715-n"
+      },
+      {
+        "word": "靴下",
+        "synset": "wnja-04254777-n"
+      },
+      {
+        "word": "ストッキング",
+        "synset": "wnja-04323819-n"
+      },
+      {
+        "word": "ストール",
+        "synset": "wnja-04325704-n"
+      },
+      {
+        "word": "スーツ",
+        "synset": "wnja-04350905-n"
+      },
+      {
+        "word": "燕尾服",
+        "synset": "wnja-04368496-n"
+      },
+      {
+        "word": "セーター",
+        "synset": "wnja-04370048-n"
+      },
+      {
+        "word": "トレーナー",
+        "synset": "wnja-04370456-n"
+      },
+      {
+        "word": "水着",
+        "synset": "wnja-04371563-n"
+      },
+      {
+        "word": "足袋",
+        "synset": "wnja-04378956-n"
+      },
+      {
+        "word": "タンクトップ",
+        "synset": "wnja-04390577-n"
+      },
+      {
+        "word": "ティアラ",
+        "synset": "wnja-04432203-n"
+      },
+      {
+        "word": "ネクタイピン",
+        "synset": "wnja-04433800-n"
+      },
+      {
+        "word": "タイツ",
+        "synset": "wnja-04434932-n"
+      },
+      {
+        "word": "チュニック",
+        "synset": "wnja-04497570-n"
+      },
+      {
+        "word": "ターバン",
+        "synset": "wnja-04498389-n"
+      },
+      {
+        "word": "タートルネック",
+        "synset": "wnja-04502197-n"
+      },
+      {
+        "word": "ツーピース",
+        "synset": "wnja-04504141-n"
+      },
+      {
+        "word": "下着",
+        "synset": "wnja-04508163-n"
+      },
+      {
+        "word": "制服",
+        "synset": "wnja-04509592-n"
+      },
+      {
+        "word": "ベスト",
+        "synset": "wnja-04531873-n"
+      },
+      {
+        "word": "結婚指輪",
+        "synset": "wnja-04569338-n"
+      },
+      {
+        "word": "喪服",
+        "synset": "wnja-04570532-n"
+      },
+      {
+        "word": "パール",
+        "synset": "wnja-13372403-n"
+      },
+      {
+        "word": "普段着",
+        "synset": "wnja-80001509-n"
+      }
+    ],
+    "electronics": [
+      {
+        "word": "アンプ",
+        "synset": "wnja-02705944-n"
+      },
+      {
+        "word": "乾電池",
+        "synset": "wnja-02810471-n"
+      },
+      {
+        "word": "ビデオカメラ",
+        "synset": "wnja-02942349-n"
+      },
+      {
+        "word": "カセットデッキ",
+        "synset": "wnja-02979074-n"
+      },
+      {
+        "word": "電池",
+        "synset": "wnja-02991048-n"
+      },
+      {
+        "word": "携帯電話",
+        "synset": "wnja-02992529-n"
+      },
+      {
+        "word": "CPU",
+        "synset": "wnja-02995345-n"
+      },
+      {
+        "word": "冷凍庫",
+        "synset": "wnja-03170635-n"
+      },
+      {
+        "word": "食器洗い機",
+        "synset": "wnja-03207941-n"
+      },
+      {
+        "word": "ヘッドホン",
+        "synset": "wnja-03261776-n"
+      },
+      {
+        "word": "冷蔵庫",
+        "synset": "wnja-03273913-n"
+      },
+      {
+        "word": "フードプロセッサー",
+        "synset": "wnja-03378174-n"
+      },
+      {
+        "word": "ヒューズ",
+        "synset": "wnja-03407369-n"
+      },
+      {
+        "word": "ホットプレート",
+        "synset": "wnja-03543254-n"
+      },
+      {
+        "word": "アイロン",
+        "synset": "wnja-03584829-n"
+      },
+      {
+        "word": "ジョイスティック",
+        "synset": "wnja-03602883-n"
+      },
+      {
+        "word": "スピーカー",
+        "synset": "wnja-03691459-n"
+      },
+      {
+        "word": "マイク",
+        "synset": "wnja-03759954-n"
+      },
+      {
+        "word": "電子レンジ",
+        "synset": "wnja-03761084-n"
+      },
+      {
+        "word": "モデム",
+        "synset": "wnja-03777754-n"
+      },
+      {
+        "word": "モニター",
+        "synset": "wnja-03781787-n"
+      },
+      {
+        "word": "オシロスコープ",
+        "synset": "wnja-03857828-n"
+      },
+      {
+        "word": "オーブン",
+        "synset": "wnja-03862676-n"
+      },
+      {
+        "word": "プラグ",
+        "synset": "wnja-03968293-n"
+      },
+      {
+        "word": "プリンター",
+        "synset": "wnja-04004767-n"
+      },
+      {
+        "word": "ラジオ",
+        "synset": "wnja-04043733-n"
+      },
+      {
+        "word": "スキャナー",
+        "synset": "wnja-04143140-n"
+      },
+      {
+        "word": "ミシン",
+        "synset": "wnja-04179913-n"
+      },
+      {
+        "word": "ステレオ",
+        "synset": "wnja-04315948-n"
+      },
+      {
+        "word": "蓄電池",
+        "synset": "wnja-04328329-n"
+      },
+      {
+        "word": "サブウーファー",
+        "synset": "wnja-04349401-n"
+      },
+      {
+        "word": "受話器",
+        "synset": "wnja-04402580-n"
+      },
+      {
+        "word": "カメラ",
+        "synset": "wnja-04404997-n"
+      },
+      {
+        "word": "テレビ",
+        "synset": "wnja-04405907-n"
+      },
+      {
+        "word": "トースター",
+        "synset": "wnja-04442312-n"
+      },
+      {
+        "word": "掃除機",
+        "synset": "wnja-04517823-n"
+      },
+      {
+        "word": "ウォークマン",
+        "synset": "wnja-04546340-n"
+      },
+      {
+        "word": "洗濯機",
+        "synset": "wnja-04554684-n"
+      },
+      {
+        "word": "スマートフォン",
+        "synset": "wnja-80002427-n"
+      }
+    ],
+    "jobs": [
+      {
+        "word": "芸人",
+        "synset": "wnja-09616922-n"
+      },
+      {
+        "word": "サラリーマン",
+        "synset": "wnja-09632518-n"
+      },
+      {
+        "word": "俳優",
+        "synset": "wnja-09765278-n"
+      },
+      {
+        "word": "女優",
+        "synset": "wnja-09767700-n"
+      },
+      {
+        "word": "弁護士",
+        "synset": "wnja-09775663-n"
+      },
+      {
+        "word": "芸能人",
+        "synset": "wnja-09813126-n"
+      },
+      {
+        "word": "助教授",
+        "synset": "wnja-09816654-n"
+      },
+      {
+        "word": "自動車整備士",
+        "synset": "wnja-09825750-n"
+      },
+      {
+        "word": "バレリーナ",
+        "synset": "wnja-09834592-n"
+      },
+      {
+        "word": "理容師",
+        "synset": "wnja-09838895-n"
+      },
+      {
+        "word": "バーテンダー",
+        "synset": "wnja-09841188-n"
+      },
+      {
+        "word": "美容師",
+        "synset": "wnja-09845999-n"
+      },
+      {
+        "word": "船頭",
+        "synset": "wnja-09861946-n"
+      },
+      {
+        "word": "キャディー",
+        "synset": "wnja-09886403-n"
+      },
+      {
+        "word": "書家",
+        "synset": "wnja-09889170-n"
+      },
+      {
+        "word": "機長",
+        "synset": "wnja-09892693-n"
+      },
+      {
+        "word": "大工",
+        "synset": "wnja-09896685-n"
+      },
+      {
+        "word": "捕手",
+        "synset": "wnja-09901143-n"
+      },
+      {
+        "word": "チェリスト",
+        "synset": "wnja-09903501-n"
+      },
+      {
+        "word": "事務員",
+        "synset": "wnja-09928451-n"
+      },
+      {
+        "word": "家庭教師",
+        "synset": "wnja-09931418-n"
+      },
+      {
+        "word": "鉱夫",
+        "synset": "wnja-09932508-n"
+      },
+      {
+        "word": "お笑い芸人",
+        "synset": "wnja-09940146-n"
+      },
+      {
+        "word": "車掌",
+        "synset": "wnja-09953052-n"
+      },
+      {
+        "word": "領事",
+        "synset": "wnja-09959797-n"
+      },
+      {
+        "word": "料理人",
+        "synset": "wnja-09963320-n"
+      },
+      {
+        "word": "コピーライター",
+        "synset": "wnja-09965021-n"
+      },
+      {
+        "word": "ダンサー",
+        "synset": "wnja-09989502-n"
+      },
+      {
+        "word": "歯科衛生士",
+        "synset": "wnja-10003870-n"
+      },
+      {
+        "word": "歯科医師",
+        "synset": "wnja-10004282-n"
+      },
+      {
+        "word": "外交官",
+        "synset": "wnja-10013927-n"
+      },
+      {
+        "word": "医師",
+        "synset": "wnja-10020890-n"
+      },
+      {
+        "word": "ドラマー",
+        "synset": "wnja-10036929-n"
+      },
+      {
+        "word": "編集者",
+        "synset": "wnja-10044879-n"
+      },
+      {
+        "word": "鷹匠",
+        "synset": "wnja-10076604-n"
+      },
+      {
+        "word": "野手",
+        "synset": "wnja-10086383-n"
+      },
+      {
+        "word": "漁師",
+        "synset": "wnja-10093658-n"
+      },
+      {
+        "word": "庭師",
+        "synset": "wnja-10120671-n"
+      },
+      {
+        "word": "ゴールキーパー",
+        "synset": "wnja-10134001-n"
+      },
+      {
+        "word": "ギタリスト",
+        "synset": "wnja-10151760-n"
+      },
+      {
+        "word": "スタイリスト",
+        "synset": "wnja-10155849-n"
+      },
+      {
+        "word": "ハウスキーパー",
+        "synset": "wnja-10188715-n"
+      },
+      {
+        "word": "アイドル",
+        "synset": "wnja-10198437-n"
+      },
+      {
+        "word": "公務員",
+        "synset": "wnja-10202624-n"
+      },
+      {
+        "word": "裁判官",
+        "synset": "wnja-10225219-n"
+      },
+      {
+        "word": "司書",
+        "synset": "wnja-10257948-n"
+      },
+      {
+        "word": "ラインバッカー",
+        "synset": "wnja-10263002-n"
+      },
+      {
+        "word": "木こり",
+        "synset": "wnja-10276045-n"
+      },
+      {
+        "word": "マジシャン",
+        "synset": "wnja-10280674-n"
+      },
+      {
+        "word": "家政婦",
+        "synset": "wnja-10282672-n"
+      },
+      {
+        "word": "モデル",
+        "synset": "wnja-10291240-n"
+      },
+      {
+        "word": "船乗り",
+        "synset": "wnja-10294602-n"
+      },
+      {
+        "word": "石工",
+        "synset": "wnja-10297531-n"
+      },
+      {
+        "word": "船長",
+        "synset": "wnja-10298912-n"
+      },
+      {
+        "word": "司会",
+        "synset": "wnja-10299250-n"
+      },
+      {
+        "word": "航海士",
+        "synset": "wnja-10300041-n"
+      },
+      {
+        "word": "工員",
+        "synset": "wnja-10318293-n"
+      },
+      {
+        "word": "ミュージシャン",
+        "synset": "wnja-10340312-n"
+      },
+      {
+        "word": "看護師",
+        "synset": "wnja-10366966-n"
+      },
+      {
+        "word": "薬剤師",
+        "synset": "wnja-10421470-n"
+      },
+      {
+        "word": "ピアニスト",
+        "synset": "wnja-10430665-n"
+      },
+      {
+        "word": "パイロット",
+        "synset": "wnja-10433164-n"
+      },
+      {
+        "word": "投手",
+        "synset": "wnja-10435988-n"
+      },
+      {
+        "word": "左官",
+        "synset": "wnja-10438842-n"
+      },
+      {
+        "word": "配管工",
+        "synset": "wnja-10443032-n"
+      },
+      {
+        "word": "陶芸家",
+        "synset": "wnja-10460806-n"
+      },
+      {
+        "word": "プリマドンナ",
+        "synset": "wnja-10471732-n"
+      },
+      {
+        "word": "校長",
+        "synset": "wnja-10474645-n"
+      },
+      {
+        "word": "検察官",
+        "synset": "wnja-10484858-n"
+      },
+      {
+        "word": "受付係",
+        "synset": "wnja-10511069-n"
+      },
+      {
+        "word": "セールスマン",
+        "synset": "wnja-10548537-n"
+      },
+      {
+        "word": "二塁手",
+        "synset": "wnja-10568200-n"
+      },
+      {
+        "word": "秘書",
+        "synset": "wnja-10569744-n"
+      },
+      {
+        "word": "船大工",
+        "synset": "wnja-10590764-n"
+      },
+      {
+        "word": "歌手",
+        "synset": "wnja-10599806-n"
+      },
+      {
+        "word": "スキーヤー",
+        "synset": "wnja-10605253-n"
+      },
+      {
+        "word": "ケースワーカー",
+        "synset": "wnja-10620027-n"
+      },
+      {
+        "word": "ソリスト",
+        "synset": "wnja-10623650-n"
+      },
+      {
+        "word": "ソムリエ",
+        "synset": "wnja-10623806-n"
+      },
+      {
+        "word": "専門医",
+        "synset": "wnja-10632576-n"
+      },
+      {
+        "word": "スプリンター",
+        "synset": "wnja-10641413-n"
+      },
+      {
+        "word": "エキストラ",
+        "synset": "wnja-10676569-n"
+      },
+      {
+        "word": "教師",
+        "synset": "wnja-10694258-n"
+      },
+      {
+        "word": "三塁手",
+        "synset": "wnja-10708976-n"
+      },
+      {
+        "word": "トランペッター",
+        "synset": "wnja-10732010-n"
+      },
+      {
+        "word": "タイピスト",
+        "synset": "wnja-10735173-n"
+      },
+      {
+        "word": "獣医師",
+        "synset": "wnja-10749715-n"
+      },
+      {
+        "word": "ヴァイオリニスト",
+        "synset": "wnja-10754578-n"
+      },
+      {
+        "word": "ウェイター",
+        "synset": "wnja-10763383-n"
+      },
+      {
+        "word": "ウェイトレス",
+        "synset": "wnja-10763620-n"
+      },
+      {
+        "word": "溶接工",
+        "synset": "wnja-10773665-n"
+      }
+    ],
+    "vehicles": [
+      {
+        "word": "旅客機",
+        "synset": "wnja-02690373-n"
+      },
+      {
+        "word": "飛行船",
+        "synset": "wnja-02692877-n"
+      },
+      {
+        "word": "救急車",
+        "synset": "wnja-02701002-n"
+      },
+      {
+        "word": "ベビーカー",
+        "synset": "wnja-02766534-n"
+      },
+      {
+        "word": "気球",
+        "synset": "wnja-02782093-n"
+      },
+      {
+        "word": "自転車",
+        "synset": "wnja-02834778-n"
+      },
+      {
+        "word": "ボート",
+        "synset": "wnja-02858304-n"
+      },
+      {
+        "word": "ボブスレー",
+        "synset": "wnja-02860847-n"
+      },
+      {
+        "word": "貨物船",
+        "synset": "wnja-02878222-n"
+      },
+      {
+        "word": "ブルドーザー",
+        "synset": "wnja-02916179-n"
+      },
+      {
+        "word": "タクシー",
+        "synset": "wnja-02930766-n"
+      },
+      {
+        "word": "カヌー",
+        "synset": "wnja-02951358-n"
+      },
+      {
+        "word": "乗用車",
+        "synset": "wnja-02958343-n"
+      },
+      {
+        "word": "馬車",
+        "synset": "wnja-02968473-n"
+      },
+      {
+        "word": "小型車",
+        "synset": "wnja-03079136-n"
+      },
+      {
+        "word": "コンテナ船",
+        "synset": "wnja-03095699-n"
+      },
+      {
+        "word": "オープンカー",
+        "synset": "wnja-03100240-n"
+      },
+      {
+        "word": "クーペ",
+        "synset": "wnja-03119396-n"
+      },
+      {
+        "word": "パトカー",
+        "synset": "wnja-03141065-n"
+      },
+      {
+        "word": "ディーゼル機関車",
+        "synset": "wnja-03193597-n"
+      },
+      {
+        "word": "ダンプカー",
+        "synset": "wnja-03256166-n"
+      },
+      {
+        "word": "電気自動車",
+        "synset": "wnja-03268790-n"
+      },
+      {
+        "word": "フェリー",
+        "synset": "wnja-03329663-n"
+      },
+      {
+        "word": "消防車",
+        "synset": "wnja-03345487-n"
+      },
+      {
+        "word": "漁船",
+        "synset": "wnja-03351262-n"
+      },
+      {
+        "word": "貨車",
+        "synset": "wnja-03393912-n"
+      },
+      {
+        "word": "清掃車",
+        "synset": "wnja-03417042-n"
+      },
+      {
+        "word": "グライダー",
+        "synset": "wnja-03439814-n"
+      },
+      {
+        "word": "ゴーカート",
+        "synset": "wnja-03444034-n"
+      },
+      {
+        "word": "ゴンドラ",
+        "synset": "wnja-03447447-n"
+      },
+      {
+        "word": "ワゴン",
+        "synset": "wnja-03484083-n"
+      },
+      {
+        "word": "ハンググライダー",
+        "synset": "wnja-03491032-n"
+      },
+      {
+        "word": "霊柩車",
+        "synset": "wnja-03506880-n"
+      },
+      {
+        "word": "ヘリコプター",
+        "synset": "wnja-03512147-n"
+      },
+      {
+        "word": "ホバークラフト",
+        "synset": "wnja-03547229-n"
+      },
+      {
+        "word": "水上飛行機",
+        "synset": "wnja-03552749-n"
+      },
+      {
+        "word": "ジープ",
+        "synset": "wnja-03594945-n"
+      },
+      {
+        "word": "ジェット機",
+        "synset": "wnja-03595860-n"
+      },
+      {
+        "word": "人力車",
+        "synset": "wnja-03599486-n"
+      },
+      {
+        "word": "カヤック",
+        "synset": "wnja-03609235-n"
+      },
+      {
+        "word": "リムジン",
+        "synset": "wnja-03670208-n"
+      },
+      {
+        "word": "モーターボート",
+        "synset": "wnja-03790230-n"
+      },
+      {
+        "word": "オートバイ",
+        "synset": "wnja-03790512-n"
+      },
+      {
+        "word": "スクーター",
+        "synset": "wnja-03791053-n"
+      },
+      {
+        "word": "自動車",
+        "synset": "wnja-03791235-n"
+      },
+      {
+        "word": "マウンテンバイク",
+        "synset": "wnja-03792782-n"
+      },
+      {
+        "word": "タンカー",
+        "synset": "wnja-03845190-n"
+      },
+      {
+        "word": "牛車",
+        "synset": "wnja-03868242-n"
+      },
+      {
+        "word": "客車",
+        "synset": "wnja-03895866-n"
+      },
+      {
+        "word": "客船",
+        "synset": "wnja-03896103-n"
+      },
+      {
+        "word": "プロペラ機",
+        "synset": "wnja-04012084-n"
+      },
+      {
+        "word": "レーシングカー",
+        "synset": "wnja-04037443-n"
+      },
+      {
+        "word": "ロケット",
+        "synset": "wnja-04099429-n"
+      },
+      {
+        "word": "帆船",
+        "synset": "wnja-04128499-n"
+      },
+      {
+        "word": "キックボード",
+        "synset": "wnja-04149374-n"
+      },
+      {
+        "word": "セダン",
+        "synset": "wnja-04166281-n"
+      },
+      {
+        "word": "スケートボード",
+        "synset": "wnja-04225987-n"
+      },
+      {
+        "word": "スノーモービル",
+        "synset": "wnja-04252077-n"
+      },
+      {
+        "word": "除雪車",
+        "synset": "wnja-04252225-n"
+      },
+      {
+        "word": "宇宙船",
+        "synset": "wnja-04264914-n"
+      },
+      {
+        "word": "スポーツカー",
+        "synset": "wnja-04285008-n"
+      },
+      {
+        "word": "蒸気機関車",
+        "synset": "wnja-04310018-n"
+      },
+      {
+        "word": "ロードローラー",
+        "synset": "wnja-04310157-n"
+      },
+      {
+        "word": "路面電車",
+        "synset": "wnja-04335435-n"
+      },
+      {
+        "word": "ツーリングカー",
+        "synset": "wnja-04459122-n"
+      },
+      {
+        "word": "レッカー車",
+        "synset": "wnja-04461696-n"
+      },
+      {
+        "word": "トラクター",
+        "synset": "wnja-04465501-n"
+      },
+      {
+        "word": "トレーラー",
+        "synset": "wnja-04467099-n"
+      },
+      {
+        "word": "三輪車",
+        "synset": "wnja-04482393-n"
+      },
+      {
+        "word": "トラック",
+        "synset": "wnja-04490091-n"
+      },
+      {
+        "word": "タグボート",
+        "synset": "wnja-04495843-n"
+      },
+      {
+        "word": "一輪車",
+        "synset": "wnja-04509417-n"
+      },
+      {
+        "word": "ヨット",
+        "synset": "wnja-04610013-n"
+      }
+    ],
+    "body": [
+      {
+        "word": "腰",
+        "synset": "wnja-02463403-n"
+      },
+      {
+        "word": "皮膚",
+        "synset": "wnja-05238282-n"
+      },
+      {
+        "word": "距骨",
+        "synset": "wnja-05271383-n"
+      },
+      {
+        "word": "頬骨",
+        "synset": "wnja-05273822-n"
+      },
+      {
+        "word": "鎖骨",
+        "synset": "wnja-05274105-n"
+      },
+      {
+        "word": "尾骨",
+        "synset": "wnja-05274247-n"
+      },
+      {
+        "word": "坐骨",
+        "synset": "wnja-05275466-n"
+      },
+      {
+        "word": "鼻骨",
+        "synset": "wnja-05277532-n"
+      },
+      {
+        "word": "膝蓋骨",
+        "synset": "wnja-05278395-n"
+      },
+      {
+        "word": "恥骨",
+        "synset": "wnja-05278714-n"
+      },
+      {
+        "word": "仙骨",
+        "synset": "wnja-05279407-n"
+      },
+      {
+        "word": "肩甲骨",
+        "synset": "wnja-05279688-n"
+      },
+      {
+        "word": "胸骨",
+        "synset": "wnja-05281189-n"
+      },
+      {
+        "word": "歯",
+        "synset": "wnja-05283498-n"
+      },
+      {
+        "word": "脊椎",
+        "synset": "wnja-05284333-n"
+      },
+      {
+        "word": "眼窩",
+        "synset": "wnja-05285275-n"
+      },
+      {
+        "word": "歯槽",
+        "synset": "wnja-05285480-n"
+      },
+      {
+        "word": "軟骨",
+        "synset": "wnja-05288091-n"
+      },
+      {
+        "word": "筋肉",
+        "synset": "wnja-05289297-n"
+      },
+      {
+        "word": "靭帯",
+        "synset": "wnja-05295381-n"
+      },
+      {
+        "word": "内臓",
+        "synset": "wnja-05298988-n"
+      },
+      {
+        "word": "舌",
+        "synset": "wnja-05301072-n"
+      },
+      {
+        "word": "声門",
+        "synset": "wnja-05301526-n"
+      },
+      {
+        "word": "喉頭蓋",
+        "synset": "wnja-05301752-n"
+      },
+      {
+        "word": "口",
+        "synset": "wnja-05301908-n"
+      },
+      {
+        "word": "歯茎",
+        "synset": "wnja-05304932-n"
+      },
+      {
+        "word": "唇",
+        "synset": "wnja-05305806-n"
+      },
+      {
+        "word": "前歯",
+        "synset": "wnja-05306190-n"
+      },
+      {
+        "word": "奥歯",
+        "synset": "wnja-05306476-n"
+      },
+      {
+        "word": "永久歯",
+        "synset": "wnja-05306708-n"
+      },
+      {
+        "word": "犬歯",
+        "synset": "wnja-05307091-n"
+      },
+      {
+        "word": "臼歯",
+        "synset": "wnja-05307773-n"
+      },
+      {
+        "word": "親知らず",
+        "synset": "wnja-05307952-n"
+      },
+      {
+        "word": "歯根",
+        "synset": "wnja-05308310-n"
+      },
+      {
+        "word": "歯髄",
+        "synset": "wnja-05308950-n"
+      },
+      {
+        "word": "扁桃",
+        "synset": "wnja-05309050-n"
+      },
+      {
+        "word": "目",
+        "synset": "wnja-05311054-n"
+      },
+      {
+        "word": "右目",
+        "synset": "wnja-05312149-n"
+      },
+      {
+        "word": "左目",
+        "synset": "wnja-05312227-n"
+      },
+      {
+        "word": "眼瞼",
+        "synset": "wnja-05313822-n"
+      },
+      {
+        "word": "結膜",
+        "synset": "wnja-05315095-n"
+      },
+      {
+        "word": "角膜",
+        "synset": "wnja-05317354-n"
+      },
+      {
+        "word": "横隔膜",
+        "synset": "wnja-05318606-n"
+      },
+      {
+        "word": "鼓膜",
+        "synset": "wnja-05318831-n"
+      },
+      {
+        "word": "虹彩",
+        "synset": "wnja-05319936-n"
+      },
+      {
+        "word": "耳",
+        "synset": "wnja-05320899-n"
+      },
+      {
+        "word": "内耳",
+        "synset": "wnja-05321307-n"
+      },
+      {
+        "word": "三半規管",
+        "synset": "wnja-05323228-n"
+      },
+      {
+        "word": "耳たぶ",
+        "synset": "wnja-05323588-n"
+      },
+      {
+        "word": "外耳",
+        "synset": "wnja-05323723-n"
+      },
+      {
+        "word": "粘膜",
+        "synset": "wnja-05327134-n"
+      },
+      {
+        "word": "骨膜",
+        "synset": "wnja-05327373-n"
+      },
+      {
+        "word": "甲状腺",
+        "synset": "wnja-05330244-n"
+      },
+      {
+        "word": "汗腺",
+        "synset": "wnja-05330659-n"
+      },
+      {
+        "word": "副腎",
+        "synset": "wnja-05331171-n"
+      },
+      {
+        "word": "涙腺",
+        "synset": "wnja-05331653-n"
+      },
+      {
+        "word": "胸腺",
+        "synset": "wnja-05332569-n"
+      },
+      {
+        "word": "動脈",
+        "synset": "wnja-05333777-n"
+      },
+      {
+        "word": "冠動脈",
+        "synset": "wnja-05343718-n"
+      },
+      {
+        "word": "胆のう",
+        "synset": "wnja-05385161-n"
+      },
+      {
+        "word": "膵臓",
+        "synset": "wnja-05387167-n"
+      },
+      {
+        "word": "胸",
+        "synset": "wnja-05388805-n"
+      },
+      {
+        "word": "心筋",
+        "synset": "wnja-05389939-n"
+      },
+      {
+        "word": "心室",
+        "synset": "wnja-05391763-n"
+      },
+      {
+        "word": "お腹",
+        "synset": "wnja-05395690-n"
+      },
+      {
+        "word": "血管",
+        "synset": "wnja-05417975-n"
+      },
+      {
+        "word": "毛細血管",
+        "synset": "wnja-05425910-n"
+      },
+      {
+        "word": "網膜",
+        "synset": "wnja-05426989-n"
+      },
+      {
+        "word": "大網",
+        "synset": "wnja-05429658-n"
+      },
+      {
+        "word": "神経",
+        "synset": "wnja-05474346-n"
+      },
+      {
+        "word": "左脳",
+        "synset": "wnja-05477112-n"
+      },
+      {
+        "word": "右脳",
+        "synset": "wnja-05477510-n"
+      },
+      {
+        "word": "視神経",
+        "synset": "wnja-05478336-n"
+      },
+      {
+        "word": "脳",
+        "synset": "wnja-05481095-n"
+      },
+      {
+        "word": "くも膜",
+        "synset": "wnja-05482676-n"
+      },
+      {
+        "word": "脳下垂体",
+        "synset": "wnja-05483890-n"
+      },
+      {
+        "word": "大脳皮質",
+        "synset": "wnja-05486510-n"
+      },
+      {
+        "word": "大脳",
+        "synset": "wnja-05491993-n"
+      },
+      {
+        "word": "前頭葉",
+        "synset": "wnja-05493758-n"
+      },
+      {
+        "word": "延髄",
+        "synset": "wnja-05495172-n"
+      },
+      {
+        "word": "視床",
+        "synset": "wnja-05499172-n"
+      },
+      {
+        "word": "脳幹",
+        "synset": "wnja-05501185-n"
+      },
+      {
+        "word": "脊髄",
+        "synset": "wnja-05503705-n"
+      },
+      {
+        "word": "鼻腔",
+        "synset": "wnja-05528604-n"
+      },
+      {
+        "word": "喉頭",
+        "synset": "wnja-05529729-n"
+      },
+      {
+        "word": "声帯",
+        "synset": "wnja-05530429-n"
+      },
+      {
+        "word": "気管支",
+        "synset": "wnja-05531511-n"
+      },
+      {
+        "word": "気管",
+        "synset": "wnja-05531814-n"
+      },
+      {
+        "word": "食道",
+        "synset": "wnja-05533948-n"
+      },
+      {
+        "word": "小腸",
+        "synset": "wnja-05534712-n"
+      },
+      {
+        "word": "十二指腸",
+        "synset": "wnja-05534955-n"
+      },
+      {
+        "word": "盲腸",
+        "synset": "wnja-05536370-n"
+      },
+      {
+        "word": "頭皮",
+        "synset": "wnja-05539947-n"
+      },
+      {
+        "word": "頭蓋",
+        "synset": "wnja-05540513-n"
+      },
+      {
+        "word": "額",
+        "synset": "wnja-05541231-n"
+      },
+      {
+        "word": "喉",
+        "synset": "wnja-05547508-n"
+      },
+      {
+        "word": "肩",
+        "synset": "wnja-05548840-n"
+      },
+      {
+        "word": "わきの下",
+        "synset": "wnja-05549576-n"
+      },
+      {
+        "word": "上半身",
+        "synset": "wnja-05549830-n"
+      },
+      {
+        "word": "大胸筋",
+        "synset": "wnja-05551939-n"
+      },
+      {
+        "word": "胸郭",
+        "synset": "wnja-05553768-n"
+      },
+      {
+        "word": "お尻",
+        "synset": "wnja-05559256-n"
+      },
+      {
+        "word": "足",
+        "synset": "wnja-05560787-n"
+      },
+      {
+        "word": "下腿",
+        "synset": "wnja-05561390-n"
+      },
+      {
+        "word": "太もも",
+        "synset": "wnja-05562249-n"
+      },
+      {
+        "word": "膝",
+        "synset": "wnja-05562595-n"
+      },
+      {
+        "word": "手",
+        "synset": "wnja-05563770-n"
+      },
+      {
+        "word": "前腕",
+        "synset": "wnja-05564323-n"
+      },
+      {
+        "word": "手のひら",
+        "synset": "wnja-05565696-n"
+      },
+      {
+        "word": "指",
+        "synset": "wnja-05566504-n"
+      },
+      {
+        "word": "親指",
+        "synset": "wnja-05567217-n"
+      },
+      {
+        "word": "人差し指",
+        "synset": "wnja-05567381-n"
+      },
+      {
+        "word": "薬指",
+        "synset": "wnja-05567489-n"
+      },
+      {
+        "word": "中指",
+        "synset": "wnja-05567604-n"
+      },
+      {
+        "word": "小指",
+        "synset": "wnja-05567727-n"
+      },
+      {
+        "word": "脹脛",
+        "synset": "wnja-05574332-n"
+      },
+      {
+        "word": "土踏まず",
+        "synset": "wnja-05576573-n"
+      },
+      {
+        "word": "足の裏",
+        "synset": "wnja-05577190-n"
+      },
+      {
+        "word": "足の指",
+        "synset": "wnja-05577410-n"
+      },
+      {
+        "word": "足首",
+        "synset": "wnja-05578442-n"
+      },
+      {
+        "word": "上腕二頭筋",
+        "synset": "wnja-05579436-n"
+      },
+      {
+        "word": "腕",
+        "synset": "wnja-05579944-n"
+      },
+      {
+        "word": "爪",
+        "synset": "wnja-05581693-n"
+      },
+      {
+        "word": "手首",
+        "synset": "wnja-05584928-n"
+      },
+      {
+        "word": "頸椎",
+        "synset": "wnja-05588551-n"
+      },
+      {
+        "word": "胸椎",
+        "synset": "wnja-05589132-n"
+      },
+      {
+        "word": "腰椎",
+        "synset": "wnja-05589378-n"
+      },
+      {
+        "word": "橈骨",
+        "synset": "wnja-05593318-n"
+      },
+      {
+        "word": "腓骨",
+        "synset": "wnja-05594201-n"
+      },
+      {
+        "word": "脛骨",
+        "synset": "wnja-05594367-n"
+      },
+      {
+        "word": "関節",
+        "synset": "wnja-05595083-n"
+      },
+      {
+        "word": "股関節",
+        "synset": "wnja-05596004-n"
+      },
+      {
+        "word": "鼻",
+        "synset": "wnja-05598707-n"
+      },
+      {
+        "word": "鼻孔",
+        "synset": "wnja-05600109-n"
+      },
+      {
+        "word": "顔",
+        "synset": "wnja-05600637-n"
+      },
+      {
+        "word": "頬",
+        "synset": "wnja-05601357-n"
+      }
+    ],
+    "colors": [
+      {
+        "word": "黒",
+        "synset": "wnja-04960277-n"
+      },
+      {
+        "word": "漆黒",
+        "synset": "wnja-04960582-n"
+      },
+      {
+        "word": "白",
+        "synset": "wnja-04960729-n"
+      },
+      {
+        "word": "アイボリー",
+        "synset": "wnja-04961331-n"
+      },
+      {
+        "word": "灰色",
+        "synset": "wnja-04961691-n"
+      },
+      {
+        "word": "銀色",
+        "synset": "wnja-04962062-n"
+      },
+      {
+        "word": "チャコールグレー",
+        "synset": "wnja-04962240-n"
+      },
+      {
+        "word": "赤",
+        "synset": "wnja-04962784-n"
+      },
+      {
+        "word": "真紅",
+        "synset": "wnja-04963588-n"
+      },
+      {
+        "word": "マゼンタ",
+        "synset": "wnja-04964586-n"
+      },
+      {
+        "word": "朱色",
+        "synset": "wnja-04964977-n"
+      },
+      {
+        "word": "オレンジ色",
+        "synset": "wnja-04965179-n"
+      },
+      {
+        "word": "サーモンピンク",
+        "synset": "wnja-04965371-n"
+      },
+      {
+        "word": "黄色",
+        "synset": "wnja-04965661-n"
+      },
+      {
+        "word": "金色",
+        "synset": "wnja-04966240-n"
+      },
+      {
+        "word": "緑",
+        "synset": "wnja-04967191-n"
+      },
+      {
+        "word": "黄緑",
+        "synset": "wnja-04968257-n"
+      },
+      {
+        "word": "青",
+        "synset": "wnja-04968895-n"
+      },
+      {
+        "word": "空色",
+        "synset": "wnja-04969242-n"
+      },
+      {
+        "word": "濃紺",
+        "synset": "wnja-04969703-n"
+      },
+      {
+        "word": "ターコイズ",
+        "synset": "wnja-04969798-n"
+      },
+      {
+        "word": "紫",
+        "synset": "wnja-04970059-n"
+      },
+      {
+        "word": "藍色",
+        "synset": "wnja-04970398-n"
+      },
+      {
+        "word": "ピンク",
+        "synset": "wnja-04970916-n"
+      },
+      {
+        "word": "茶色",
+        "synset": "wnja-04971928-n"
+      },
+      {
+        "word": "薄茶",
+        "synset": "wnja-04972801-n"
+      },
+      {
+        "word": "ベージュ",
+        "synset": "wnja-04973291-n"
+      },
+      {
+        "word": "セピア色",
+        "synset": "wnja-04973386-n"
+      },
+      {
+        "word": "銅色",
+        "synset": "wnja-04973669-n"
+      },
+      {
+        "word": "飴色",
+        "synset": "wnja-04973957-n"
+      },
+      {
+        "word": "オリーブ色",
+        "synset": "wnja-04974340-n"
+      },
+      {
+        "word": "パステル",
+        "synset": "wnja-04974575-n"
+      },
+      {
+        "word": "肌色",
+        "synset": "wnja-04976952-n"
+      }
+    ],
+    "music": [
+      {
+        "word": "アコーディオン",
+        "synset": "wnja-02672831-n"
+      },
+      {
+        "word": "バグパイプ",
+        "synset": "wnja-02775483-n"
+      },
+      {
+        "word": "バラライカ",
+        "synset": "wnja-02776978-n"
+      },
+      {
+        "word": "バンジョー",
+        "synset": "wnja-02787622-n"
+      },
+      {
+        "word": "バスドラム",
+        "synset": "wnja-02803666-n"
+      },
+      {
+        "word": "チューバ",
+        "synset": "wnja-02804252-n"
+      },
+      {
+        "word": "バスーン",
+        "synset": "wnja-02804610-n"
+      },
+      {
+        "word": "カスタネット",
+        "synset": "wnja-02869249-n"
+      },
+      {
+        "word": "ボンゴ",
+        "synset": "wnja-02869737-n"
+      },
+      {
+        "word": "チェレスタ",
+        "synset": "wnja-02990758-n"
+      },
+      {
+        "word": "チェロ",
+        "synset": "wnja-02992211-n"
+      },
+      {
+        "word": "クラリネット",
+        "synset": "wnja-03037709-n"
+      },
+      {
+        "word": "トランペット",
+        "synset": "wnja-03110669-n"
+      },
+      {
+        "word": "シンバル",
+        "synset": "wnja-03157348-n"
+      },
+      {
+        "word": "ドラム",
+        "synset": "wnja-03249569-n"
+      },
+      {
+        "word": "エレクトーン",
+        "synset": "wnja-03273551-n"
+      },
+      {
+        "word": "ユーフォニアム",
+        "synset": "wnja-03301568-n"
+      },
+      {
+        "word": "フルート",
+        "synset": "wnja-03372029-n"
+      },
+      {
+        "word": "ホルン",
+        "synset": "wnja-03394916-n"
+      },
+      {
+        "word": "タムタム",
+        "synset": "wnja-03447721-n"
+      },
+      {
+        "word": "グランドピアノ",
+        "synset": "wnja-03452741-n"
+      },
+      {
+        "word": "ギター",
+        "synset": "wnja-03467517-n"
+      },
+      {
+        "word": "ハンドベル",
+        "synset": "wnja-03483230-n"
+      },
+      {
+        "word": "ハーモニカ",
+        "synset": "wnja-03494278-n"
+      },
+      {
+        "word": "オルガン",
+        "synset": "wnja-03494537-n"
+      },
+      {
+        "word": "ハープ",
+        "synset": "wnja-03495258-n"
+      },
+      {
+        "word": "チェンバロ",
+        "synset": "wnja-03496296-n"
+      },
+      {
+        "word": "ティンパニ",
+        "synset": "wnja-03612965-n"
+      },
+      {
+        "word": "琴",
+        "synset": "wnja-03628215-n"
+      },
+      {
+        "word": "リュート",
+        "synset": "wnja-03698360-n"
+      },
+      {
+        "word": "ライアー",
+        "synset": "wnja-03699280-n"
+      },
+      {
+        "word": "マンドリン",
+        "synset": "wnja-03716966-n"
+      },
+      {
+        "word": "木琴",
+        "synset": "wnja-03721384-n"
+      },
+      {
+        "word": "オルゴール",
+        "synset": "wnja-03801353-n"
+      },
+      {
+        "word": "オーボエ",
+        "synset": "wnja-03838899-n"
+      },
+      {
+        "word": "オカリナ",
+        "synset": "wnja-03840681-n"
+      },
+      {
+        "word": "ピアノ",
+        "synset": "wnja-03928116-n"
+      },
+      {
+        "word": "ピッコロ",
+        "synset": "wnja-03929091-n"
+      },
+      {
+        "word": "三味線",
+        "synset": "wnja-04132603-n"
+      },
+      {
+        "word": "サックス",
+        "synset": "wnja-04141076-n"
+      },
+      {
+        "word": "シタール",
+        "synset": "wnja-04224842-n"
+      },
+      {
+        "word": "スネアドラム",
+        "synset": "wnja-04249415-n"
+      },
+      {
+        "word": "シンセサイザー",
+        "synset": "wnja-04376400-n"
+      },
+      {
+        "word": "タンバリン",
+        "synset": "wnja-04387400-n"
+      },
+      {
+        "word": "テルミン",
+        "synset": "wnja-04419642-n"
+      },
+      {
+        "word": "トライアングル",
+        "synset": "wnja-04480853-n"
+      },
+      {
+        "word": "トロンボーン",
+        "synset": "wnja-04487394-n"
+      },
+      {
+        "word": "ウクレレ",
+        "synset": "wnja-04506289-n"
+      },
+      {
+        "word": "アップライトピアノ",
+        "synset": "wnja-04515003-n"
+      },
+      {
+        "word": "ヴィオラ",
+        "synset": "wnja-04536335-n"
+      },
+      {
+        "word": "バイオリン",
+        "synset": "wnja-04536866-n"
+      }
+    ],
+    "plants": [
+      {
+        "word": "春菊",
+        "synset": "wnja-07709701-n"
+      },
+      {
+        "word": "ジャガイモ",
+        "synset": "wnja-07710616-n"
+      },
+      {
+        "word": "サツマイモ",
+        "synset": "wnja-07712063-n"
+      },
+      {
+        "word": "ナス",
+        "synset": "wnja-07713074-n"
+      },
+      {
+        "word": "キャベツ",
+        "synset": "wnja-07713895-n"
+      },
+      {
+        "word": "ブロッコリー",
+        "synset": "wnja-07714990-n"
+      },
+      {
+        "word": "カリフラワー",
+        "synset": "wnja-07715103-n"
+      },
+      {
+        "word": "ズッキーニ",
+        "synset": "wnja-07716358-n"
+      },
+      {
+        "word": "キュウリ",
+        "synset": "wnja-07718472-n"
+      },
+      {
+        "word": "アーティチョーク",
+        "synset": "wnja-07718747-n"
+      },
+      {
+        "word": "アスパラガス",
+        "synset": "wnja-07719213-n"
+      },
+      {
+        "word": "もやし",
+        "synset": "wnja-07719616-n"
+      },
+      {
+        "word": "アルファルファスプラウト",
+        "synset": "wnja-07719756-n"
+      },
+      {
+        "word": "フダンソウ",
+        "synset": "wnja-07720277-n"
+      },
+      {
+        "word": "ピーマン",
+        "synset": "wnja-07721018-n"
+      },
+      {
+        "word": "タマネギ",
+        "synset": "wnja-07722217-n"
+      },
+      {
+        "word": "ネギ",
+        "synset": "wnja-07722485-n"
+      },
+      {
+        "word": "ニラネギ",
+        "synset": "wnja-07723039-n"
+      },
+      {
+        "word": "アイスバーグレタス",
+        "synset": "wnja-07724269-n"
+      },
+      {
+        "word": "ローメインレタス",
+        "synset": "wnja-07724492-n"
+      },
+      {
+        "word": "シカクマメ",
+        "synset": "wnja-07725158-n"
+      },
+      {
+        "word": "レンズ豆",
+        "synset": "wnja-07725255-n"
+      },
+      {
+        "word": "エンドウ豆",
+        "synset": "wnja-07725376-n"
+      },
+      {
+        "word": "グリーンピース",
+        "synset": "wnja-07725531-n"
+      },
+      {
+        "word": "マローファットピース",
+        "synset": "wnja-07725663-n"
+      },
+      {
+        "word": "サヤエンドウ",
+        "synset": "wnja-07725789-n"
+      },
+      {
+        "word": "スナップエンドウ",
+        "synset": "wnja-07725888-n"
+      },
+      {
+        "word": "キマメ",
+        "synset": "wnja-07726230-n"
+      },
+      {
+        "word": "大豆",
+        "synset": "wnja-07729485-n"
+      },
+      {
+        "word": "ニンジン",
+        "synset": "wnja-07730207-n"
+      },
+      {
+        "word": "エンダイブ",
+        "synset": "wnja-07731587-n"
+      },
+      {
+        "word": "クレソン",
+        "synset": "wnja-07732904-n"
+      },
+      {
+        "word": "コショウソウ",
+        "synset": "wnja-07733005-n"
+      },
+      {
+        "word": "オクラ",
+        "synset": "wnja-07733394-n"
+      },
+      {
+        "word": "コールラビ",
+        "synset": "wnja-07733567-n"
+      },
+      {
+        "word": "アカザ",
+        "synset": "wnja-07733712-n"
+      },
+      {
+        "word": "トマト",
+        "synset": "wnja-07734017-n"
+      },
+      {
+        "word": "マッシュルーム",
+        "synset": "wnja-07734744-n"
+      },
+      {
+        "word": "ラディッシュ",
+        "synset": "wnja-07735687-n"
+      },
+      {
+        "word": "スイバ",
+        "synset": "wnja-07736371-n"
+      },
+      {
+        "word": "サトイモ",
+        "synset": "wnja-07736813-n"
+      },
+      {
+        "word": "落花生",
+        "synset": "wnja-07737745-n"
+      },
+      {
+        "word": "リンゴ",
+        "synset": "wnja-07739125-n"
+      },
+      {
+        "word": "ブラムリー",
+        "synset": "wnja-07742224-n"
+      },
+      {
+        "word": "ハックルベリー",
+        "synset": "wnja-07743384-n"
+      },
+      {
+        "word": "ブルーベリー",
+        "synset": "wnja-07743544-n"
+      },
+      {
+        "word": "スグリ",
+        "synset": "wnja-07744246-n"
+      },
+      {
+        "word": "セイヨウスグリ",
+        "synset": "wnja-07744430-n"
+      },
+      {
+        "word": "クロスグリ",
+        "synset": "wnja-07744559-n"
+      },
+      {
+        "word": "アカスグリ",
+        "synset": "wnja-07744682-n"
+      },
+      {
+        "word": "ラズベリー",
+        "synset": "wnja-07745466-n"
+      },
+      {
+        "word": "ザイフリボク",
+        "synset": "wnja-07745661-n"
+      },
+      {
+        "word": "エノキ",
+        "synset": "wnja-07746038-n"
+      },
+      {
+        "word": "アセロラ",
+        "synset": "wnja-07746334-n"
+      },
+      {
+        "word": "モンステラ",
+        "synset": "wnja-07746749-n"
+      },
+      {
+        "word": "オレンジ",
+        "synset": "wnja-07747607-n"
+      },
+      {
+        "word": "マンダリンオレンジ",
+        "synset": "wnja-07747951-n"
+      },
+      {
+        "word": "クレメンタイン",
+        "synset": "wnja-07748157-n"
+      },
+      {
+        "word": "ウンシュウミカン",
+        "synset": "wnja-07748276-n"
+      },
+      {
+        "word": "タンジェリン",
+        "synset": "wnja-07748416-n"
+      },
+      {
+        "word": "ビターオレンジ",
+        "synset": "wnja-07748753-n"
+      },
+      {
+        "word": "ジャッファ・オレンジ",
+        "synset": "wnja-07749095-n"
+      },
+      {
+        "word": "ネーブルオレンジ",
+        "synset": "wnja-07749192-n"
+      },
+      {
+        "word": "バレンシアオレンジ",
+        "synset": "wnja-07749312-n"
+      },
+      {
+        "word": "キンカン",
+        "synset": "wnja-07749446-n"
+      },
+      {
+        "word": "レモン",
+        "synset": "wnja-07749582-n"
+      },
+      {
+        "word": "ライム",
+        "synset": "wnja-07749731-n"
+      },
+      {
+        "word": "グレープフルーツ",
+        "synset": "wnja-07749969-n"
+      },
+      {
+        "word": "ザボン",
+        "synset": "wnja-07750146-n"
+      },
+      {
+        "word": "アーモンド",
+        "synset": "wnja-07750586-n"
+      },
+      {
+        "word": "アンズ",
+        "synset": "wnja-07750872-n"
+      },
+      {
+        "word": "ネクタリン",
+        "synset": "wnja-07751148-n"
+      },
+      {
+        "word": "ウメ",
+        "synset": "wnja-07751451-n"
+      },
+      {
+        "word": "ダムソンスモモ",
+        "synset": "wnja-07751737-n"
+      },
+      {
+        "word": "スローベリー",
+        "synset": "wnja-07752109-n"
+      },
+      {
+        "word": "ビクトリアプラム",
+        "synset": "wnja-07752264-n"
+      },
+      {
+        "word": "パイナップル",
+        "synset": "wnja-07753275-n"
+      },
+      {
+        "word": "バナナ",
+        "synset": "wnja-07753592-n"
+      },
+      {
+        "word": "パッションフルーツ",
+        "synset": "wnja-07753743-n"
+      },
+      {
+        "word": "マスクメロン",
+        "synset": "wnja-07755707-n"
+      },
+      {
+        "word": "カンタロープ",
+        "synset": "wnja-07755929-n"
+      },
+      {
+        "word": "スイカ",
+        "synset": "wnja-07756951-n"
+      },
+      {
+        "word": "サクランボ",
+        "synset": "wnja-07757132-n"
+      },
+      {
+        "word": "パパイヤ",
+        "synset": "wnja-07762244-n"
+      },
+      {
+        "word": "アキー",
+        "synset": "wnja-07762740-n"
+      },
+      {
+        "word": "ドリアン",
+        "synset": "wnja-07762913-n"
+      },
+      {
+        "word": "キウイ",
+        "synset": "wnja-07763629-n"
+      },
+      {
+        "word": "びわ",
+        "synset": "wnja-07763792-n"
+      },
+      {
+        "word": "マンゴスチン",
+        "synset": "wnja-07763987-n"
+      },
+      {
+        "word": "マンゴー",
+        "synset": "wnja-07764155-n"
+      },
+      {
+        "word": "サポジラ",
+        "synset": "wnja-07764315-n"
+      },
+      {
+        "word": "アボカド",
+        "synset": "wnja-07764847-n"
+      },
+      {
+        "word": "ナツメヤシ",
+        "synset": "wnja-07765073-n"
+      },
+      {
+        "word": "ニワトコ",
+        "synset": "wnja-07765208-n"
+      },
+      {
+        "word": "グアバ",
+        "synset": "wnja-07765361-n"
+      },
+      {
+        "word": "ザクロ",
+        "synset": "wnja-07768694-n"
+      },
+      {
+        "word": "マルメロ",
+        "synset": "wnja-07769584-n"
+      },
+      {
+        "word": "クルミ",
+        "synset": "wnja-07771212-n"
+      },
+      {
+        "word": "カシューナッツ",
+        "synset": "wnja-07772147-n"
+      },
+      {
+        "word": "ココナッツ",
+        "synset": "wnja-07772935-n"
+      },
+      {
+        "word": "ペカン",
+        "synset": "wnja-07774719-n"
+      },
+      {
+        "word": "松の実",
+        "synset": "wnja-07774842-n"
+      },
+      {
+        "word": "ピスタチオ",
+        "synset": "wnja-07775050-n"
+      },
+      {
+        "word": "ウェルウィッチア",
+        "synset": "wnja-11599324-n"
+      },
+      {
+        "word": "ソテツ",
+        "synset": "wnja-11601177-n"
+      },
+      {
+        "word": "マツ",
+        "synset": "wnja-11608250-n"
+      },
+      {
+        "word": "アカマツ",
+        "synset": "wnja-11618079-n"
+      },
+      {
+        "word": "クロマツ",
+        "synset": "wnja-11618290-n"
+      },
+      {
+        "word": "バルサムモミ",
+        "synset": "wnja-11621950-n"
+      },
+      {
+        "word": "ヒマラヤスギ",
+        "synset": "wnja-11623967-n"
+      },
+      {
+        "word": "オウシュウトウヒ",
+        "synset": "wnja-11625003-n"
+      },
+      {
+        "word": "イタリアンサイプレス",
+        "synset": "wnja-11632619-n"
+      },
+      {
+        "word": "スギ",
+        "synset": "wnja-11636204-n"
+      },
+      {
+        "word": "ナギ",
+        "synset": "wnja-11657585-n"
+      },
+      {
+        "word": "イチイ",
+        "synset": "wnja-11661372-n"
+      },
+      {
+        "word": "イチョウ",
+        "synset": "wnja-11664418-n"
+      },
+      {
+        "word": "メギ",
+        "synset": "wnja-11698245-n"
+      },
+      {
+        "word": "クロバナロウバイ",
+        "synset": "wnja-11701066-n"
+      },
+      {
+        "word": "蝋梅",
+        "synset": "wnja-11701698-n"
+      },
+      {
+        "word": "ゲッケイジュ",
+        "synset": "wnja-11704093-n"
+      },
+      {
+        "word": "クスノキ",
+        "synset": "wnja-11704620-n"
+      },
+      {
+        "word": "トウシキミ",
+        "synset": "wnja-11709205-n"
+      },
+      {
+        "word": "ユリノキ",
+        "synset": "wnja-11712282-n"
+      },
+      {
+        "word": "ハス",
+        "synset": "wnja-11717399-n"
+      },
+      {
+        "word": "ジュンサイ",
+        "synset": "wnja-11718681-n"
+      },
+      {
+        "word": "シャクヤク",
+        "synset": "wnja-11719286-n"
+      },
+      {
+        "word": "トリカブト",
+        "synset": "wnja-11723452-n"
+      },
+      {
+        "word": "オウレン",
+        "synset": "wnja-11732052-n"
+      },
+      {
+        "word": "クリスマスローズ",
+        "synset": "wnja-11734300-n"
+      },
+      {
+        "word": "イグサ",
+        "synset": "wnja-11743294-n"
+      },
+      {
+        "word": "シロツメクサ",
+        "synset": "wnja-11753700-n"
+      },
+      {
+        "word": "オジギソウ",
+        "synset": "wnja-11755319-n"
+      },
+      {
+        "word": "ネムノキ",
+        "synset": "wnja-11759404-n"
+      },
+      {
+        "word": "アイスクリームビーン",
+        "synset": "wnja-11761836-n"
+      },
+      {
+        "word": "ギンネム",
+        "synset": "wnja-11762433-n"
+      },
+      {
+        "word": "ニチニチソウ",
+        "synset": "wnja-11772408-n"
+      },
+      {
+        "word": "キョウチクトウ",
+        "synset": "wnja-11773987-n"
+      },
+      {
+        "word": "ヒメツルニチニチソウ",
+        "synset": "wnja-11778092-n"
+      },
+      {
+        "word": "アンスリウム",
+        "synset": "wnja-11783920-n"
+      },
+      {
+        "word": "テンナンショウ",
+        "synset": "wnja-11784497-n"
+      },
+      {
+        "word": "ポトス",
+        "synset": "wnja-11788727-n"
+      },
+      {
+        "word": "ミズバショウ",
+        "synset": "wnja-11789066-n"
+      },
+      {
+        "word": "フィロデンドロン",
+        "synset": "wnja-11791341-n"
+      },
+      {
+        "word": "ボタンウキクサ",
+        "synset": "wnja-11791569-n"
+      },
+      {
+        "word": "ザゼンソウ",
+        "synset": "wnja-11792742-n"
+      },
+      {
+        "word": "オランダカイウ",
+        "synset": "wnja-11793779-n"
+      },
+      {
+        "word": "ツタ",
+        "synset": "wnja-11798978-n"
+      },
+      {
+        "word": "アオイ",
+        "synset": "wnja-11802212-n"
+      },
+      {
+        "word": "カーネーション",
+        "synset": "wnja-11808468-n"
+      },
+      {
+        "word": "セキチク",
+        "synset": "wnja-11808721-n"
+      },
+      {
+        "word": "ムシトリナデシコ",
+        "synset": "wnja-11811473-n"
+      },
+      {
+        "word": "シャボンソウ",
+        "synset": "wnja-11814584-n"
+      },
+      {
+        "word": "コハコベ",
+        "synset": "wnja-11818069-n"
+      },
+      {
+        "word": "アワユキハコベ",
+        "synset": "wnja-11818271-n"
+      },
+      {
+        "word": "鶏頭",
+        "synset": "wnja-11825351-n"
+      },
+      {
+        "word": "ホウキギ",
+        "synset": "wnja-11831874-n"
+      },
+      {
+        "word": "甜菜",
+        "synset": "wnja-11833073-n"
+      },
+      {
+        "word": "ミルナ",
+        "synset": "wnja-11833999-n"
+      },
+      {
+        "word": "ほうれん草",
+        "synset": "wnja-11835568-n"
+      },
+      {
+        "word": "ヨウシュヤマゴボウ",
+        "synset": "wnja-11855553-n"
+      },
+      {
+        "word": "ケール",
+        "synset": "wnja-11876976-n"
+      },
+      {
+        "word": "カラシナ",
+        "synset": "wnja-11878633-n"
+      },
+      {
+        "word": "白菜",
+        "synset": "wnja-11878808-n"
+      },
+      {
+        "word": "アブラナ",
+        "synset": "wnja-11879722-n"
+      },
+      {
+        "word": "ナズナ",
+        "synset": "wnja-11881189-n"
+      },
+      {
+        "word": "ルッコラ",
+        "synset": "wnja-11886537-n"
+      },
+      {
+        "word": "ハナダイコン",
+        "synset": "wnja-11888800-n"
+      },
+      {
+        "word": "バージニアストック",
+        "synset": "wnja-11892181-n"
+      },
+      {
+        "word": "ニオイアラセイトウ",
+        "synset": "wnja-11892637-n"
+      },
+      {
+        "word": "ポピー",
+        "synset": "wnja-11900569-n"
+      },
+      {
+        "word": "アイスランドポピー",
+        "synset": "wnja-11901294-n"
+      },
+      {
+        "word": "ノコギリソウ",
+        "synset": "wnja-11916696-n"
+      },
+      {
+        "word": "ヤマハハコ",
+        "synset": "wnja-11921395-n"
+      },
+      {
+        "word": "ゴボウ",
+        "synset": "wnja-11924445-n"
+      },
+      {
+        "word": "ニガヨモギ",
+        "synset": "wnja-11929477-n"
+      },
+      {
+        "word": "ハハコグサ",
+        "synset": "wnja-11930788-n"
+      },
+      {
+        "word": "キンセンカ",
+        "synset": "wnja-11943660-n"
+      },
+      {
+        "word": "ミヤコワスレ",
+        "synset": "wnja-11943992-n"
+      },
+      {
+        "word": "ニオイヤグルマ",
+        "synset": "wnja-11948469-n"
+      },
+      {
+        "word": "チョウセンアザミ",
+        "synset": "wnja-11959632-n"
+      },
+      {
+        "word": "ダリア",
+        "synset": "wnja-11960245-n"
+      },
+      {
+        "word": "ヒメジョオン",
+        "synset": "wnja-11966083-n"
+      },
+      {
+        "word": "ヒヨドリバナ",
+        "synset": "wnja-11968704-n"
+      },
+      {
+        "word": "フジバカマ",
+        "synset": "wnja-11968931-n"
+      },
+      {
+        "word": "ブルーデージー",
+        "synset": "wnja-11969607-n"
+      },
+      {
+        "word": "キクイモ",
+        "synset": "wnja-11979715-n"
+      },
+      {
+        "word": "オオグルマ",
+        "synset": "wnja-11984659-n"
+      },
+      {
+        "word": "エーデルワイス",
+        "synset": "wnja-11989393-n"
+      },
+      {
+        "word": "カミツレ",
+        "synset": "wnja-11995092-n"
+      },
+      {
+        "word": "シネラリア",
+        "synset": "wnja-12001707-n"
+      },
+      {
+        "word": "オオハンゴンソウ",
+        "synset": "wnja-12009047-n"
+      },
+      {
+        "word": "ノボロギク",
+        "synset": "wnja-12012755-n"
+      },
+      {
+        "word": "トウワタ",
+        "synset": "wnja-12019035-n"
+      },
+      {
+        "word": "ホテイラン",
+        "synset": "wnja-12049562-n"
+      },
+      {
+        "word": "アツモリソウ",
+        "synset": "wnja-12056217-n"
+      },
+      {
+        "word": "サギソウ",
+        "synset": "wnja-12065316-n"
+      },
+      {
+        "word": "長芋",
+        "synset": "wnja-12088495-n"
+      },
+      {
+        "word": "シクラメン",
+        "synset": "wnja-12093329-n"
+      },
+      {
+        "word": "万両",
+        "synset": "wnja-12097396-n"
+      },
+      {
+        "word": "コヌカグサ",
+        "synset": "wnja-12107336-n"
+      },
+      {
+        "word": "カラスムギ",
+        "synset": "wnja-12109827-n"
+      },
+      {
+        "word": "ヤギュウシバ",
+        "synset": "wnja-12112609-n"
+      },
+      {
+        "word": "パンパスグラス",
+        "synset": "wnja-12115180-n"
+      },
+      {
+        "word": "カモガヤ",
+        "synset": "wnja-12116429-n"
+      },
+      {
+        "word": "イヌビエ",
+        "synset": "wnja-12117695-n"
+      },
+      {
+        "word": "オヒシバ",
+        "synset": "wnja-12118414-n"
+      },
+      {
+        "word": "シコクビエ",
+        "synset": "wnja-12118661-n"
+      },
+      {
+        "word": "ドクムギ",
+        "synset": "wnja-12125183-n"
+      },
+      {
+        "word": "イネ",
+        "synset": "wnja-12125890-n"
+      },
+      {
+        "word": "ケンタッキーブルーグラス",
+        "synset": "wnja-12131767-n"
+      },
+      {
+        "word": "サトウキビ",
+        "synset": "wnja-12132502-n"
+      },
+      {
+        "word": "ライムギ",
+        "synset": "wnja-12134025-n"
+      },
+      {
+        "word": "デュラムコムギ",
+        "synset": "wnja-12142450-n"
+      },
+      {
+        "word": "トウモロコシ",
+        "synset": "wnja-12143676-n"
+      },
+      {
+        "word": "ワイルドライス",
+        "synset": "wnja-12145919-n"
+      },
+      {
+        "word": "コウライシバ",
+        "synset": "wnja-12146654-n"
+      },
+      {
+        "word": "ハチク",
+        "synset": "wnja-12149350-n"
+      },
+      {
+        "word": "カヤツリグサ",
+        "synset": "wnja-12151170-n"
+      },
+      {
+        "word": "タコノキ",
+        "synset": "wnja-12154773-n"
+      },
+      {
+        "word": "ガマ",
+        "synset": "wnja-12155583-n"
+      },
+      {
+        "word": "ペポカボチャ",
+        "synset": "wnja-12158443-n"
+      },
+      {
+        "word": "ユウガオ",
+        "synset": "wnja-12166128-n"
+      },
+      {
+        "word": "イチビ",
+        "synset": "wnja-12173069-n"
+      },
+      {
+        "word": "ワタ",
+        "synset": "wnja-12175949-n"
+      },
+      {
+        "word": "芙蓉",
+        "synset": "wnja-12179122-n"
+      },
+      {
+        "word": "ローゼル",
+        "synset": "wnja-12179632-n"
+      },
+      {
+        "word": "ムクゲ",
+        "synset": "wnja-12179907-n"
+      },
+      {
+        "word": "オオハマボウ",
+        "synset": "wnja-12180168-n"
+      },
+      {
+        "word": "バオバブ",
+        "synset": "wnja-12189987-n"
+      },
+      {
+        "word": "バルサ",
+        "synset": "wnja-12191587-n"
+      },
+      {
+        "word": "アオギリ",
+        "synset": "wnja-12198286-n"
+      },
+      {
+        "word": "ヒメシャクナゲ",
+        "synset": "wnja-12229651-n"
+      },
+      {
+        "word": "ギョリュウモドキ",
+        "synset": "wnja-12233529-n"
+      },
+      {
+        "word": "アザレア",
+        "synset": "wnja-12245319-n"
+      },
+      {
+        "word": "ツルコケモモ",
+        "synset": "wnja-12246037-n"
+      },
+      {
+        "word": "ブナ",
+        "synset": "wnja-12260799-n"
+      },
+      {
+        "word": "シナグリ",
+        "synset": "wnja-12263410-n"
+      },
+      {
+        "word": "ライブオーク",
+        "synset": "wnja-12269241-n"
+      },
+      {
+        "word": "ヒイラギガシ",
+        "synset": "wnja-12274630-n"
+      },
+      {
+        "word": "ブルーベル",
+        "synset": "wnja-12291959-n"
+      },
+      {
+        "word": "オリーブ",
+        "synset": "wnja-12301180-n"
+      },
+      {
+        "word": "チョウジノキ",
+        "synset": "wnja-12339526-n"
+      },
+      {
+        "word": "フクシア",
+        "synset": "wnja-12343480-n"
+      },
+      {
+        "word": "カンナ",
+        "synset": "wnja-12350959-n"
+      },
+      {
+        "word": "ゴクラクチョウカ",
+        "synset": "wnja-12354619-n"
+      },
+      {
+        "word": "ショウガ",
+        "synset": "wnja-12356023-n"
+      },
+      {
+        "word": "マタタビ",
+        "synset": "wnja-12371704-n"
+      },
+      {
+        "word": "トケイソウ",
+        "synset": "wnja-12383402-n"
+      },
+      {
+        "word": "クロタネソウ",
+        "synset": "wnja-12384839-n"
+      },
+      {
+        "word": "スミレ",
+        "synset": "wnja-12387839-n"
+      },
+      {
+        "word": "スイートホワイトバイオレット",
+        "synset": "wnja-12388444-n"
+      },
+      {
+        "word": "ニオイスミレ",
+        "synset": "wnja-12389317-n"
+      },
+      {
+        "word": "パンジー",
+        "synset": "wnja-12390485-n"
+      },
+      {
+        "word": "カラムシ",
+        "synset": "wnja-12393269-n"
+      },
+      {
+        "word": "パンノキ",
+        "synset": "wnja-12400489-n"
+      },
+      {
+        "word": "イチジク",
+        "synset": "wnja-12401684-n"
+      },
+      {
+        "word": "カジノキ",
+        "synset": "wnja-12403994-n"
+      },
+      {
+        "word": "アヤメ",
+        "synset": "wnja-12411922-n"
+      },
+      {
+        "word": "ダッチアイリス",
+        "synset": "wnja-12413301-n"
+      },
+      {
+        "word": "ジャーマンアイリス",
+        "synset": "wnja-12413880-n"
+      },
+      {
+        "word": "キショウブ",
+        "synset": "wnja-12414602-n"
+      },
+      {
+        "word": "ニワゼキショウ",
+        "synset": "wnja-12418221-n"
+      },
+      {
+        "word": "オニユリ",
+        "synset": "wnja-12427184-n"
+      },
+      {
+        "word": "アガパンサス",
+        "synset": "wnja-12429352-n"
+      },
+      {
+        "word": "ニンニク",
+        "synset": "wnja-12434775-n"
+      },
+      {
+        "word": "ニラ",
+        "synset": "wnja-12435777-n"
+      },
+      {
+        "word": "葉蘭",
+        "synset": "wnja-12443323-n"
+      },
+      {
+        "word": "カタクリ",
+        "synset": "wnja-12450344-n"
+      },
+      {
+        "word": "チューリップ",
+        "synset": "wnja-12454159-n"
+      },
+      {
+        "word": "イヌサフラン",
+        "synset": "wnja-12455540-n"
+      },
+      {
+        "word": "ワスレグサ",
+        "synset": "wnja-12456845-n"
+      },
+      {
+        "word": "ヒヤシンス",
+        "synset": "wnja-12458383-n"
+      },
+      {
+        "word": "ムスカリ",
+        "synset": "wnja-12460697-n"
+      },
+      {
+        "word": "ナギイカダ",
+        "synset": "wnja-12463134-n"
+      },
+      {
+        "word": "リュウゼツラン",
+        "synset": "wnja-12476510-n"
+      },
+      {
+        "word": "サンセベリア",
+        "synset": "wnja-12480895-n"
+      },
+      {
+        "word": "タマリンド",
+        "synset": "wnja-12501202-n"
+      },
+      {
+        "word": "ナタマメ",
+        "synset": "wnja-12511488-n"
+      },
+      {
+        "word": "チョウマメ",
+        "synset": "wnja-12517642-n"
+      },
+      {
+        "word": "エニシダ",
+        "synset": "wnja-12521394-n"
+      },
+      {
+        "word": "デイゴ",
+        "synset": "wnja-12528974-n"
+      },
+      {
+        "word": "甘草",
+        "synset": "wnja-12532886-n"
+      },
+      {
+        "word": "オオカラスノエンドウ",
+        "synset": "wnja-12542466-n"
+      },
+      {
+        "word": "インゲンマメ",
+        "synset": "wnja-12557064-n"
+      },
+      {
+        "word": "ハリエンジュ",
+        "synset": "wnja-12568186-n"
+      },
+      {
+        "word": "カラスノエンドウ",
+        "synset": "wnja-12575679-n"
+      },
+      {
+        "word": "クサフジ",
+        "synset": "wnja-12575812-n"
+      },
+      {
+        "word": "ソラマメ",
+        "synset": "wnja-12576029-n"
+      },
+      {
+        "word": "小豆",
+        "synset": "wnja-12577686-n"
+      },
+      {
+        "word": "サゴヤシ",
+        "synset": "wnja-12582665-n"
+      },
+      {
+        "word": "ビンロウ",
+        "synset": "wnja-12584365-n"
+      },
+      {
+        "word": "ヤシ",
+        "synset": "wnja-12587803-n"
+      },
+      {
+        "word": "ヘラオオバコ",
+        "synset": "wnja-12599185-n"
+      },
+      {
+        "word": "オオケタデ",
+        "synset": "wnja-12601805-n"
+      },
+      {
+        "word": "ギシギシ",
+        "synset": "wnja-12603959-n"
+      },
+      {
+        "word": "トチカガミ",
+        "synset": "wnja-12613408-n"
+      },
+      {
+        "word": "セイヨウセキショウモ",
+        "synset": "wnja-12615232-n"
+      },
+      {
+        "word": "ノイバラ",
+        "synset": "wnja-12622072-n"
+      },
+      {
+        "word": "ボケ",
+        "synset": "wnja-12624381-n"
+      },
+      {
+        "word": "オランダイチゴ",
+        "synset": "wnja-12630478-n"
+      },
+      {
+        "word": "ダイコンソウ",
+        "synset": "wnja-12632526-n"
+      },
+      {
+        "word": "サクラ",
+        "synset": "wnja-12641413-n"
+      },
+      {
+        "word": "フジ",
+        "synset": "wnja-12646605-n"
+      },
+      {
+        "word": "ニワウメ",
+        "synset": "wnja-12646740-n"
+      },
+      {
+        "word": "ブラックソーン",
+        "synset": "wnja-12649723-n"
+      },
+      {
+        "word": "セイヨウナシ",
+        "synset": "wnja-12651611-n"
+      },
+      {
+        "word": "キイチゴ",
+        "synset": "wnja-12655869-n"
+      },
+      {
+        "word": "ナナカマド",
+        "synset": "wnja-12658308-n"
+      },
+      {
+        "word": "シジミバナ",
+        "synset": "wnja-12659539-n"
+      },
+      {
+        "word": "コーヒーノキ",
+        "synset": "wnja-12662772-n"
+      },
+      {
+        "word": "ヤエムグラ",
+        "synset": "wnja-12666159-n"
+      },
+      {
+        "word": "スイカズラ",
+        "synset": "wnja-12675876-n"
+      },
+      {
+        "word": "セイヨウニワトコ",
+        "synset": "wnja-12679201-n"
+      },
+      {
+        "word": "ホウセンカ",
+        "synset": "wnja-12684379-n"
+      },
+      {
+        "word": "コカノキ",
+        "synset": "wnja-12690046-n"
+      },
+      {
+        "word": "栴檀",
+        "synset": "wnja-12695975-n"
+      },
+      {
+        "word": "ブシュカン",
+        "synset": "wnja-12709349-n"
+      },
+      {
+        "word": "白鮮",
+        "synset": "wnja-12712626-n"
+      },
+      {
+        "word": "カラタチ",
+        "synset": "wnja-12714254-n"
+      },
+      {
+        "word": "シダレヤナギ",
+        "synset": "wnja-12726670-n"
+      },
+      {
+        "word": "ネコヤナギ",
+        "synset": "wnja-12727101-n"
+      },
+      {
+        "word": "フウセンカズラ",
+        "synset": "wnja-12743009-n"
+      },
+      {
+        "word": "ツルウメモドキ",
+        "synset": "wnja-12748534-n"
+      },
+      {
+        "word": "ニシキギ",
+        "synset": "wnja-12749456-n"
+      },
+      {
+        "word": "サトウカエデ",
+        "synset": "wnja-12753245-n"
+      },
+      {
+        "word": "アメリカヤマモミジ",
+        "synset": "wnja-12754311-n"
+      },
+      {
+        "word": "マロニエ",
+        "synset": "wnja-12768369-n"
+      },
+      {
+        "word": "イワベンケイ",
+        "synset": "wnja-12786273-n"
+      },
+      {
+        "word": "ハシドイ",
+        "synset": "wnja-12791329-n"
+      },
+      {
+        "word": "ユキノシタ",
+        "synset": "wnja-12794568-n"
+      },
+      {
+        "word": "シロスグリ",
+        "synset": "wnja-12805762-n"
+      },
+      {
+        "word": "アカバナスグリ",
+        "synset": "wnja-12805899-n"
+      },
+      {
+        "word": "アメリカスズカケノキ",
+        "synset": "wnja-12807409-n"
+      },
+      {
+        "word": "シバザクラ",
+        "synset": "wnja-12811501-n"
+      },
+      {
+        "word": "ワスレナグサ",
+        "synset": "wnja-12822115-n"
+      },
+      {
+        "word": "ネナシカズラ",
+        "synset": "wnja-12825721-n"
+      },
+      {
+        "word": "アオイゴケ",
+        "synset": "wnja-12826143-n"
+      },
+      {
+        "word": "アサガオ",
+        "synset": "wnja-12826516-n"
+      },
+      {
+        "word": "ヨルガオ",
+        "synset": "wnja-12827537-n"
+      },
+      {
+        "word": "ルリカラクサ",
+        "synset": "wnja-12836337-n"
+      },
+      {
+        "word": "ラベンダー",
+        "synset": "wnja-12849717-n"
+      },
+      {
+        "word": "ニホンハッカ",
+        "synset": "wnja-12855365-n"
+      },
+      {
+        "word": "ミズハッカ",
+        "synset": "wnja-12855494-n"
+      },
+      {
+        "word": "ベルガモットミント",
+        "synset": "wnja-12855710-n"
+      },
+      {
+        "word": "ホースミント",
+        "synset": "wnja-12855886-n"
+      },
+      {
+        "word": "マルバハッカ",
+        "synset": "wnja-12856479-n"
+      },
+      {
+        "word": "ウツボグサ",
+        "synset": "wnja-12863234-n"
+      },
+      {
+        "word": "ローズマリー",
+        "synset": "wnja-12864160-n"
+      },
+      {
+        "word": "イヌホオズキ",
+        "synset": "wnja-12896307-n"
+      },
+      {
+        "word": "タマサンゴ",
+        "synset": "wnja-12896862-n"
+      },
+      {
+        "word": "ヤコウボク",
+        "synset": "wnja-12902662-n"
+      },
+      {
+        "word": "ヒヨス",
+        "synset": "wnja-12904314-n"
+      },
+      {
+        "word": "ペチュニア",
+        "synset": "wnja-12909421-n"
+      },
+      {
+        "word": "ランタナ",
+        "synset": "wnja-12915140-n"
+      },
+      {
+        "word": "ショウジョウソウ",
+        "synset": "wnja-12920521-n"
+      },
+      {
+        "word": "ハナキリン",
+        "synset": "wnja-12921868-n"
+      },
+      {
+        "word": "クロトン",
+        "synset": "wnja-12923652-n"
+      },
+      {
+        "word": "ツバキ",
+        "synset": "wnja-12929403-n"
+      },
+      {
+        "word": "チャノキ",
+        "synset": "wnja-12929783-n"
+      },
+      {
+        "word": "セルリアク",
+        "synset": "wnja-12933616-n"
+      },
+      {
+        "word": "キャラウエー",
+        "synset": "wnja-12934479-n"
+      },
+      {
+        "word": "ドクゼリ",
+        "synset": "wnja-12934985-n"
+      },
+      {
+        "word": "ノラニンジン",
+        "synset": "wnja-12937130-n"
+      },
+      {
+        "word": "パセリ",
+        "synset": "wnja-12942395-n"
+      },
+      {
+        "word": "ゼンマイ",
+        "synset": "wnja-12953484-n"
+      },
+      {
+        "word": "ハシバミ",
+        "synset": "wnja-13144084-n"
+      },
+      {
+        "word": "ヨーロッパブドウ",
+        "synset": "wnja-13145444-n"
+      },
+      {
+        "word": "アメリカヅタ",
+        "synset": "wnja-13148384-n"
+      },
+      {
+        "word": "コタニワタリ",
+        "synset": "wnja-13183056-n"
+      },
+      {
+        "word": "クサソテツ",
+        "synset": "wnja-13198054-n"
+      },
+      {
+        "word": "ホウライシダ",
+        "synset": "wnja-13207094-n"
+      },
+      {
+        "word": "イノモトソウ",
+        "synset": "wnja-13214340-n"
+      },
+      {
+        "word": "スギナ",
+        "synset": "wnja-13219833-n"
+      },
+      {
+        "word": "トクサ",
+        "synset": "wnja-13220122-n"
+      },
+      {
+        "word": "マンネンスギ",
+        "synset": "wnja-13223710-n"
+      },
+      {
+        "word": "サクララン",
+        "synset": "wnja-13237188-n"
+      },
+      {
+        "word": "マウンテンマホガニー",
+        "synset": "wnja-15100570-n"
+      },
+      {
+        "word": "ブラッドオレンジ",
+        "synset": "wnja-80000117-n"
+      },
+      {
+        "word": "空心菜",
+        "synset": "wnja-80000250-n"
+      },
+      {
+        "word": "パンダン",
+        "synset": "wnja-80000290-n"
+      },
+      {
+        "word": "コブミカン",
+        "synset": "wnja-80001374-n"
+      },
+      {
+        "word": "ヒノキ",
+        "synset": "wnja-80002359-n"
+      },
+      {
+        "word": "パンギノキ",
+        "synset": "wnja-90000313-n"
+      },
+      {
+        "word": "枝豆",
+        "synset": "wnja-90000471-n"
+      }
+    ],
+    "animals": [
+      {
+        "word": "ドジョウ",
+        "synset": "wnja-01438581-n"
+      },
+      {
+        "word": "金魚",
+        "synset": "wnja-01443537-n"
+      },
+      {
+        "word": "フナ",
+        "synset": "wnja-01443831-n"
+      },
+      {
+        "word": "デンキウナギ",
+        "synset": "wnja-01444339-n"
+      },
+      {
+        "word": "ソードテール",
+        "synset": "wnja-01448291-n"
+      },
+      {
+        "word": "グッピー",
+        "synset": "wnja-01448594-n"
+      },
+      {
+        "word": "カダヤシ",
+        "synset": "wnja-01449374-n"
+      },
+      {
+        "word": "マトウダイ",
+        "synset": "wnja-01453087-n"
+      },
+      {
+        "word": "トゲウオ",
+        "synset": "wnja-01454856-n"
+      },
+      {
+        "word": "イトヨ",
+        "synset": "wnja-01455317-n"
+      },
+      {
+        "word": "ヨウジウオ",
+        "synset": "wnja-01455778-n"
+      },
+      {
+        "word": "タイ",
+        "synset": "wnja-01458842-n"
+      },
+      {
+        "word": "ナメクジウオ",
+        "synset": "wnja-01467804-n"
+      },
+      {
+        "word": "海鞘",
+        "synset": "wnja-01469103-n"
+      },
+      {
+        "word": "サルパ",
+        "synset": "wnja-01469723-n"
+      },
+      {
+        "word": "ヤツメウナギ",
+        "synset": "wnja-01477525-n"
+      },
+      {
+        "word": "メクラウナギ",
+        "synset": "wnja-01478511-n"
+      },
+      {
+        "word": "サメ",
+        "synset": "wnja-01482330-n"
+      },
+      {
+        "word": "アオザメ",
+        "synset": "wnja-01484097-n"
+      },
+      {
+        "word": "ホホジロザメ",
+        "synset": "wnja-01484850-n"
+      },
+      {
+        "word": "ウバザメ",
+        "synset": "wnja-01485479-n"
+      },
+      {
+        "word": "オナガザメ",
+        "synset": "wnja-01486010-n"
+      },
+      {
+        "word": "カーペットシャーク",
+        "synset": "wnja-01486540-n"
+      },
+      {
+        "word": "ナースシャーク",
+        "synset": "wnja-01486838-n"
+      },
+      {
+        "word": "ジンベエザメ",
+        "synset": "wnja-01488038-n"
+      },
+      {
+        "word": "ヨゴレザメ",
+        "synset": "wnja-01490112-n"
+      },
+      {
+        "word": "ヨシキリザメ",
+        "synset": "wnja-01491006-n"
+      },
+      {
+        "word": "イタチザメ",
+        "synset": "wnja-01491361-n"
+      },
+      {
+        "word": "シュモクザメ",
+        "synset": "wnja-01494475-n"
+      },
+      {
+        "word": "エイ",
+        "synset": "wnja-01495701-n"
+      },
+      {
+        "word": "ノコギリエイ",
+        "synset": "wnja-01497118-n"
+      },
+      {
+        "word": "アカエイ",
+        "synset": "wnja-01498041-n"
+      },
+      {
+        "word": "オニイトマキエイ",
+        "synset": "wnja-01500091-n"
+      },
+      {
+        "word": "ガンギエイ",
+        "synset": "wnja-01501160-n"
+      },
+      {
+        "word": "ダチョウ",
+        "synset": "wnja-01518878-n"
+      },
+      {
+        "word": "ヒクイドリ",
+        "synset": "wnja-01519563-n"
+      },
+      {
+        "word": "エミュー",
+        "synset": "wnja-01519873-n"
+      },
+      {
+        "word": "レア",
+        "synset": "wnja-01521399-n"
+      },
+      {
+        "word": "ナキドリ",
+        "synset": "wnja-01526521-n"
+      },
+      {
+        "word": "ミツスイ",
+        "synset": "wnja-01526766-n"
+      },
+      {
+        "word": "スズメ",
+        "synset": "wnja-01527347-n"
+      },
+      {
+        "word": "ヒバリ",
+        "synset": "wnja-01527917-n"
+      },
+      {
+        "word": "セキレイ",
+        "synset": "wnja-01528396-n"
+      },
+      {
+        "word": "タヒバリ",
+        "synset": "wnja-01528654-n"
+      },
+      {
+        "word": "フィンチ",
+        "synset": "wnja-01529672-n"
+      },
+      {
+        "word": "ズアオアトリ",
+        "synset": "wnja-01530439-n"
+      },
+      {
+        "word": "アトリ",
+        "synset": "wnja-01530575-n"
+      },
+      {
+        "word": "マヒワ",
+        "synset": "wnja-01531512-n"
+      },
+      {
+        "word": "ベニヒワ",
+        "synset": "wnja-01531971-n"
+      },
+      {
+        "word": "メキシコマシコ",
+        "synset": "wnja-01532829-n"
+      },
+      {
+        "word": "ムラサキマシコ",
+        "synset": "wnja-01533000-n"
+      },
+      {
+        "word": "カナリア",
+        "synset": "wnja-01533339-n"
+      },
+      {
+        "word": "イスカ",
+        "synset": "wnja-01533893-n"
+      },
+      {
+        "word": "ミヤマシトド",
+        "synset": "wnja-01535690-n"
+      },
+      {
+        "word": "ヒメドリ",
+        "synset": "wnja-01536186-n"
+      },
+      {
+        "word": "ルリノジコ",
+        "synset": "wnja-01537544-n"
+      },
+      {
+        "word": "オオジュリン",
+        "synset": "wnja-01538059-n"
+      },
+      {
+        "word": "シマアオジ",
+        "synset": "wnja-01538362-n"
+      },
+      {
+        "word": "ユキホオジロ",
+        "synset": "wnja-01538630-n"
+      },
+      {
+        "word": "キビタイシメ",
+        "synset": "wnja-01540566-n"
+      },
+      {
+        "word": "ギンザンマシコ",
+        "synset": "wnja-01541102-n"
+      },
+      {
+        "word": "ムネアカコウカンチョウ",
+        "synset": "wnja-01541760-n"
+      },
+      {
+        "word": "ベニスズメ",
+        "synset": "wnja-01543936-n"
+      },
+      {
+        "word": "キンカチョウ",
+        "synset": "wnja-01544389-n"
+      },
+      {
+        "word": "ニシタイランチョウ",
+        "synset": "wnja-01548492-n"
+      },
+      {
+        "word": "オウサマタイランチョウ",
+        "synset": "wnja-01548865-n"
+      },
+      {
+        "word": "ニシモリタイランチョウ",
+        "synset": "wnja-01549641-n"
+      },
+      {
+        "word": "オニキバシリ",
+        "synset": "wnja-01554448-n"
+      },
+      {
+        "word": "ツグミ",
+        "synset": "wnja-01557185-n"
+      },
+      {
+        "word": "ヤドリギツグミ",
+        "synset": "wnja-01557962-n"
+      },
+      {
+        "word": "ウタツグミ",
+        "synset": "wnja-01558149-n"
+      },
+      {
+        "word": "ノハラツグミ",
+        "synset": "wnja-01558307-n"
+      },
+      {
+        "word": "コマツグミ",
+        "synset": "wnja-01558993-n"
+      },
+      {
+        "word": "チャイロコツグミ",
+        "synset": "wnja-01559477-n"
+      },
+      {
+        "word": "モリツグミ",
+        "synset": "wnja-01559804-n"
+      },
+      {
+        "word": "ナイチンゲール",
+        "synset": "wnja-01560105-n"
+      },
+      {
+        "word": "キクイタダキ",
+        "synset": "wnja-01563945-n"
+      },
+      {
+        "word": "ウィルソンアメリカムシクイ",
+        "synset": "wnja-01567879-n"
+      },
+      {
+        "word": "ホオアカアメリカムシクイ",
+        "synset": "wnja-01568720-n"
+      },
+      {
+        "word": "キイロアメリカムシクイ",
+        "synset": "wnja-01568892-n"
+      },
+      {
+        "word": "オオアメリカムシクイ",
+        "synset": "wnja-01569971-n"
+      },
+      {
+        "word": "カマドムシクイ",
+        "synset": "wnja-01570267-n"
+      },
+      {
+        "word": "イエロースロート",
+        "synset": "wnja-01570676-n"
+      },
+      {
+        "word": "カオグロアメリカムシクイ",
+        "synset": "wnja-01570839-n"
+      },
+      {
+        "word": "ボルチモアムクドリモドキ",
+        "synset": "wnja-01572489-n"
+      },
+      {
+        "word": "マキバドリ",
+        "synset": "wnja-01573074-n"
+      },
+      {
+        "word": "ニシマキバドリ",
+        "synset": "wnja-01573360-n"
+      },
+      {
+        "word": "クロムクドリモドキ",
+        "synset": "wnja-01574801-n"
+      },
+      {
+        "word": "ハゴロモガラス",
+        "synset": "wnja-01575401-n"
+      },
+      {
+        "word": "ニシコウライウグイス",
+        "synset": "wnja-01576076-n"
+      },
+      {
+        "word": "マイナ",
+        "synset": "wnja-01577659-n"
+      },
+      {
+        "word": "キュウカンチョウ",
+        "synset": "wnja-01578180-n"
+      },
+      {
+        "word": "カラス",
+        "synset": "wnja-01579028-n"
+      },
+      {
+        "word": "ワタリガラス",
+        "synset": "wnja-01579260-n"
+      },
+      {
+        "word": "ミヤマガラス",
+        "synset": "wnja-01579410-n"
+      },
+      {
+        "word": "ベニハシガラス",
+        "synset": "wnja-01579729-n"
+      },
+      {
+        "word": "カケス",
+        "synset": "wnja-01580077-n"
+      },
+      {
+        "word": "カナダカケス",
+        "synset": "wnja-01581166-n"
+      },
+      {
+        "word": "ホシガラス",
+        "synset": "wnja-01581730-n"
+      },
+      {
+        "word": "カササギ",
+        "synset": "wnja-01582220-n"
+      },
+      {
+        "word": "カササギフエガラス",
+        "synset": "wnja-01582856-n"
+      },
+      {
+        "word": "ミソサザイ",
+        "synset": "wnja-01584225-n"
+      },
+      {
+        "word": "イエミソサザイ",
+        "synset": "wnja-01584853-n"
+      },
+      {
+        "word": "ネコマネドリ",
+        "synset": "wnja-01587526-n"
+      },
+      {
+        "word": "チャイロツグミモドキ",
+        "synset": "wnja-01588002-n"
+      },
+      {
+        "word": "キバシリ",
+        "synset": "wnja-01589286-n"
+      },
+      {
+        "word": "アメリカキバシリ",
+        "synset": "wnja-01589718-n"
+      },
+      {
+        "word": "ゴジュウカラ",
+        "synset": "wnja-01590583-n"
+      },
+      {
+        "word": "ムネアカゴジュウカラ",
+        "synset": "wnja-01591123-n"
+      },
+      {
+        "word": "ムナジロゴジュウカラ",
+        "synset": "wnja-01591301-n"
+      },
+      {
+        "word": "エボシガラ",
+        "synset": "wnja-01592387-n"
+      },
+      {
+        "word": "アオガラ",
+        "synset": "wnja-01592694-n"
+      },
+      {
+        "word": "ヤブガラ",
+        "synset": "wnja-01593028-n"
+      },
+      {
+        "word": "アメリカツリスガラ",
+        "synset": "wnja-01593553-n"
+      },
+      {
+        "word": "ツバメ",
+        "synset": "wnja-01594787-n"
+      },
+      {
+        "word": "サンショクツバメ",
+        "synset": "wnja-01594968-n"
+      },
+      {
+        "word": "イワツバメ",
+        "synset": "wnja-01595974-n"
+      },
+      {
+        "word": "ショウドウツバメ",
+        "synset": "wnja-01596273-n"
+      },
+      {
+        "word": "モズ",
+        "synset": "wnja-01598588-n"
+      },
+      {
+        "word": "アメリカオオモズ",
+        "synset": "wnja-01599556-n"
+      },
+      {
+        "word": "カワガラス",
+        "synset": "wnja-01601694-n"
+      },
+      {
+        "word": "アカメモズモドキ",
+        "synset": "wnja-01602832-n"
+      },
+      {
+        "word": "レンジャク",
+        "synset": "wnja-01603600-n"
+      },
+      {
+        "word": "ヒメレンジャク",
+        "synset": "wnja-01603812-n"
+      },
+      {
+        "word": "キレンジャク",
+        "synset": "wnja-01603953-n"
+      },
+      {
+        "word": "タカ",
+        "synset": "wnja-01605630-n"
+      },
+      {
+        "word": "オオタカ",
+        "synset": "wnja-01606522-n"
+      },
+      {
+        "word": "ハイタカ",
+        "synset": "wnja-01606672-n"
+      },
+      {
+        "word": "クーパーハイタカ",
+        "synset": "wnja-01606809-n"
+      },
+      {
+        "word": "アカオノスリ",
+        "synset": "wnja-01607429-n"
+      },
+      {
+        "word": "ノスリ",
+        "synset": "wnja-01607962-n"
+      },
+      {
+        "word": "ヒメハイイロチュウヒ",
+        "synset": "wnja-01610100-n"
+      },
+      {
+        "word": "チュウヒワシ",
+        "synset": "wnja-01610552-n"
+      },
+      {
+        "word": "ハヤブサ",
+        "synset": "wnja-01610955-n"
+      },
+      {
+        "word": "チョウゲンボウ",
+        "synset": "wnja-01611969-n"
+      },
+      {
+        "word": "アメリカチョウゲンボウ",
+        "synset": "wnja-01612122-n"
+      },
+      {
+        "word": "カラカラ",
+        "synset": "wnja-01612628-n"
+      },
+      {
+        "word": "ワシ",
+        "synset": "wnja-01613294-n"
+      },
+      {
+        "word": "イヌワシ",
+        "synset": "wnja-01614343-n"
+      },
+      {
+        "word": "オオワシ",
+        "synset": "wnja-01615303-n"
+      },
+      {
+        "word": "オジロワシ",
+        "synset": "wnja-01615458-n"
+      },
+      {
+        "word": "ミサゴ",
+        "synset": "wnja-01616086-n"
+      },
+      {
+        "word": "ハゲタカ",
+        "synset": "wnja-01616318-n"
+      },
+      {
+        "word": "シロエリハゲワシ",
+        "synset": "wnja-01617095-n"
+      },
+      {
+        "word": "エジプトハゲワシ",
+        "synset": "wnja-01617766-n"
+      },
+      {
+        "word": "ヒメコンドル",
+        "synset": "wnja-01619310-n"
+      },
+      {
+        "word": "コンドル",
+        "synset": "wnja-01619536-n"
+      },
+      {
+        "word": "トキイロコンドル",
+        "synset": "wnja-01620735-n"
+      },
+      {
+        "word": "フクロウ",
+        "synset": "wnja-01621127-n"
+      },
+      {
+        "word": "コキンメフクロウ",
+        "synset": "wnja-01622120-n"
+      },
+      {
+        "word": "ミミズク",
+        "synset": "wnja-01622352-n"
+      },
+      {
+        "word": "アメリカワシミミズク",
+        "synset": "wnja-01622483-n"
+      },
+      {
+        "word": "カラフトフクロウ",
+        "synset": "wnja-01622779-n"
+      },
+      {
+        "word": "モリフクロウ",
+        "synset": "wnja-01622959-n"
+      },
+      {
+        "word": "アメリカフクロウ",
+        "synset": "wnja-01623110-n"
+      },
+      {
+        "word": "ヒガシアメリカオオコノハズク",
+        "synset": "wnja-01623425-n"
+      },
+      {
+        "word": "トラフズク",
+        "synset": "wnja-01624833-n"
+      },
+      {
+        "word": "サンショウウオ",
+        "synset": "wnja-01629276-n"
+      },
+      {
+        "word": "ファイアーサラマンダー",
+        "synset": "wnja-01629962-n"
+      },
+      {
+        "word": "ウーパールーパー",
+        "synset": "wnja-01632777-n"
+      },
+      {
+        "word": "オオサンショウウオ",
+        "synset": "wnja-01633781-n"
+      },
+      {
+        "word": "ホライモリ",
+        "synset": "wnja-01634227-n"
+      },
+      {
+        "word": "アンヒューマ",
+        "synset": "wnja-01638722-n"
+      },
+      {
+        "word": "カエル",
+        "synset": "wnja-01639765-n"
+      },
+      {
+        "word": "ウシガエル",
+        "synset": "wnja-01641577-n"
+      },
+      {
+        "word": "アオガエル",
+        "synset": "wnja-01641739-n"
+      },
+      {
+        "word": "ゴライアスガエル",
+        "synset": "wnja-01642097-n"
+      },
+      {
+        "word": "アフリカツメガエル",
+        "synset": "wnja-01654637-n"
+      },
+      {
+        "word": "カメ",
+        "synset": "wnja-01662784-n"
+      },
+      {
+        "word": "ウミガメ",
+        "synset": "wnja-01663401-n"
+      },
+      {
+        "word": "アカウミガメ",
+        "synset": "wnja-01664065-n"
+      },
+      {
+        "word": "ヒメウミガメ",
+        "synset": "wnja-01664674-n"
+      },
+      {
+        "word": "タイマイ",
+        "synset": "wnja-01664990-n"
+      },
+      {
+        "word": "ワニガメ",
+        "synset": "wnja-01666585-n"
+      },
+      {
+        "word": "ゾウガメ",
+        "synset": "wnja-01670802-n"
+      },
+      {
+        "word": "スッポン",
+        "synset": "wnja-01672032-n"
+      },
+      {
+        "word": "トカゲ",
+        "synset": "wnja-01674464-n"
+      },
+      {
+        "word": "ヤモリ",
+        "synset": "wnja-01674990-n"
+      },
+      {
+        "word": "カメレオン",
+        "synset": "wnja-01693783-n"
+      },
+      {
+        "word": "クロコダイル",
+        "synset": "wnja-01697178-n"
+      },
+      {
+        "word": "イリエワニ",
+        "synset": "wnja-01697611-n"
+      },
+      {
+        "word": "アリゲーター",
+        "synset": "wnja-01698434-n"
+      },
+      {
+        "word": "カイマン",
+        "synset": "wnja-01699040-n"
+      },
+      {
+        "word": "ピサノサウルス",
+        "synset": "wnja-01700924-n"
+      },
+      {
+        "word": "スタウリコサウルス",
+        "synset": "wnja-01701205-n"
+      },
+      {
+        "word": "ステゴサウルス",
+        "synset": "wnja-01701859-n"
+      },
+      {
+        "word": "アンキロサウルス",
+        "synset": "wnja-01702256-n"
+      },
+      {
+        "word": "エドモントニア",
+        "synset": "wnja-01702479-n"
+      },
+      {
+        "word": "パキケファロサウルス",
+        "synset": "wnja-01703161-n"
+      },
+      {
+        "word": "プロトケラトプス",
+        "synset": "wnja-01704103-n"
+      },
+      {
+        "word": "トリケラトプス",
+        "synset": "wnja-01704323-n"
+      },
+      {
+        "word": "スティラコサウルス",
+        "synset": "wnja-01704626-n"
+      },
+      {
+        "word": "トラコドン",
+        "synset": "wnja-01707294-n"
+      },
+      {
+        "word": "イグアノドン",
+        "synset": "wnja-01707698-n"
+      },
+      {
+        "word": "ディプロドクス",
+        "synset": "wnja-01710177-n"
+      },
+      {
+        "word": "ティラノサウルス",
+        "synset": "wnja-01713764-n"
+      },
+      {
+        "word": "アロサウルス",
+        "synset": "wnja-01714231-n"
+      },
+      {
+        "word": "コンプソグナトゥス",
+        "synset": "wnja-01714536-n"
+      },
+      {
+        "word": "ヘレラサウルス",
+        "synset": "wnja-01714843-n"
+      },
+      {
+        "word": "メガロサウルス",
+        "synset": "wnja-01715518-n"
+      },
+      {
+        "word": "デイノニクス",
+        "synset": "wnja-01718096-n"
+      },
+      {
+        "word": "エダフォサウルス",
+        "synset": "wnja-01722389-n"
+      },
+      {
+        "word": "ディメトロドン",
+        "synset": "wnja-01722670-n"
+      },
+      {
+        "word": "イクチオサウルス",
+        "synset": "wnja-01724840-n"
+      },
+      {
+        "word": "ヘビ",
+        "synset": "wnja-01726692-n"
+      },
+      {
+        "word": "ナミヘビ",
+        "synset": "wnja-01727646-n"
+      },
+      {
+        "word": "ボアコンストリクター",
+        "synset": "wnja-01742172-n"
+      },
+      {
+        "word": "アナコンダ",
+        "synset": "wnja-01743086-n"
+      },
+      {
+        "word": "アミメニシキヘビ",
+        "synset": "wnja-01744100-n"
+      },
+      {
+        "word": "アフリカニシキヘビ",
+        "synset": "wnja-01744401-n"
+      },
+      {
+        "word": "アメジストニシキヘビ",
+        "synset": "wnja-01744555-n"
+      },
+      {
+        "word": "コブラ",
+        "synset": "wnja-01747885-n"
+      },
+      {
+        "word": "エジプトコブラ",
+        "synset": "wnja-01748389-n"
+      },
+      {
+        "word": "ブラックマンバ",
+        "synset": "wnja-01749742-n"
+      },
+      {
+        "word": "タイパン",
+        "synset": "wnja-01751472-n"
+      },
+      {
+        "word": "ウミヘビ",
+        "synset": "wnja-01751748-n"
+      },
+      {
+        "word": "パフアダー",
+        "synset": "wnja-01753032-n"
+      },
+      {
+        "word": "ガラガラヘビ",
+        "synset": "wnja-01754876-n"
+      },
+      {
+        "word": "ヨコバイガラガラヘビ",
+        "synset": "wnja-01756291-n"
+      },
+      {
+        "word": "サソリ",
+        "synset": "wnja-01770393-n"
+      },
+      {
+        "word": "カニムシ",
+        "synset": "wnja-01770795-n"
+      },
+      {
+        "word": "クモ",
+        "synset": "wnja-01772222-n"
+      },
+      {
+        "word": "マダニ",
+        "synset": "wnja-01776705-n"
+      },
+      {
+        "word": "ダニ",
+        "synset": "wnja-01779629-n"
+      },
+      {
+        "word": "ツツガムシ",
+        "synset": "wnja-01781071-n"
+      },
+      {
+        "word": "ハダニ",
+        "synset": "wnja-01782209-n"
+      },
+      {
+        "word": "ゲジ",
+        "synset": "wnja-01785667-n"
+      },
+      {
+        "word": "ウミグモ",
+        "synset": "wnja-01787006-n"
+      },
+      {
+        "word": "カブトガニ",
+        "synset": "wnja-01788291-n"
+      },
+      {
+        "word": "シタムシ",
+        "synset": "wnja-01788864-n"
+      },
+      {
+        "word": "野鶏",
+        "synset": "wnja-01791107-n"
+      },
+      {
+        "word": "セキショクヤケイ",
+        "synset": "wnja-01791463-n"
+      },
+      {
+        "word": "ニワトリ",
+        "synset": "wnja-01791625-n"
+      },
+      {
+        "word": "ターキー",
+        "synset": "wnja-01794158-n"
+      },
+      {
+        "word": "ライチョウ",
+        "synset": "wnja-01796340-n"
+      },
+      {
+        "word": "キジオライチョウ",
+        "synset": "wnja-01797601-n"
+      },
+      {
+        "word": "ツカツクリ",
+        "synset": "wnja-01801088-n"
+      },
+      {
+        "word": "セレベスツカツクリ",
+        "synset": "wnja-01802159-n"
+      },
+      {
+        "word": "キジ",
+        "synset": "wnja-01803078-n"
+      },
+      {
+        "word": "セイラン",
+        "synset": "wnja-01803893-n"
+      },
+      {
+        "word": "キンケイ",
+        "synset": "wnja-01804163-n"
+      },
+      {
+        "word": "クジャク",
+        "synset": "wnja-01805801-n"
+      },
+      {
+        "word": "ウズラ",
+        "synset": "wnja-01806567-n"
+      },
+      {
+        "word": "カンムリウズラ",
+        "synset": "wnja-01806847-n"
+      },
+      {
+        "word": "ハト",
+        "synset": "wnja-01811909-n"
+      },
+      {
+        "word": "カワラバト",
+        "synset": "wnja-01812662-n"
+      },
+      {
+        "word": "モリバト",
+        "synset": "wnja-01813088-n"
+      },
+      {
+        "word": "ナゲキバト",
+        "synset": "wnja-01814217-n"
+      },
+      {
+        "word": "伝書バト",
+        "synset": "wnja-01814921-n"
+      },
+      {
+        "word": "サケイ",
+        "synset": "wnja-01816474-n"
+      },
+      {
+        "word": "オウム",
+        "synset": "wnja-01816887-n"
+      },
+      {
+        "word": "インコ",
+        "synset": "wnja-01821203-n"
+      },
+      {
+        "word": "セキセイインコ",
+        "synset": "wnja-01821869-n"
+      },
+      {
+        "word": "カッコウ",
+        "synset": "wnja-01823013-n"
+      },
+      {
+        "word": "サイチョウ",
+        "synset": "wnja-01829413-n"
+      },
+      {
+        "word": "ヤツガシラ",
+        "synset": "wnja-01829869-n"
+      },
+      {
+        "word": "アマツバメ",
+        "synset": "wnja-01832167-n"
+      },
+      {
+        "word": "エントツアマツバメ",
+        "synset": "wnja-01832813-n"
+      },
+      {
+        "word": "ヨタカ",
+        "synset": "wnja-01835276-n"
+      },
+      {
+        "word": "ヨーロッパヨタカ",
+        "synset": "wnja-01835769-n"
+      },
+      {
+        "word": "キツツキ",
+        "synset": "wnja-01838598-n"
+      },
+      {
+        "word": "アオゲラ",
+        "synset": "wnja-01839086-n"
+      },
+      {
+        "word": "アリスイ",
+        "synset": "wnja-01841679-n"
+      },
+      {
+        "word": "オオハシ",
+        "synset": "wnja-01843383-n"
+      },
+      {
+        "word": "ケツァール",
+        "synset": "wnja-01844551-n"
+      },
+      {
+        "word": "アヒル",
+        "synset": "wnja-01846331-n"
+      },
+      {
+        "word": "マガモ",
+        "synset": "wnja-01847806-n"
+      },
+      {
+        "word": "アメリカコガモ",
+        "synset": "wnja-01848323-n"
+      },
+      {
+        "word": "シマアジ",
+        "synset": "wnja-01848555-n"
+      },
+      {
+        "word": "ヒドリガモ",
+        "synset": "wnja-01848648-n"
+      },
+      {
+        "word": "オナガガモ",
+        "synset": "wnja-01849157-n"
+      },
+      {
+        "word": "アカオタテガモ",
+        "synset": "wnja-01849863-n"
+      },
+      {
+        "word": "ヒメハジロ",
+        "synset": "wnja-01850192-n"
+      },
+      {
+        "word": "キタホオジロガモ",
+        "synset": "wnja-01850553-n"
+      },
+      {
+        "word": "オオホシハジロ",
+        "synset": "wnja-01850873-n"
+      },
+      {
+        "word": "ホシハジロ",
+        "synset": "wnja-01851038-n"
+      },
+      {
+        "word": "コスズガモ",
+        "synset": "wnja-01851731-n"
+      },
+      {
+        "word": "アメリカオシ",
+        "synset": "wnja-01852142-n"
+      },
+      {
+        "word": "オシドリ",
+        "synset": "wnja-01852400-n"
+      },
+      {
+        "word": "バリケン",
+        "synset": "wnja-01852671-n"
+      },
+      {
+        "word": "クロガモ",
+        "synset": "wnja-01853498-n"
+      },
+      {
+        "word": "アイサ",
+        "synset": "wnja-01854415-n"
+      },
+      {
+        "word": "ガチョウ",
+        "synset": "wnja-01855672-n"
+      },
+      {
+        "word": "ハイイロガン",
+        "synset": "wnja-01856553-n"
+      },
+      {
+        "word": "ハクガン",
+        "synset": "wnja-01857079-n"
+      },
+      {
+        "word": "カオジロガン",
+        "synset": "wnja-01857851-n"
+      },
+      {
+        "word": "コブハクチョウ",
+        "synset": "wnja-01859190-n"
+      },
+      {
+        "word": "コハクチョウ",
+        "synset": "wnja-01859689-n"
+      },
+      {
+        "word": "ナキハクチョウ",
+        "synset": "wnja-01860002-n"
+      },
+      {
+        "word": "コクチョウ",
+        "synset": "wnja-01860187-n"
+      },
+      {
+        "word": "ハリモグラ",
+        "synset": "wnja-01872401-n"
+      },
+      {
+        "word": "オポッサム",
+        "synset": "wnja-01874928-n"
+      },
+      {
+        "word": "カンガルー",
+        "synset": "wnja-01877134-n"
+      },
+      {
+        "word": "ワラビー",
+        "synset": "wnja-01877812-n"
+      },
+      {
+        "word": "キノボリカンガルー",
+        "synset": "wnja-01879509-n"
+      },
+      {
+        "word": "ニオイネズミカンガルー",
+        "synset": "wnja-01879837-n"
+      },
+      {
+        "word": "コアラ",
+        "synset": "wnja-01882714-n"
+      },
+      {
+        "word": "ウォンバット",
+        "synset": "wnja-01883070-n"
+      },
+      {
+        "word": "モグラ",
+        "synset": "wnja-01889520-n"
+      },
+      {
+        "word": "ヒメコミミトガリネズミ",
+        "synset": "wnja-01893399-n"
+      },
+      {
+        "word": "ハリネズミ",
+        "synset": "wnja-01893825-n"
+      },
+      {
+        "word": "テンレック",
+        "synset": "wnja-01894207-n"
+      },
+      {
+        "word": "クラゲ",
+        "synset": "wnja-01910252-n"
+      },
+      {
+        "word": "ヒドラ",
+        "synset": "wnja-01912152-n"
+      },
+      {
+        "word": "カツオノエボシ",
+        "synset": "wnja-01913166-n"
+      },
+      {
+        "word": "ウミエラ",
+        "synset": "wnja-01915700-n"
+      },
+      {
+        "word": "肝蛭",
+        "synset": "wnja-01926379-n"
+      },
+      {
+        "word": "ジュウケツキュウチュウ",
+        "synset": "wnja-01927159-n"
+      },
+      {
+        "word": "ジョウチュウ",
+        "synset": "wnja-01927456-n"
+      },
+      {
+        "word": "カイチュウ",
+        "synset": "wnja-01930112-n"
+      },
+      {
+        "word": "カギムシ",
+        "synset": "wnja-01933151-n"
+      },
+      {
+        "word": "ミミズ",
+        "synset": "wnja-01935395-n"
+      },
+      {
+        "word": "イトメ",
+        "synset": "wnja-01936671-n"
+      },
+      {
+        "word": "ヒル",
+        "synset": "wnja-01937909-n"
+      },
+      {
+        "word": "ツノガイ",
+        "synset": "wnja-01941340-n"
+      },
+      {
+        "word": "セイヨウトコブシ",
+        "synset": "wnja-01943087-n"
+      },
+      {
+        "word": "カタツムリ",
+        "synset": "wnja-01944390-n"
+      },
+      {
+        "word": "ナメクジ",
+        "synset": "wnja-01945685-n"
+      },
+      {
+        "word": "ヒザラガイ",
+        "synset": "wnja-01955084-n"
+      },
+      {
+        "word": "マテガイ",
+        "synset": "wnja-01959029-n"
+      },
+      {
+        "word": "オオシャコガイ",
+        "synset": "wnja-01959492-n"
+      },
+      {
+        "word": "ホタテ",
+        "synset": "wnja-01965889-n"
+      },
+      {
+        "word": "フナクイムシ",
+        "synset": "wnja-01967094-n"
+      },
+      {
+        "word": "オウムガイ",
+        "synset": "wnja-01968897-n"
+      },
+      {
+        "word": "アオイガイ",
+        "synset": "wnja-01970667-n"
+      },
+      {
+        "word": "イカ",
+        "synset": "wnja-01971280-n"
+      },
+      {
+        "word": "ダイオウイカ",
+        "synset": "wnja-01972131-n"
+      },
+      {
+        "word": "コウイカ",
+        "synset": "wnja-01972541-n"
+      },
+      {
+        "word": "カニ",
+        "synset": "wnja-01976957-n"
+      },
+      {
+        "word": "カクレガニ",
+        "synset": "wnja-01980655-n"
+      },
+      {
+        "word": "クモガニ",
+        "synset": "wnja-01981702-n"
+      },
+      {
+        "word": "タカアシガニ",
+        "synset": "wnja-01982347-n"
+      },
+      {
+        "word": "ザリガニ",
+        "synset": "wnja-01985128-n"
+      },
+      {
+        "word": "ヤドカリ",
+        "synset": "wnja-01986214-n"
+      },
+      {
+        "word": "テナガエビ",
+        "synset": "wnja-01987545-n"
+      },
+      {
+        "word": "オキアミ",
+        "synset": "wnja-01988701-n"
+      },
+      {
+        "word": "ワラジムシ",
+        "synset": "wnja-01992262-n"
+      },
+      {
+        "word": "フナムシ",
+        "synset": "wnja-01992423-n"
+      },
+      {
+        "word": "ワレカラ",
+        "synset": "wnja-01993525-n"
+      },
+      {
+        "word": "ミジンコ",
+        "synset": "wnja-01994910-n"
+      },
+      {
+        "word": "ホウネンエビ",
+        "synset": "wnja-01995514-n"
+      },
+      {
+        "word": "シーモンキー",
+        "synset": "wnja-01995686-n"
+      },
+      {
+        "word": "ケンミジンコ",
+        "synset": "wnja-01997119-n"
+      },
+      {
+        "word": "チョウ",
+        "synset": "wnja-01997605-n"
+      },
+      {
+        "word": "エボシガイ",
+        "synset": "wnja-01999186-n"
+      },
+      {
+        "word": "コウノトリ",
+        "synset": "wnja-02002556-n"
+      },
+      {
+        "word": "ナベコウ",
+        "synset": "wnja-02002724-n"
+      },
+      {
+        "word": "セイタカコウ",
+        "synset": "wnja-02004492-n"
+      },
+      {
+        "word": "ハシビロコウ",
+        "synset": "wnja-02005399-n"
+      },
+      {
+        "word": "アフリカクロトキ",
+        "synset": "wnja-02006364-n"
+      },
+      {
+        "word": "ヘラサギ",
+        "synset": "wnja-02006656-n"
+      },
+      {
+        "word": "フラミンゴ",
+        "synset": "wnja-02007558-n"
+      },
+      {
+        "word": "アオサギ",
+        "synset": "wnja-02008041-n"
+      },
+      {
+        "word": "ユキコサギ",
+        "synset": "wnja-02009380-n"
+      },
+      {
+        "word": "コサギ",
+        "synset": "wnja-02009508-n"
+      },
+      {
+        "word": "アマサギ",
+        "synset": "wnja-02010272-n"
+      },
+      {
+        "word": "ゴイサギ",
+        "synset": "wnja-02010453-n"
+      },
+      {
+        "word": "アメリカサンカノゴイ",
+        "synset": "wnja-02011805-n"
+      },
+      {
+        "word": "ツル",
+        "synset": "wnja-02012849-n"
+      },
+      {
+        "word": "アメリカシロヅル",
+        "synset": "wnja-02013177-n"
+      },
+      {
+        "word": "オオバン",
+        "synset": "wnja-02018027-n"
+      },
+      {
+        "word": "アメリカオオバン",
+        "synset": "wnja-02018207-n"
+      },
+      {
+        "word": "チドリ",
+        "synset": "wnja-02023341-n"
+      },
+      {
+        "word": "フタオビチドリ",
+        "synset": "wnja-02023992-n"
+      },
+      {
+        "word": "タゲリ",
+        "synset": "wnja-02024763-n"
+      },
+      {
+        "word": "アメリカイソシギ",
+        "synset": "wnja-02027075-n"
+      },
+      {
+        "word": "アメリカヒバリシギ",
+        "synset": "wnja-02027357-n"
+      },
+      {
+        "word": "ハマシギ",
+        "synset": "wnja-02027492-n"
+      },
+      {
+        "word": "アオアシシギ",
+        "synset": "wnja-02027897-n"
+      },
+      {
+        "word": "オオキアシシギ",
+        "synset": "wnja-02028342-n"
+      },
+      {
+        "word": "コキアシシギ",
+        "synset": "wnja-02028451-n"
+      },
+      {
+        "word": "アメリカウズラシギ",
+        "synset": "wnja-02028727-n"
+      },
+      {
+        "word": "サルハマシギ",
+        "synset": "wnja-02029087-n"
+      },
+      {
+        "word": "ミユビシギ",
+        "synset": "wnja-02029378-n"
+      },
+      {
+        "word": "マキバシギ",
+        "synset": "wnja-02029706-n"
+      },
+      {
+        "word": "タシギ",
+        "synset": "wnja-02032222-n"
+      },
+      {
+        "word": "セイタカシギ",
+        "synset": "wnja-02035210-n"
+      },
+      {
+        "word": "クロセイタカシギ",
+        "synset": "wnja-02035656-n"
+      },
+      {
+        "word": "ミヤコドリ",
+        "synset": "wnja-02037110-n"
+      },
+      {
+        "word": "ハイイロヒレアシシギ",
+        "synset": "wnja-02037869-n"
+      },
+      {
+        "word": "スナバシリ",
+        "synset": "wnja-02039171-n"
+      },
+      {
+        "word": "カモメ",
+        "synset": "wnja-02041246-n"
+      },
+      {
+        "word": "オオカモメ",
+        "synset": "wnja-02041875-n"
+      },
+      {
+        "word": "セグロカモメ",
+        "synset": "wnja-02042046-n"
+      },
+      {
+        "word": "ゾウゲカモメ",
+        "synset": "wnja-02042472-n"
+      },
+      {
+        "word": "アジサシ",
+        "synset": "wnja-02043063-n"
+      },
+      {
+        "word": "オオトウゾクカモメ",
+        "synset": "wnja-02044908-n"
+      },
+      {
+        "word": "オオハシウミガラス",
+        "synset": "wnja-02045864-n"
+      },
+      {
+        "word": "ヒメウミスズメ",
+        "synset": "wnja-02046171-n"
+      },
+      {
+        "word": "ハジロウミバト",
+        "synset": "wnja-02046939-n"
+      },
+      {
+        "word": "ウミガラス",
+        "synset": "wnja-02047260-n"
+      },
+      {
+        "word": "エトピリカ",
+        "synset": "wnja-02048353-n"
+      },
+      {
+        "word": "アビ",
+        "synset": "wnja-02049088-n"
+      },
+      {
+        "word": "カンムリカイツブリ",
+        "synset": "wnja-02050313-n"
+      },
+      {
+        "word": "アカエリカイツブリ",
+        "synset": "wnja-02050442-n"
+      },
+      {
+        "word": "ハジロカイツブリ",
+        "synset": "wnja-02050586-n"
+      },
+      {
+        "word": "カイツブリ",
+        "synset": "wnja-02050809-n"
+      },
+      {
+        "word": "オビハシカイツブリ",
+        "synset": "wnja-02051059-n"
+      },
+      {
+        "word": "ペリカン",
+        "synset": "wnja-02051845-n"
+      },
+      {
+        "word": "グンカンドリ",
+        "synset": "wnja-02052775-n"
+      },
+      {
+        "word": "ペンギン",
+        "synset": "wnja-02055803-n"
+      },
+      {
+        "word": "アデリーペンギン",
+        "synset": "wnja-02056228-n"
+      },
+      {
+        "word": "ワタリアホウドリ",
+        "synset": "wnja-02058594-n"
+      },
+      {
+        "word": "ミズナギドリ",
+        "synset": "wnja-02060411-n"
+      },
+      {
+        "word": "クジラ",
+        "synset": "wnja-02062744-n"
+      },
+      {
+        "word": "セミクジラ",
+        "synset": "wnja-02063662-n"
+      },
+      {
+        "word": "シロナガスクジラ",
+        "synset": "wnja-02064816-n"
+      },
+      {
+        "word": "ナガスクジラ",
+        "synset": "wnja-02065026-n"
+      },
+      {
+        "word": "イワシクジラ",
+        "synset": "wnja-02065263-n"
+      },
+      {
+        "word": "ザトウクジラ",
+        "synset": "wnja-02065726-n"
+      },
+      {
+        "word": "コククジラ",
+        "synset": "wnja-02066245-n"
+      },
+      {
+        "word": "マッコウクジラ",
+        "synset": "wnja-02067240-n"
+      },
+      {
+        "word": "オガワコマッコウ",
+        "synset": "wnja-02067768-n"
+      },
+      {
+        "word": "イルカ",
+        "synset": "wnja-02068974-n"
+      },
+      {
+        "word": "マイルカ",
+        "synset": "wnja-02069412-n"
+      },
+      {
+        "word": "ハナゴンドウ",
+        "synset": "wnja-02071028-n"
+      },
+      {
+        "word": "シャチ",
+        "synset": "wnja-02071294-n"
+      },
+      {
+        "word": "マナティー",
+        "synset": "wnja-02073831-n"
+      },
+      {
+        "word": "ジュゴン",
+        "synset": "wnja-02074367-n"
+      },
+      {
+        "word": "オットセイ",
+        "synset": "wnja-02077658-n"
+      },
+      {
+        "word": "アシカ",
+        "synset": "wnja-02077923-n"
+      },
+      {
+        "word": "オタリア",
+        "synset": "wnja-02078292-n"
+      },
+      {
+        "word": "カリフォルニアアシカ",
+        "synset": "wnja-02078574-n"
+      },
+      {
+        "word": "アザラシ",
+        "synset": "wnja-02079389-n"
+      },
+      {
+        "word": "アゴヒゲアザラシ",
+        "synset": "wnja-02080713-n"
+      },
+      {
+        "word": "セイウチ",
+        "synset": "wnja-02081571-n"
+      },
+      {
+        "word": "チワワ",
+        "synset": "wnja-02085620-n"
+      },
+      {
+        "word": "マルチーズ",
+        "synset": "wnja-02085936-n"
+      },
+      {
+        "word": "ペキニーズ",
+        "synset": "wnja-02086079-n"
+      },
+      {
+        "word": "シーズー",
+        "synset": "wnja-02086240-n"
+      },
+      {
+        "word": "トイスパニエル",
+        "synset": "wnja-02086346-n"
+      },
+      {
+        "word": "ブレナムスパニエル",
+        "synset": "wnja-02086646-n"
+      },
+      {
+        "word": "キングチャールズスパニエル",
+        "synset": "wnja-02086753-n"
+      },
+      {
+        "word": "パピヨン",
+        "synset": "wnja-02086910-n"
+      },
+      {
+        "word": "トイテリア",
+        "synset": "wnja-02087046-n"
+      },
+      {
+        "word": "アフガンハウンド",
+        "synset": "wnja-02088094-n"
+      },
+      {
+        "word": "バセットハウンド",
+        "synset": "wnja-02088238-n"
+      },
+      {
+        "word": "ビーグル",
+        "synset": "wnja-02088364-n"
+      },
+      {
+        "word": "ブラッドハウンド",
+        "synset": "wnja-02088466-n"
+      },
+      {
+        "word": "ダックスフント",
+        "synset": "wnja-02089232-n"
+      },
+      {
+        "word": "フォックスハウンド",
+        "synset": "wnja-02089555-n"
+      },
+      {
+        "word": "ボルゾイ",
+        "synset": "wnja-02090622-n"
+      },
+      {
+        "word": "アイリッシュウルフハウンド",
+        "synset": "wnja-02090721-n"
+      },
+      {
+        "word": "イタリアン・グレーハウンド",
+        "synset": "wnja-02091032-n"
+      },
+      {
+        "word": "テリア",
+        "synset": "wnja-02092468-n"
+      },
+      {
+        "word": "アメリカン・ピット・ブル・テリア",
+        "synset": "wnja-02093428-n"
+      },
+      {
+        "word": "ベドリントン・テリア",
+        "synset": "wnja-02093647-n"
+      },
+      {
+        "word": "ヨークシャーテリア",
+        "synset": "wnja-02094433-n"
+      },
+      {
+        "word": "フォックステリヤ",
+        "synset": "wnja-02095050-n"
+      },
+      {
+        "word": "ウェルシュテリア",
+        "synset": "wnja-02095727-n"
+      },
+      {
+        "word": "ケアーン・テリア",
+        "synset": "wnja-02096177-n"
+      },
+      {
+        "word": "シュナウザー",
+        "synset": "wnja-02096756-n"
+      },
+      {
+        "word": "ウエスト・ハイランド・ホワイト・テリア",
+        "synset": "wnja-02098286-n"
+      },
+      {
+        "word": "ラブラドール・レトリバー",
+        "synset": "wnja-02099712-n"
+      },
+      {
+        "word": "チェサピーク・ベイ・レトリーバー",
+        "synset": "wnja-02099849-n"
+      },
+      {
+        "word": "セッター",
+        "synset": "wnja-02100399-n"
+      },
+      {
+        "word": "アイリッシュ・セッター",
+        "synset": "wnja-02100877-n"
+      },
+      {
+        "word": "スパニエル",
+        "synset": "wnja-02101108-n"
+      },
+      {
+        "word": "スプリンガースパニエル",
+        "synset": "wnja-02101861-n"
+      },
+      {
+        "word": "イングリッシュ・スプリンガー・スパニエル",
+        "synset": "wnja-02102040-n"
+      },
+      {
+        "word": "ウェルシュスプリンガースパニエル",
+        "synset": "wnja-02102177-n"
+      },
+      {
+        "word": "コッカースパニエル",
+        "synset": "wnja-02102318-n"
+      },
+      {
+        "word": "ウォータースパニエル",
+        "synset": "wnja-02102605-n"
+      },
+      {
+        "word": "シェットランド・シープドッグ",
+        "synset": "wnja-02105855-n"
+      },
+      {
+        "word": "コリー",
+        "synset": "wnja-02106030-n"
+      },
+      {
+        "word": "ボーダー・コリー",
+        "synset": "wnja-02106166-n"
+      },
+      {
+        "word": "バーニーズ・マウンテン・ドッグ",
+        "synset": "wnja-02107683-n"
+      },
+      {
+        "word": "マスティフ",
+        "synset": "wnja-02108254-n"
+      },
+      {
+        "word": "チベタンマスチフ",
+        "synset": "wnja-02108551-n"
+      },
+      {
+        "word": "ブルドッグ",
+        "synset": "wnja-02108672-n"
+      },
+      {
+        "word": "フレンチ・ブルドッグ",
+        "synset": "wnja-02108915-n"
+      },
+      {
+        "word": "エスキモーケン",
+        "synset": "wnja-02109961-n"
+      },
+      {
+        "word": "シベリアンハスキー",
+        "synset": "wnja-02110185-n"
+      },
+      {
+        "word": "パグ",
+        "synset": "wnja-02110958-n"
+      },
+      {
+        "word": "チャウチャウ",
+        "synset": "wnja-02112137-n"
+      },
+      {
+        "word": "グリフォン",
+        "synset": "wnja-02112497-n"
+      },
+      {
+        "word": "ブラバンソングリフォン",
+        "synset": "wnja-02112706-n"
+      },
+      {
+        "word": "ペンブローク",
+        "synset": "wnja-02113023-n"
+      },
+      {
+        "word": "プードル",
+        "synset": "wnja-02113335-n"
+      },
+      {
+        "word": "オオカミ",
+        "synset": "wnja-02114100-n"
+      },
+      {
+        "word": "コヨーテ",
+        "synset": "wnja-02114855-n"
+      },
+      {
+        "word": "ジャッカル",
+        "synset": "wnja-02115096-n"
+      },
+      {
+        "word": "ディンゴ",
+        "synset": "wnja-02115641-n"
+      },
+      {
+        "word": "タヌキ",
+        "synset": "wnja-02116450-n"
+      },
+      {
+        "word": "ハイエナ",
+        "synset": "wnja-02117135-n"
+      },
+      {
+        "word": "ブチハイエナ",
+        "synset": "wnja-02117900-n"
+      },
+      {
+        "word": "キツネ",
+        "synset": "wnja-02118333-n"
+      },
+      {
+        "word": "ホッキョクギツネ",
+        "synset": "wnja-02120079-n"
+      },
+      {
+        "word": "ネコ",
+        "synset": "wnja-02121620-n"
+      },
+      {
+        "word": "ペルシアネコ",
+        "synset": "wnja-02123394-n"
+      },
+      {
+        "word": "シャムネコ",
+        "synset": "wnja-02123597-n"
+      },
+      {
+        "word": "ピューマ",
+        "synset": "wnja-02125311-n"
+      },
+      {
+        "word": "オセロット",
+        "synset": "wnja-02125494-n"
+      },
+      {
+        "word": "サーバル",
+        "synset": "wnja-02126139-n"
+      },
+      {
+        "word": "ベンガルヤマネコ",
+        "synset": "wnja-02126317-n"
+      },
+      {
+        "word": "オオヤマネコ",
+        "synset": "wnja-02127052-n"
+      },
+      {
+        "word": "ボブキャット",
+        "synset": "wnja-02127482-n"
+      },
+      {
+        "word": "カラカル",
+        "synset": "wnja-02127678-n"
+      },
+      {
+        "word": "ヒョウ",
+        "synset": "wnja-02128385-n"
+      },
+      {
+        "word": "ユキヒョウ",
+        "synset": "wnja-02128757-n"
+      },
+      {
+        "word": "トラ",
+        "synset": "wnja-02129604-n"
+      },
+      {
+        "word": "ベンガルトラ",
+        "synset": "wnja-02129837-n"
+      },
+      {
+        "word": "チータ",
+        "synset": "wnja-02130308-n"
+      },
+      {
+        "word": "スミロドン",
+        "synset": "wnja-02130925-n"
+      },
+      {
+        "word": "クマ",
+        "synset": "wnja-02131653-n"
+      },
+      {
+        "word": "ヒグマ",
+        "synset": "wnja-02132136-n"
+      },
+      {
+        "word": "ホッキョクグマ",
+        "synset": "wnja-02134084-n"
+      },
+      {
+        "word": "フォッサ",
+        "synset": "wnja-02136452-n"
+      },
+      {
+        "word": "ジェネット",
+        "synset": "wnja-02137015-n"
+      },
+      {
+        "word": "マングース",
+        "synset": "wnja-02137549-n"
+      },
+      {
+        "word": "ミーアキャット",
+        "synset": "wnja-02138441-n"
+      },
+      {
+        "word": "コウモリ",
+        "synset": "wnja-02139199-n"
+      },
+      {
+        "word": "オオコウモリ",
+        "synset": "wnja-02139671-n"
+      },
+      {
+        "word": "アブラコウモリ",
+        "synset": "wnja-02147947-n"
+      },
+      {
+        "word": "トビムシ",
+        "synset": "wnja-02163297-n"
+      },
+      {
+        "word": "カブトムシ",
+        "synset": "wnja-02164464-n"
+      },
+      {
+        "word": "ホタル",
+        "synset": "wnja-02168245-n"
+      },
+      {
+        "word": "スカラベ",
+        "synset": "wnja-02172182-n"
+      },
+      {
+        "word": "コメツキムシ",
+        "synset": "wnja-02176261-n"
+      },
+      {
+        "word": "ツチハンミョウ",
+        "synset": "wnja-02179012-n"
+      },
+      {
+        "word": "スパニッシュフライ",
+        "synset": "wnja-02179340-n"
+      },
+      {
+        "word": "シラミ",
+        "synset": "wnja-02183857-n"
+      },
+      {
+        "word": "ケジラミ",
+        "synset": "wnja-02185167-n"
+      },
+      {
+        "word": "ハジラミ",
+        "synset": "wnja-02185481-n"
+      },
+      {
+        "word": "ノミ",
+        "synset": "wnja-02186153-n"
+      },
+      {
+        "word": "タマバエ",
+        "synset": "wnja-02189363-n"
+      },
+      {
+        "word": "ハエ",
+        "synset": "wnja-02190166-n"
+      },
+      {
+        "word": "イエバエ",
+        "synset": "wnja-02190790-n"
+      },
+      {
+        "word": "ツェツェバエ",
+        "synset": "wnja-02191273-n"
+      },
+      {
+        "word": "チチュウカイミバエ",
+        "synset": "wnja-02197185-n"
+      },
+      {
+        "word": "ショウジョウバエ",
+        "synset": "wnja-02197689-n"
+      },
+      {
+        "word": "ノサシバエ",
+        "synset": "wnja-02199502-n"
+      },
+      {
+        "word": "アカイエカ",
+        "synset": "wnja-02202006-n"
+      },
+      {
+        "word": "スナバエ",
+        "synset": "wnja-02204249-n"
+      },
+      {
+        "word": "ハチ",
+        "synset": "wnja-02206856-n"
+      },
+      {
+        "word": "ミツバチ",
+        "synset": "wnja-02208280-n"
+      },
+      {
+        "word": "クマバチ",
+        "synset": "wnja-02209354-n"
+      },
+      {
+        "word": "マルハナバチ",
+        "synset": "wnja-02209624-n"
+      },
+      {
+        "word": "ハキリバチ",
+        "synset": "wnja-02211444-n"
+      },
+      {
+        "word": "スズメバチ",
+        "synset": "wnja-02212062-n"
+      },
+      {
+        "word": "タマバチ",
+        "synset": "wnja-02216740-n"
+      },
+      {
+        "word": "バッタ",
+        "synset": "wnja-02226429-n"
+      },
+      {
+        "word": "イナゴ",
+        "synset": "wnja-02226970-n"
+      },
+      {
+        "word": "ダイミョウバッタ",
+        "synset": "wnja-02227247-n"
+      },
+      {
+        "word": "キリギリス",
+        "synset": "wnja-02228341-n"
+      },
+      {
+        "word": "ゴキブリ",
+        "synset": "wnja-02233338-n"
+      },
+      {
+        "word": "ワモンゴキブリ",
+        "synset": "wnja-02234355-n"
+      },
+      {
+        "word": "カマキリ",
+        "synset": "wnja-02236241-n"
+      },
+      {
+        "word": "グンバイムシ",
+        "synset": "wnja-02238594-n"
+      },
+      {
+        "word": "ミズムシ",
+        "synset": "wnja-02243209-n"
+      },
+      {
+        "word": "カイガラムシ",
+        "synset": "wnja-02248510-n"
+      },
+      {
+        "word": "アブラムシ",
+        "synset": "wnja-02252226-n"
+      },
+      {
+        "word": "シミ",
+        "synset": "wnja-02270623-n"
+      },
+      {
+        "word": "マダラシミ",
+        "synset": "wnja-02270945-n"
+      },
+      {
+        "word": "アザミウマ",
+        "synset": "wnja-02271897-n"
+      },
+      {
+        "word": "イチモンジチョウ",
+        "synset": "wnja-02276749-n"
+      },
+      {
+        "word": "ヒョウモンチョウ",
+        "synset": "wnja-02278210-n"
+      },
+      {
+        "word": "クジャクチョウ",
+        "synset": "wnja-02279257-n"
+      },
+      {
+        "word": "モンシロチョウ",
+        "synset": "wnja-02281015-n"
+      },
+      {
+        "word": "カイコ",
+        "synset": "wnja-02300797-n"
+      },
+      {
+        "word": "アメリカシロヒトリ",
+        "synset": "wnja-02308735-n"
+      },
+      {
+        "word": "ケムシ",
+        "synset": "wnja-02310717-n"
+      },
+      {
+        "word": "コケムシ",
+        "synset": "wnja-02313709-n"
+      },
+      {
+        "word": "ヒトデ",
+        "synset": "wnja-02317335-n"
+      },
+      {
+        "word": "クモヒトデ",
+        "synset": "wnja-02317781-n"
+      },
+      {
+        "word": "ウニ",
+        "synset": "wnja-02319095-n"
+      },
+      {
+        "word": "ウミユリ",
+        "synset": "wnja-02320127-n"
+      },
+      {
+        "word": "ウミシダ",
+        "synset": "wnja-02321170-n"
+      },
+      {
+        "word": "ナマコ",
+        "synset": "wnja-02321529-n"
+      },
+      {
+        "word": "ナキウサギ",
+        "synset": "wnja-02328429-n"
+      },
+      {
+        "word": "ネズミ",
+        "synset": "wnja-02330245-n"
+      },
+      {
+        "word": "ハツカネズミ",
+        "synset": "wnja-02332156-n"
+      },
+      {
+        "word": "ドブネズミ",
+        "synset": "wnja-02333546-n"
+      },
+      {
+        "word": "クマネズミ",
+        "synset": "wnja-02333909-n"
+      },
+      {
+        "word": "マスクラット",
+        "synset": "wnja-02338145-n"
+      },
+      {
+        "word": "コットンラット",
+        "synset": "wnja-02338722-n"
+      },
+      {
+        "word": "ハムスター",
+        "synset": "wnja-02342885-n"
+      },
+      {
+        "word": "ゴールデンハムスター",
+        "synset": "wnja-02343320-n"
+      },
+      {
+        "word": "レミング",
+        "synset": "wnja-02344528-n"
+      },
+      {
+        "word": "ヤマアラシ",
+        "synset": "wnja-02346627-n"
+      },
+      {
+        "word": "トビネズミ",
+        "synset": "wnja-02351870-n"
+      },
+      {
+        "word": "ヤマネ",
+        "synset": "wnja-02352591-n"
+      },
+      {
+        "word": "リス",
+        "synset": "wnja-02355227-n"
+      },
+      {
+        "word": "プレーリードッグ",
+        "synset": "wnja-02359324-n"
+      },
+      {
+        "word": "マーモット",
+        "synset": "wnja-02361337-n"
+      },
+      {
+        "word": "ウッドチャック",
+        "synset": "wnja-02361587-n"
+      },
+      {
+        "word": "ビーバー",
+        "synset": "wnja-02363005-n"
+      },
+      {
+        "word": "モルモット",
+        "synset": "wnja-02364673-n"
+      },
+      {
+        "word": "マーラ",
+        "synset": "wnja-02365108-n"
+      },
+      {
+        "word": "カピバラ",
+        "synset": "wnja-02365480-n"
+      },
+      {
+        "word": "アグーチ",
+        "synset": "wnja-02366002-n"
+      },
+      {
+        "word": "ヌートリア",
+        "synset": "wnja-02366959-n"
+      },
+      {
+        "word": "チンチラ",
+        "synset": "wnja-02367492-n"
+      },
+      {
+        "word": "スナネズミ",
+        "synset": "wnja-02369555-n"
+      },
+      {
+        "word": "ハイラックス",
+        "synset": "wnja-02372584-n"
+      },
+      {
+        "word": "ウマ",
+        "synset": "wnja-02374451-n"
+      },
+      {
+        "word": "メソヒップス",
+        "synset": "wnja-02376135-n"
+      },
+      {
+        "word": "ムスタング",
+        "synset": "wnja-02380583-n"
+      },
+      {
+        "word": "ポニー",
+        "synset": "wnja-02382437-n"
+      },
+      {
+        "word": "ハクニー",
+        "synset": "wnja-02386224-n"
+      },
+      {
+        "word": "シャイヤー",
+        "synset": "wnja-02387346-n"
+      },
+      {
+        "word": "ロバ",
+        "synset": "wnja-02389346-n"
+      },
+      {
+        "word": "シマウマ",
+        "synset": "wnja-02391049-n"
+      },
+      {
+        "word": "サイ",
+        "synset": "wnja-02391994-n"
+      },
+      {
+        "word": "クロサイ",
+        "synset": "wnja-02393161-n"
+      },
+      {
+        "word": "バク",
+        "synset": "wnja-02393580-n"
+      },
+      {
+        "word": "ブタ",
+        "synset": "wnja-02395003-n"
+      },
+      {
+        "word": "イノシシ",
+        "synset": "wnja-02396427-n"
+      },
+      {
+        "word": "イボイノシシ",
+        "synset": "wnja-02397096-n"
+      },
+      {
+        "word": "ペッカリー",
+        "synset": "wnja-02397529-n"
+      },
+      {
+        "word": "カバ",
+        "synset": "wnja-02398521-n"
+      },
+      {
+        "word": "ウシ",
+        "synset": "wnja-02402425-n"
+      },
+      {
+        "word": "ロングホーン",
+        "synset": "wnja-02404432-n"
+      },
+      {
+        "word": "ブラウンスイス",
+        "synset": "wnja-02406533-n"
+      },
+      {
+        "word": "ジャージー牛",
+        "synset": "wnja-02406749-n"
+      },
+      {
+        "word": "ガーンジー牛",
+        "synset": "wnja-02407521-n"
+      },
+      {
+        "word": "ヘレフォード",
+        "synset": "wnja-02407625-n"
+      },
+      {
+        "word": "スイギュウ",
+        "synset": "wnja-02408817-n"
+      },
+      {
+        "word": "アノア",
+        "synset": "wnja-02409038-n"
+      },
+      {
+        "word": "バイソン",
+        "synset": "wnja-02410509-n"
+      },
+      {
+        "word": "アメリカバイソン",
+        "synset": "wnja-02410702-n"
+      },
+      {
+        "word": "ヒツジ",
+        "synset": "wnja-02411705-n"
+      },
+      {
+        "word": "ハンプシャー",
+        "synset": "wnja-02413593-n"
+      },
+      {
+        "word": "カラクール",
+        "synset": "wnja-02414043-n"
+      },
+      {
+        "word": "ヤギ",
+        "synset": "wnja-02416519-n"
+      },
+      {
+        "word": "カシミアヤギ",
+        "synset": "wnja-02417242-n"
+      },
+      {
+        "word": "ゴーラル",
+        "synset": "wnja-02418770-n"
+      },
+      {
+        "word": "スマトラカモシカ",
+        "synset": "wnja-02419056-n"
+      },
+      {
+        "word": "シャモア",
+        "synset": "wnja-02419336-n"
+      },
+      {
+        "word": "カモシカ",
+        "synset": "wnja-02419796-n"
+      },
+      {
+        "word": "ヌー",
+        "synset": "wnja-02421449-n"
+      },
+      {
+        "word": "ハーテビースト",
+        "synset": "wnja-02422106-n"
+      },
+      {
+        "word": "インパラ",
+        "synset": "wnja-02422699-n"
+      },
+      {
+        "word": "ガゼル",
+        "synset": "wnja-02423022-n"
+      },
+      {
+        "word": "トムソンガゼル",
+        "synset": "wnja-02423218-n"
+      },
+      {
+        "word": "オリックス",
+        "synset": "wnja-02428349-n"
+      },
+      {
+        "word": "プロングホーン",
+        "synset": "wnja-02429456-n"
+      },
+      {
+        "word": "アカシカ",
+        "synset": "wnja-02431122-n"
+      },
+      {
+        "word": "ダマジカ",
+        "synset": "wnja-02433318-n"
+      },
+      {
+        "word": "ノロジカ",
+        "synset": "wnja-02433546-n"
+      },
+      {
+        "word": "トナカイ",
+        "synset": "wnja-02433925-n"
+      },
+      {
+        "word": "マメジカ",
+        "synset": "wnja-02435853-n"
+      },
+      {
+        "word": "ラクダ",
+        "synset": "wnja-02437136-n"
+      },
+      {
+        "word": "ラマ",
+        "synset": "wnja-02437616-n"
+      },
+      {
+        "word": "グアナコ",
+        "synset": "wnja-02438173-n"
+      },
+      {
+        "word": "アルパカ",
+        "synset": "wnja-02438272-n"
+      },
+      {
+        "word": "キリン",
+        "synset": "wnja-02439033-n"
+      },
+      {
+        "word": "オカピ",
+        "synset": "wnja-02439398-n"
+      },
+      {
+        "word": "オコジョ",
+        "synset": "wnja-02442172-n"
+      },
+      {
+        "word": "イイズナ",
+        "synset": "wnja-02442572-n"
+      },
+      {
+        "word": "アメリカミンク",
+        "synset": "wnja-02443015-n"
+      },
+      {
+        "word": "フェレット",
+        "synset": "wnja-02443346-n"
+      },
+      {
+        "word": "カワウソ",
+        "synset": "wnja-02444819-n"
+      },
+      {
+        "word": "ラッコ",
+        "synset": "wnja-02445394-n"
+      },
+      {
+        "word": "アナグマ",
+        "synset": "wnja-02447366-n"
+      },
+      {
+        "word": "クズリ",
+        "synset": "wnja-02449350-n"
+      },
+      {
+        "word": "テン",
+        "synset": "wnja-02450034-n"
+      },
+      {
+        "word": "クロテン",
+        "synset": "wnja-02450426-n"
+      },
+      {
+        "word": "アルマジロ",
+        "synset": "wnja-02454379-n"
+      },
+      {
+        "word": "ナマケモノ",
+        "synset": "wnja-02456962-n"
+      },
+      {
+        "word": "オタマジャクシ",
+        "synset": "wnja-02469472-n"
+      },
+      {
+        "word": "オランウータン",
+        "synset": "wnja-02480495-n"
+      },
+      {
+        "word": "ゴリラ",
+        "synset": "wnja-02480855-n"
+      },
+      {
+        "word": "マウンテンゴリラ",
+        "synset": "wnja-02481366-n"
+      },
+      {
+        "word": "チンパンジー",
+        "synset": "wnja-02481823-n"
+      },
+      {
+        "word": "テナガザル",
+        "synset": "wnja-02483362-n"
+      },
+      {
+        "word": "フクロテナガザル",
+        "synset": "wnja-02483708-n"
+      },
+      {
+        "word": "サル",
+        "synset": "wnja-02484322-n"
+      },
+      {
+        "word": "マンガベー",
+        "synset": "wnja-02485988-n"
+      },
+      {
+        "word": "マンドリル",
+        "synset": "wnja-02486908-n"
+      },
+      {
+        "word": "マカク",
+        "synset": "wnja-02487347-n"
+      },
+      {
+        "word": "アカゲザル",
+        "synset": "wnja-02487547-n"
+      },
+      {
+        "word": "コロブス",
+        "synset": "wnja-02488702-n"
+      },
+      {
+        "word": "テングザル",
+        "synset": "wnja-02489166-n"
+      },
+      {
+        "word": "マーモセット",
+        "synset": "wnja-02490219-n"
+      },
+      {
+        "word": "ピグミーマーモセット",
+        "synset": "wnja-02490811-n"
+      },
+      {
+        "word": "ホエザル",
+        "synset": "wnja-02492660-n"
+      },
+      {
+        "word": "ティティ",
+        "synset": "wnja-02493509-n"
+      },
+      {
+        "word": "クモザル",
+        "synset": "wnja-02493793-n"
+      },
+      {
+        "word": "リスザル",
+        "synset": "wnja-02494079-n"
+      },
+      {
+        "word": "キツネザル",
+        "synset": "wnja-02496913-n"
+      },
+      {
+        "word": "アイアイ",
+        "synset": "wnja-02498153-n"
+      },
+      {
+        "word": "インドリ",
+        "synset": "wnja-02500267-n"
+      },
+      {
+        "word": "ゾウ",
+        "synset": "wnja-02503517-n"
+      },
+      {
+        "word": "アフリカゾウ",
+        "synset": "wnja-02504458-n"
+      },
+      {
+        "word": "アライグマ",
+        "synset": "wnja-02508021-n"
+      },
+      {
+        "word": "キンカジュー",
+        "synset": "wnja-02509197-n"
+      },
+      {
+        "word": "レッサーパンダ",
+        "synset": "wnja-02509815-n"
+      },
+      {
+        "word": "ハイギョ",
+        "synset": "wnja-02516188-n"
+      },
+      {
+        "word": "ナマズ",
+        "synset": "wnja-02517442-n"
+      },
+      {
+        "word": "デンキナマズ",
+        "synset": "wnja-02518622-n"
+      },
+      {
+        "word": "タラ",
+        "synset": "wnja-02522399-n"
+      },
+      {
+        "word": "マダラ",
+        "synset": "wnja-02522866-n"
+      },
+      {
+        "word": "カスク",
+        "synset": "wnja-02525382-n"
+      },
+      {
+        "word": "ウナギ",
+        "synset": "wnja-02526121-n"
+      },
+      {
+        "word": "アナゴ",
+        "synset": "wnja-02527622-n"
+      },
+      {
+        "word": "シャッド",
+        "synset": "wnja-02530421-n"
+      },
+      {
+        "word": "イワシ",
+        "synset": "wnja-02532602-n"
+      },
+      {
+        "word": "カタクチイワシ",
+        "synset": "wnja-02533834-n"
+      },
+      {
+        "word": "サケ",
+        "synset": "wnja-02534734-n"
+      },
+      {
+        "word": "マス",
+        "synset": "wnja-02537085-n"
+      },
+      {
+        "word": "ブラウントラウト",
+        "synset": "wnja-02537319-n"
+      },
+      {
+        "word": "ニジマス",
+        "synset": "wnja-02537525-n"
+      },
+      {
+        "word": "レイクトラウト",
+        "synset": "wnja-02538010-n"
+      },
+      {
+        "word": "スメルト",
+        "synset": "wnja-02540412-n"
+      },
+      {
+        "word": "カラフトシシャモ",
+        "synset": "wnja-02541257-n"
+      },
+      {
+        "word": "アカマンボウ",
+        "synset": "wnja-02545841-n"
+      },
+      {
+        "word": "トビウオ",
+        "synset": "wnja-02550460-n"
+      },
+      {
+        "word": "サンマ",
+        "synset": "wnja-02551668-n"
+      },
+      {
+        "word": "キノボリウオ",
+        "synset": "wnja-02556373-n"
+      },
+      {
+        "word": "カクレウオ",
+        "synset": "wnja-02559383-n"
+      },
+      {
+        "word": "ブルーギル",
+        "synset": "wnja-02563792-n"
+      },
+      {
+        "word": "スズキ",
+        "synset": "wnja-02566834-n"
+      },
+      {
+        "word": "ハタ",
+        "synset": "wnja-02568959-n"
+      },
+      {
+        "word": "ウミタナゴ",
+        "synset": "wnja-02570838-n"
+      },
+      {
+        "word": "コバンザメ",
+        "synset": "wnja-02574910-n"
+      },
+      {
+        "word": "イトヒキアジ",
+        "synset": "wnja-02577952-n"
+      },
+      {
+        "word": "ブリ",
+        "synset": "wnja-02578928-n"
+      },
+      {
+        "word": "バンディッドラダーフィッシュ",
+        "synset": "wnja-02579091-n"
+      },
+      {
+        "word": "マアジ",
+        "synset": "wnja-02580679-n"
+      },
+      {
+        "word": "ムロアジ",
+        "synset": "wnja-02581482-n"
+      },
+      {
+        "word": "テトラ",
+        "synset": "wnja-02583890-n"
+      },
+      {
+        "word": "ピラニア",
+        "synset": "wnja-02584449-n"
+      },
+      {
+        "word": "シクリッド",
+        "synset": "wnja-02585872-n"
+      },
+      {
+        "word": "イサキ",
+        "synset": "wnja-02588286-n"
+      },
+      {
+        "word": "アメリカンシルバーパーチ",
+        "synset": "wnja-02595339-n"
+      },
+      {
+        "word": "クイーンフィッシュ",
+        "synset": "wnja-02598878-n"
+      },
+      {
+        "word": "ヒメジ",
+        "synset": "wnja-02599958-n"
+      },
+      {
+        "word": "オオカマス",
+        "synset": "wnja-02603540-n"
+      },
+      {
+        "word": "クマノミ",
+        "synset": "wnja-02607072-n"
+      },
+      {
+        "word": "ベラ",
+        "synset": "wnja-02607862-n"
+      },
+      {
+        "word": "ミシマオコゼ",
+        "synset": "wnja-02611898-n"
+      },
+      {
+        "word": "イカナゴ",
+        "synset": "wnja-02618513-n"
+      },
+      {
+        "word": "ネズッポ",
+        "synset": "wnja-02618827-n"
+      },
+      {
+        "word": "ハゼ",
+        "synset": "wnja-02619165-n"
+      },
+      {
+        "word": "トビハゼ",
+        "synset": "wnja-02619550-n"
+      },
+      {
+        "word": "コチ",
+        "synset": "wnja-02620167-n"
+      },
+      {
+        "word": "テッポウウオ",
+        "synset": "wnja-02620578-n"
+      },
+      {
+        "word": "タチウオ",
+        "synset": "wnja-02622955-n"
+      },
+      {
+        "word": "サバ",
+        "synset": "wnja-02623445-n"
+      },
+      {
+        "word": "ワフー",
+        "synset": "wnja-02625258-n"
+      },
+      {
+        "word": "キハダマグロ",
+        "synset": "wnja-02627532-n"
+      },
+      {
+        "word": "カツオ",
+        "synset": "wnja-02628600-n"
+      },
+      {
+        "word": "カジキ",
+        "synset": "wnja-02630739-n"
+      },
+      {
+        "word": "クロカジキ",
+        "synset": "wnja-02631475-n"
+      },
+      {
+        "word": "アマシイラ",
+        "synset": "wnja-02632494-n"
+      },
+      {
+        "word": "ドクウロコボダイ",
+        "synset": "wnja-02634858-n"
+      },
+      {
+        "word": "チョウザメ",
+        "synset": "wnja-02640242-n"
+      },
+      {
+        "word": "カサゴ",
+        "synset": "wnja-02643112-n"
+      },
+      {
+        "word": "ミノカサゴ",
+        "synset": "wnja-02643566-n"
+      },
+      {
+        "word": "メバル",
+        "synset": "wnja-02644113-n"
+      },
+      {
+        "word": "カジカ",
+        "synset": "wnja-02645538-n"
+      },
+      {
+        "word": "ヨーロッパブルヘッド",
+        "synset": "wnja-02645691-n"
+      },
+      {
+        "word": "クエ",
+        "synset": "wnja-02646241-n"
+      },
+      {
+        "word": "アイナメ",
+        "synset": "wnja-02648625-n"
+      },
+      {
+        "word": "ホウボウ",
+        "synset": "wnja-02650050-n"
+      },
+      {
+        "word": "フライングガーナード",
+        "synset": "wnja-02652132-n"
+      },
+      {
+        "word": "カワハギ",
+        "synset": "wnja-02653786-n"
+      },
+      {
+        "word": "ハコフグ",
+        "synset": "wnja-02654425-n"
+      },
+      {
+        "word": "ハリセンボン",
+        "synset": "wnja-02655848-n"
+      },
+      {
+        "word": "マフグ",
+        "synset": "wnja-02656032-n"
+      },
+      {
+        "word": "マンボウ",
+        "synset": "wnja-02656670-n"
+      },
+      {
+        "word": "カレイ",
+        "synset": "wnja-02658531-n"
+      },
+      {
+        "word": "柴犬",
+        "synset": "wnja-90000574-n"
+      }
+    ]
+  }
+}

@@ -16,7 +16,7 @@ if [[ -n "$remote" ]]; then
 fi
 export GIT_INDEX_FILE="$pages_tmp/index"
 git read-tree --empty
-for file in index.html health.json .nojekyll; do
+for file in index.html health.json credits.html dictionary.json .nojekyll; do
   object=$(git hash-object -w -- "$file")
   git update-index --add --cacheinfo "100644,$object,$file"
 done

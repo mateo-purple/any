@@ -11,7 +11,7 @@ function assertUnique(entries, used=new Set()) {
 }
 
 test('aliases, punctuation and width share a key, without merging signed or decimal numbers', () => {
-  for(const group of [['イヌ', '犬', 'いぬ'], ['マインクラフト', 'Ｍｉｎｅｃｒａｆｔ', 'マイクラ'], ['モンキー・D・ルフィ', 'ルフィ'], ['PC', 'パソコン'], ['１，０００', '+01000', '千'], ['0', '-0', '−００.００', '− ００.０', 'ゼロ', '〇']]) {
+  for(const group of [['ベッド','寝台'], ['たんす','箪笥'], ['足の裏','足裏'], ['足の指','足指'], ['背骨','脊椎'], ['まぶた','眼瞼'], ['やかん','ケトル'], ['ごみ箱','くずかご'], ['スパゲッティ','スパゲティ'], ['医師','ドクター'], ['手のひら','掌'], ['イヌ', '犬', 'いぬ'], ['マインクラフト', 'Ｍｉｎｅｃｒａｆｔ', 'マイクラ'], ['モンキー・D・ルフィ', 'ルフィ'], ['PC', 'パソコン'], ['１，０００', '+01000', '千'], ['0', '-0', '−００.００', '− ００.０', 'ゼロ', '〇']]) {
     assert.equal(canonicalSet(group).size, 1, group.join(', '));
   }
   assert.notEqual(E.key('-1'), E.key('1'));
@@ -195,4 +195,49 @@ test('mixed matching fills the available union across varied overlapping pools',
     assert.equal(entries.length,union.size);assertUnique(entries,used);
     assert.throws(()=>E.plan({...cfg,count:union.size+1},db,{},used),/人数分/);
   }
+});
+
+test('large dictionaries retain unique familiar assignments across 50 mixed players', () => {
+  const common=Array.from({length:80},(_,i)=>`共通のお題${i}`);
+  const db=Array.from({length:24},(_,i)=>category(`large${i}`,[...common,...Array.from({length:5000},(_,j)=>`分類${i}のお題${j}`)],common));
+  const used=new Set(common.slice(0,20));
+  const cfg=config({kind:'mixed',count:50,min:0,max:0});
+  used.add('0');
+  for(const c of db)assert.equal(E.remaining(c.id,cfg,db,{},used),5060);
+  const planned=E.plan(cfg,db,{},used),result=E.draw({...cfg,plan:planned},db,{},used);
+  assert.equal(result.length,50);
+  assert.ok(result.every(e=>e.tier===0));
+  assertUnique(result,used);
+  assert.equal(new Set(planned.slice(0,24)).size,24);
+});
+
+test('a large preferred pool leaves the only usable words for 49 narrow categories', () => {
+  const shared=Array.from({length:49},(_,i)=>`限定のお題${i}`);
+  const db=[category('broad',Array.from({length:5000},(_,i)=>`広い分類のお題${i}`),shared),...shared.map((w,i)=>category(`narrow${i}`,[w]))];
+  const cfg=config({count:50,plan:db.map(c=>c.id)});
+  const result=E.draw(cfg,db,{},new Set());
+  assert.equal(result.length,50);
+  assertUnique(result);
+  assert.equal(result[0].tier,1);
+  assert.deepEqual(result.slice(1).map(e=>e.w),shared);
+});
+
+
+test('unchecked familiarity gives common, built-in and online words equal selection slots', () => {
+  const vm=require('node:vm'),fs=require('node:fs');
+  // Uniform deterministic random input enumerates every slot, without a flaky statistical test.
+  let next=0;
+  const sandbox={Math:Object.create(Math)};
+  sandbox.Math.random=()=>next;
+  vm.runInNewContext(fs.readFileSync(require.resolve('./engine.js'),'utf8'),sandbox);
+  const engine=sandbox.KotobaEngine;
+  const db=[category('things',['コップ','顕微鏡'],['コップ'])];
+  const cache={things:{words:[{w:'量子干渉計'}]}};
+  const cfg=config({familiar:false,search:true});
+  const drawn=[];
+  for(let slot=0;slot<3;slot++){
+    next=(slot+.5)/3;
+    drawn.push(engine.drawOne('things',cfg,db,cache,new Set()).w);
+  }
+  assert.deepEqual(drawn,['コップ','顕微鏡','量子干渉計']);
 });
