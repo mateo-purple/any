@@ -49,4 +49,4 @@ bash scripts/publish-pages.sh
 
 初回にGitHub側で公開元の指定が必要な場合は、リポジトリの Settings → Pages → Deploy from a branch → `gh-pages` / `(root)` → Save を選びます。
 
-予定URLは `https://mateo-purple.github.io/any/` です。Pagesの公開設定・配信が完了した後に使用できます。ソースのpushやローカルでの動作確認だけでは公開確認にはなりません。
+公開URLは **https://mateo-purple.github.io/any/** です。HTTPS 200と配信HTMLのSHA-256一致、公開health.jsonを確認済みです。ソースのpushだけで公開済みと判断せず、更新後も公開HTMLとビルドを照合してください。
