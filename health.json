@@ -1,0 +1,158 @@
+{
+  "ok": true,
+  "name": "わたしは、なに？",
+  "version": "1.2.0",
+  "categories": 24,
+  "uniqueWords": 5385,
+  "categoryEntries": 5464,
+  "commit": null,
+  "builtAt": "2026-10-19T01:39:59.684Z",
+  "sha256": "38caebc5ea552b19264062f00214a1742e15f8d7009b11fd71e7907a39a3f279",
+  "ruleTests": "passed",
+  "counts": [
+    {
+      "id": "food",
+      "name": "食べ物",
+      "words": 324,
+      "commonWords": 83
+    },
+    {
+      "id": "sweets",
+      "name": "お菓子・デザート",
+      "words": 184,
+      "commonWords": 70
+    },
+    {
+      "id": "drinks",
+      "name": "飲み物",
+      "words": 100,
+      "commonWords": 62
+    },
+    {
+      "id": "animals",
+      "name": "動物",
+      "words": 261,
+      "commonWords": 89
+    },
+    {
+      "id": "plants",
+      "name": "植物・野菜・果物",
+      "words": 243,
+      "commonWords": 91
+    },
+    {
+      "id": "places",
+      "name": "身近な場所",
+      "words": 201,
+      "commonWords": 72
+    },
+    {
+      "id": "world",
+      "name": "国・地域",
+      "words": 166,
+      "commonWords": 84
+    },
+    {
+      "id": "sights",
+      "name": "街・名所",
+      "words": 235,
+      "commonWords": 80
+    },
+    {
+      "id": "things",
+      "name": "身近なもの",
+      "words": 368,
+      "commonWords": 82
+    },
+    {
+      "id": "electronics",
+      "name": "家電・電子機器",
+      "words": 164,
+      "commonWords": 82
+    },
+    {
+      "id": "clothes",
+      "name": "服・ファッション",
+      "words": 157,
+      "commonWords": 78
+    },
+    {
+      "id": "vehicles",
+      "name": "乗り物",
+      "words": 152,
+      "commonWords": 74
+    },
+    {
+      "id": "jobs",
+      "name": "職業",
+      "words": 221,
+      "commonWords": 81
+    },
+    {
+      "id": "sports",
+      "name": "スポーツ・遊び",
+      "words": 211,
+      "commonWords": 70
+    },
+    {
+      "id": "music",
+      "name": "楽器・音楽",
+      "words": 160,
+      "commonWords": 76
+    },
+    {
+      "id": "nature",
+      "name": "自然・宇宙・天気",
+      "words": 264,
+      "commonWords": 70
+    },
+    {
+      "id": "colors",
+      "name": "色・柄",
+      "words": 99,
+      "commonWords": 67
+    },
+    {
+      "id": "body",
+      "name": "体の部位",
+      "words": 146,
+      "commonWords": 85
+    },
+    {
+      "id": "games",
+      "name": "ゲーム",
+      "words": 291,
+      "commonWords": 80
+    },
+    {
+      "id": "anime",
+      "name": "アニメ・漫画",
+      "words": 254,
+      "commonWords": 92
+    },
+    {
+      "id": "characters",
+      "name": "キャラクター",
+      "words": 483,
+      "commonWords": 100
+    },
+    {
+      "id": "movies",
+      "name": "映画",
+      "words": 264,
+      "commonWords": 85
+    },
+    {
+      "id": "school",
+      "name": "学校・行事",
+      "words": 239,
+      "commonWords": 90
+    },
+    {
+      "id": "actions",
+      "name": "動作・日常",
+      "words": 277,
+      "commonWords": 76
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+node_modules/
+kotoba-party/public/
+test-results/
+*.log
+.DS_Store

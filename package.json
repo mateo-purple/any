@@ -1,0 +1,14 @@
+{
+  "name": "kotoba-party",
+  "version": "1.2.0",
+  "private": true,
+  "description": "スマホ1台で遊ぶ、自分のお題を当てるゲーム",
+  "scripts": {
+    "build": "node kotoba-party/build.cjs",
+    "test": "node --test kotoba-party/engine.test.cjs",
+    "test:browser": "node kotoba-party/browser.test.cjs",
+    "start": "python3 -m http.server 4173 --bind 127.0.0.1 --directory kotoba-party/public"
+  },
+  "devDependencies": { "playwright": "1.62.1" },
+  "engines": { "node": ">=20" }
+}
